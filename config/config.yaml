@@ -1,0 +1,521 @@
+#config_version=6
+
+####################################################################
+#  Hardware Definitions
+#  This section defines the physical board set and addressing for the machine
+#  currently inactive to debug config file without a machine
+####################################################################
+
+#  Defining the P-Roc hardware
+hardware:
+  platform: p3_roc
+  driverboards: pdb
+
+p_roc:
+  use_watchdog: true
+  watchdog_time: 1s
+
+
+modes:
+  - base
+  - attract
+####################################################################
+# Switch Definitions
+# This section defines the switch naming and associated numbering to link with the P3-Roc controller
+# Numbering of switches will all need to be re-defined when P3-Roc controller is installed
+# SW-16 addressing is only completed for SW-16 at address 0,  mostly the upper playfield 
+####################################################################
+
+player_vars:
+  bonusx:
+    initial_value: 1
+
+switches:   
+  s_left_flipper1:                    # front flipper button
+    number: A4-B1-4
+    tags: left_flipper1
+  s_right_flipper1:                   # front flipper button
+    number: A4-B1-7
+    tags: right_flipper1 
+  s_left_flipper2:                    # rear flipper button
+    number: A4-B1-3
+    tags: left_flipper2
+  s_right_flipper2:                   # rear flipper button
+    number: A4-B1-6
+    tags: right_flipper2
+  s_start:                             # located on coin door
+    number: A4-B1-5
+    tags: start
+  s_lower_1_drop:
+    number: A3-B0-0
+    tags: 
+  s_lower_2_drop:
+    number: A3-B0-1
+    tags: 
+  s_lower_3_drop:
+    number: A3-B0-2
+    tags: 
+  s_lower_4_drop:
+    number: A3-B0-3
+    tags: 
+  s_lower_5_drop:
+    number: A3-B0-4
+    tags: 
+  s_lower_10pt_lower:                  # below pop bumper
+    number: A3-B1-5
+    tags: playfield_active
+  s_lower_10pt_drops:                  # behind drop targets
+    number: A3-B1-4 
+    tags: playfield_active
+  s_lower_10pt_upper:                  # above pop bumper
+    number: A3-B1-7
+    tags: playfield_active
+  s_lower_rollover:                    # leading to VUK
+    number: A3-B1-1
+    tags: playfield_active
+  s_lower_vuk:                         # top left of playfield                                - Ball Device -
+    number: A3-B1-0
+    tags: 
+  s_lower_kickout_special:             # bottom of playfield                                  - Ball Device - 
+    number: A3-B0-5
+    tags: 
+  s_lower_pop:                         # pop bumper                                           - Autofire Device -
+    number: A3-B1-6
+    tags: 
+  s_lower_kick_target:                 # below pop bumper                                     - Autofire Device -
+    number: A3-B0-7
+    tags: 
+  s_lower_bonus_left:                  # left side center
+    number: A3-B1-3
+    tags: playfield_active
+  s_lower_bonus_right:                 # right side center
+    number: A3-B0-6
+    tags: playfield_active
+  s_lower_slingshot:                   # lower playfield slingshot                            - Autofire Device -
+    number: A3-B1-2
+    tags: 
+  s_main_1_target:                     #kicking target                                        - Autofire Device - 
+    number: A1-B0-7
+    tags: 
+  s_main_2_target:                     #kicking target                                        - Autofire Device - 
+    number: A1-B0-5
+    tags: 
+  s_main_3_target:                     #standing target
+    number: A1-B1-4 
+    tags: playfield_active
+  s_main_4_target:                     #standing target
+    number: A0-B0-5
+    tags: playfield_active
+  s_main_5_target:                     #kicking target                                        - Autofire Device -
+    number: A0-B0-6
+    tags: 
+  s_main_target_right:                 # along right side, near skeleton kickout
+    number: A2-B0-3
+    tags: playfield_active
+  s_main_1_trough:                     # left lane trough from main to lower playfield                                  
+    number: A1-B0-3
+    tags: playfield_active
+  s_main_2_trough:                     # left trough channel from upper to lower playfield                                 
+    number: A1-B0-2
+    tags: playfield_active
+  s_main_secret_trough:                # right trough channel secret passage                               
+    number: A0-B0-4
+    tags: playfield_active
+  s_main_trapdoor_trough:              # under main playfield, transition trough between playfields.
+    number: A0-B0-7
+    tags: playfield_active
+  s_main_pop_top:                      # upper left pop bumper                                 - Autofire Device
+    number: A1-B0-4
+    tags: 
+  s_main_pop_bottom:                   # upper right pop bumper                                - Autofire Device
+    number: A1-B1-6
+    tags: 
+  s_main_outlane_left:                 # along left side rail
+    number: A1-B1-7
+    tags: playfield_active
+  s_main_10pt_left:                    # between kicking targets
+    number: A1-B0-6
+    tags: playfield_active
+  s_main_outlane_right:                # between lower pop and outside rail
+    number: A2-B0-6
+    tags: playfield_active
+  s_main_outhole:                      # Outhole                                               - Ball Device -   
+    number: A2-B0-7    
+    tags: 
+  s_main_inlane_left:                  # rollover near pop bumper
+    number: A1-B1-5
+    tags: playfield_active
+  s_main_inlane_right:                 # rollunder above right flippers
+    number: A2-B0-5
+    tags: playfield_active
+  s_main_vuk:                          # VUK into left side of upper playfield                 - Ball Device -
+    number: A1-B0-1
+    tags: 
+  s_main_kickout_right:                # skeleton kickout along right side                     - Ball Device -
+    number: A2-B0-4
+    tags:
+  s_main_lane_center:                  # top lanes, center kickout hole
+    number: A1-B0-0
+    tags: 
+  s_main_rollunder:                    # right of ramp, to trap door. 
+    number: A2-B0-1
+    tags: playfield_active
+  s_main_slingshot:                    # right side slingshot.                                 - Autofire Device 
+    number: A2-B0-2
+    tags: 
+ 
+  s_upper_1_target:                    # Upper standup bank
+    number: A0-B0-0
+    tags: playfield_active
+  s_upper_2_target:                    # Upper standup bank
+    number: A0-B0-1
+    tags: playfield_active
+  s_upper_3_target:                    # Upper standup bank
+    number: A0-B0-2
+    tags: playfield_active
+  s_upper_4_target:                    # Upper standup bank
+    number: A0-B0-3
+    tags: playfield_active
+  s_upper_1_drop:                      # Upper drop bank
+    number: A0-B1-0
+    tags: 
+  s_upper_2_drop:                      # Upper drop bank
+    number: A0-B1-1
+    tags: 
+  s_upper_3_drop:                      # Upper drop bank
+    number: A0-B1-2
+    tags: 
+  s_upper_4_drop:                      # Upper drop bank
+    number: A0-B1-3
+    tags: 
+  s_upper_10pt_left:                   # Upper playfield standup
+    number: A0-B1-4
+    tags: playfield_active
+  s_upper_10pt_center:                 # Upper playfield standup
+    number: A0-B1-5
+    tags: playfield_active
+  s_upper_pop:                         # Upper Playfield Pop Bumper                            - Autofire Device 
+    number: A0-B1-6
+    tags: 
+####################################################################
+## Drop Target Bank Definitions
+####################################################################
+drop_targets:
+  u1_drop:
+    switch: s_upper_1_drop
+    reset_coil: c_upper_drop
+  u2_drop:
+    switch: s_upper_2_drop
+    reset_coil: c_upper_drop
+  u3_drop:
+    switch: s_upper_3_drop
+    reset_coil: c_upper_drop
+  u4_drop:
+    switch: s_upper_4_drop
+    reset_coil: c_upper_drop
+  l1_drop:
+    switch: s_lower_1_drop
+    reset_coil: c_lower_drop
+  l2_drop:
+    switch: s_lower_2_drop
+    reset_coil: c_lower_drop
+  l3_drop:
+    switch: s_lower_3_drop
+    reset_coil: c_lower_drop
+  l4_drop:
+    switch: s_lower_4_drop
+    reset_coil: c_lower_drop
+  l5_drop:
+    switch: s_lower_5_drop
+    reset_coil: c_lower_drop
+    
+drop_target_banks:
+  upper:
+    drop_targets: u1_drop, u2_drop, u3_drop, u4_drop  
+    reset_coil: c_upper_drop
+    reset_on_complete: 1s
+  lower: 
+    drop_targets: l1_drop, l2_drop, l3_drop, l4_drop, l5_drop
+    reset_coil: c_lower_drop
+    reset_on_complete: 1s
+    
+####################################################################
+#  Coil Definitions
+####################################################################
+coils:
+#  c_cabinet_knocker:                              # knocker coil
+#    number:
+  c_flipper_left1_main:                           # Main Playfield Left Inner Flipper
+    number: A2-B1-0
+    default_pulse_ms: 30
+  c_flipper_left1_hold:
+    number: A2-B1-3
+    allow_enable: true
+  c_flipper_right1_main:                          # Main Playfield Right Inner Flipper
+    number: A2-B1-4
+    default_pulse_ms: 30
+  c_flipper_right1_hold:
+    number: A2-B1-5
+    allow_enable: true
+  c_flipper_left2_main:                           # Main Playfield Left Outer Flipper
+    number: A2-B1-6
+    default_pulse_ms: 30
+  c_flipper_left2_hold:
+    number: A2-B1-2
+    allow_enable: true 
+  c_flipper_right2_main:                          # Main Playfield Right Outer Flipper
+    number: A2-B1-7
+    default_pulse_ms: 30
+  c_flipper_right2_hold:
+    number: A2-B1-1
+    allow_enable: true
+  c_flipper_left_lower_main:                           # Lower Playfield Left Flipper
+    number: A1-B0-1
+    default_pulse_ms: 20
+  c_flipper_left_lower_hold:
+    number: A1-B0-2
+    allow_enable: true
+  c_flipper_right_lower_main:                          # Lower Playfield Right Flipper
+    number: A1-B0-3
+    default_pulse_ms: 20
+  c_flipper_right_lower_hold:
+    number: A1-B0-4
+    allow_enable: true
+  c_flipper_left_upper_main:                           # Upper Playfield Left Flipper
+    number: A2-B0-4
+    default_pulse_ms: 10
+  c_flipper_left_upper_hold:
+    number: A2-B0-3
+    allow_enable: true
+  c_flipper_right_upper_main:                          # Upper Playfield Right Flipper
+    number: A2-B0-2
+    default_pulse_ms: 20
+  c_flipper_right_upper_hold:
+    number: A2-B0-1
+    allow_enable: true
+
+
+
+  c_upper_pop:                                    # Upper playfield pop bumper                    - Autofire Device -
+    number: A0-B1-1
+    default_pulse_ms: 100
+  c_upper_drop:                                   # upper drop target reset
+    number: A0-B0-6
+    default_pulse_ms: 75
+    
+  c_main_5_target:                                # kicking target #5                             - Autofire Device - 
+    number: A0-B1-5
+    default_pulse_ms: 75
+  c_main_trapdoor:                                # trapdoor open and close
+    number: A0-B1-0
+    default_pulse_ms: 75
+  c_main_trapdoor_hold:                           # hold coil for trapdoor
+    number: A0-B1-3
+  c_main_slingshot:                               # right side slingshot                          - Autofire Device - 
+    number: A0-B1-6
+    default_pulse_ms: 75
+  c_main_kickout_right:                           # extra ball kickout on right side              - Ball Device -
+    number: A0-B1-2
+    default_pulse_ms: 100
+  c_main_outhole:                                 # outhole / lane shooter                        - Ball Device - 
+    number: A0-B1-4
+    default_pulse_ms: 60
+  c_main_pop_bottom:                              # lower pop bumper                              - Autofire Device - 
+    number: A0-B0-1
+    default_pulse_ms: 100
+  c_main_1_target:                                # kicking target #1                             - Autofire Device - 
+    number: A0-B0-4
+    default_pulse_ms: 100
+  c_main_2_target:                                # kicking target #2                             - Autofire Device - 
+   number: A0-B0-0
+   default_pulse_ms: 100
+  c_main_pop_top:                                 # upper pop bumper                              - Autofire Devide - 
+   number: A0-B0-2 
+   default_pulse_ms: 100
+  c_main_lane_center:                             # kickout hole in center lane at top            - Ball Device - 
+    number: A0-B0-3
+    default_pulse_ms: 250
+  c_main_vuk:                                     # VUK into left side of upper playfield         - Ball Devide - 
+    number: A0-B0-5
+    default_pulse_ms: 75
+  c_lower_pop:                                    # Lower Playfield Pop Bumper                    - Autofire Device - 
+    number: A1-B1-4
+    default_pulse_ms: 100
+  c_lower_kick_target:                             # Lower Playfield Kicking target                - Autofire Device - 
+    number: A1-B1-3
+    default_pulse_ms: 75
+  c_lower_kickout_special:                        # Special Kickout Hole                          - Ball Device - 
+    number: A1-B1-1
+    default_pulse_ms: 100
+  c_lower_drop:                                   # Drop Target Reset                             
+    number: A1-B1-5
+    default_pulse_ms: 50
+  c_lower_slingshot:                              # Lower Playfield Slingshot                     - Autofire Device 
+    number: A1-B1-2
+    default_pulse_ms: 75
+  c_lower_vuk:                                    # VUK back to main playfield                    - Ball Device - 
+    number: A1-B0-0 
+    default_pulse_ms: 150
+   
+
+
+
+####################################################################
+# Devices Definitions
+# This section will start to create links between switches and specfic elements
+# 
+####################################################################
+# Playfields
+playfields:
+  playfield:
+    default_source_device: bd_drain 
+    tags: default
+    
+
+####################################################################
+# Ball Devices
+# This section defines the ball devices, such as outholes, kickout holes, and VUK's
+####################################################################
+ball_devices:
+  bd_drain:
+    ball_switches: s_main_outhole    
+    eject_coil: c_main_outhole
+    tags: drain, home, trough
+  bd_lower_vuk: 
+    ball_switches: s_lower_vuk
+    eject_coil: c_lower_vuk
+    eject_timeouts: 2s
+  bd_lower_kickout_special:
+    ball_switches: s_lower_kickout_special
+    eject_coil: c_lower_kickout_special
+    eject_timeouts: 1s
+  bd_main_vuk:
+    ball_switches: s_main_vuk
+    eject_coil: c_main_vuk
+    eject_timeouts: 1s
+  bd_main_kickout_right:
+    ball_switches: s_main_kickout_right
+    eject_coil: c_main_kickout_right
+    eject_timeouts: 3s
+  bd_main_kickout_lane: 
+    ball_switches: s_main_lane_center
+    eject_coil: c_main_lane_center
+    eject_timeouts: 1s 
+    
+
+####################################################################
+# Autofire Devices
+# This section defines the autofire devices.  Slingshots, pop bumpers, and kicking targets.
+####################################################################
+
+autofire_coils:
+  upper_pop:
+    coil: c_upper_pop
+    switch: s_upper_pop
+  main_5_target:
+    coil: c_main_5_target
+    switch: s_main_5_target
+  main_slingshot:
+    coil: c_main_slingshot
+    switch: s_main_slingshot
+  main_pop_bottom:
+    coil: c_main_pop_bottom
+    switch: s_main_pop_bottom
+  main_1_target:
+    coil: c_main_1_target
+    switch: s_main_1_target
+  main_2_target:
+    coil: c_main_2_target
+    switch: s_main_2_target
+  main_pop_top:
+    coil: c_main_pop_top
+    switch: s_main_pop_top
+  lower_pop:
+    coil: c_lower_pop
+    switch: s_lower_pop
+  lower_kick_target:
+    coil: c_lower_kick_target
+    switch: s_lower_kick_target
+  lower_sling:
+    coil: c_lower_slingshot
+    switch: s_lower_slingshot
+
+
+flippers:
+  inner_left: 
+    main_coil: c_flipper_left1_main
+    hold_coil: c_flipper_left1_hold
+    activation_switch: s_left_flipper1
+  inner_right: 
+    main_coil: c_flipper_right1_main
+    hold_coil: c_flipper_right1_hold
+    activation_switch: s_right_flipper1
+  outer_left: 
+    main_coil: c_flipper_left2_main
+    hold_coil: c_flipper_left2_hold
+    activation_switch: s_left_flipper1
+  outer_right: 
+    main_coil: c_flipper_right2_main
+    hold_coil: c_flipper_right2_hold
+    activation_switch: s_right_flipper1
+  lower_left: 
+    main_coil: c_flipper_left_lower_main
+    hold_coil: c_flipper_left_lower_hold
+    activation_switch: s_left_flipper2
+  lower_right: 
+    main_coil: c_flipper_left_lower_main
+    hold_coil: c_flipper_right_lower_hold
+    activation_switch: s_right_flipper2
+  upper_left: 
+    main_coil: c_flipper_left_upper_main
+    hold_coil: c_flipper_left_upper_hold
+    activation_switch: s_left_flipper2
+  upper_right:
+    main_coil: c_flipper_right_upper_main
+    hold_coil: c_flipper_right_upper_hold
+    activation_switch: s_right_flipper2
+ 
+
+lights:
+  l_left_lane:
+    number: 11-1-3-5
+    platform_settings:
+      polarity: true
+    
+  l_center_lane:
+    number: 11-7-9-11
+    platform_settings:
+      polarity: true
+    
+  l_right_lane: 
+    number: 11-25-27-29
+    platform_settings:
+      polarity: true
+    
+  l_main_5: 
+    number: 11-31-33-35
+    platform_settings:
+      polarity: true   
+  l_main_eb: 
+    number: 11-37-39-41
+ #   platform_settings:
+ #     polarity: false
+  l_upper_target_4:       #upper lights
+    number: 11-12-14-13
+    platform_settings:
+      polarity: true  
+ 
+  l_upper_target_3:
+    number: 11-15-17-16
+    platform_settings:
+      polarity: true
+      
+  l_upper_target_2:
+    number: 11-18-20-19
+    platform_settings:
+      polarity: true  
+
+  l_upper_target_1:
+    number: 11-21-23-22
+    platform_settings:
+      polarity: true 

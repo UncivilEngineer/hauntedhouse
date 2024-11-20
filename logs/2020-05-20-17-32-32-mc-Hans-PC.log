@@ -1,0 +1,66 @@
+2020-05-20 17:32:32,948 : kivy : Factory: 184 symbols loaded
+2020-05-20 17:32:33,806 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2020-05-20 17:32:34,087 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-05-20 17:32:34,087 : kivy : Video: Provider: gstplayer
+2020-05-20 17:32:34,383 : kivy : Loading MPF-MC controller
+2020-05-20 17:32:34,383 : mpfmc : Mission Pinball Framework Media Controller v0.53.3
+2020-05-20 17:32:34,399 : mpfmc : Mission Pinball Framework Game Engine v0.53.3
+2020-05-20 17:32:34,399 : mpfmc : Machine path: C:\pinball\HauntedHouse
+2020-05-20 17:32:34,399 : ConfigProcessor : Config file in cache changed: C:\pinball\HauntedHouse\config\config
+2020-05-20 17:32:34,399 : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-05-20 17:32:34,836 : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\mcconfig.yaml
+2020-05-20 17:32:38,907 : ConfigValidator : Config spec file cache created: C:\Users\Hans\AppData\Local\Temp\config_spec.mpf_cache
+2020-05-20 17:32:38,970 : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\config\config.
+2020-05-20 17:32:39,391 : kivy : YAML error found in file C:\pinball\HauntedHouse\config\config.yaml. Line 270, Position 2: while parsing a block mapping
+  in "C:\pinball\HauntedHouse\config\config.yaml", line 9, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\pinball\HauntedHouse\config\config.yaml", line 270, column 2
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 193, in load
+    config = self.process(f)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 218, in process
+    return yaml.load(data_string, Loader=MpfLoader)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\main.py", line 935, in load
+    return loader._constructor.get_single_data()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\constructor.py", line 109, in get_single_data
+    node = self.composer.get_single_node()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\composer.py", line 78, in get_single_node
+    document = self.compose_document()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\composer.py", line 101, in compose_document
+    node = self.compose_node(None, None)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\composer.py", line 138, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\composer.py", line 211, in compose_mapping_node
+    while not self.parser.check_event(MappingEndEvent):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\parser.py", line 141, in check_event
+    self.current_event = self.state()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\parser.py", line 581, in parse_block_mapping_key
+    token.start_mark,
+ruamel.yaml.parser.ParserError: while parsing a block mapping
+  in "C:\pinball\HauntedHouse\config\config.yaml", line 9, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\pinball\HauntedHouse\config\config.yaml", line 270, column 2
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\commands\mc.py", line 213, in __init__
+    thread_stopper=thread_stopper).run()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\core\mc.py", line 97, in __init__
+    self.machine_config = self._load_config()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\core\mc.py", line 223, in _load_config
+    mpf_config = self.mpf_config_processor.load_config_files_with_cache(files, "machine", True)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_processor.py", line 113, in load_config_files_with_cache
+    ignore_unknown_sections)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_processor.py", line 169, in _load_config_file_and_return_loaded_files
+    config = FileManager.load(filename, expected_version_str, True)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\file_manager.py", line 98, in load
+    return interface.load(file, verify_version, halt_on_error)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 200, in load
+    raise ValueError(msg)
+ValueError: YAML error found in file C:\pinball\HauntedHouse\config\config.yaml. Line 270, Position 2: while parsing a block mapping
+  in "C:\pinball\HauntedHouse\config\config.yaml", line 9, column 1
+expected <block end>, but found '<block mapping start>'
+  in "C:\pinball\HauntedHouse\config\config.yaml", line 270, column 2
+2020-05-20 17:32:39,407 : kivy : Stopping child threads... (0 remaining)
+2020-05-20 17:32:39,407 : kivy : All child threads stopped.

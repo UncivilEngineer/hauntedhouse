@@ -1,0 +1,931 @@
+2020-05-20 17:47:39,577 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.3
+2020-05-20 17:47:39,577 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\hans\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2020-05-20-17-47-39-mpf-Hans-PC.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2020-05-20 17:47:39,577 : INFO : Machine : MPF path: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf
+2020-05-20 17:47:39,577 : INFO : Machine : Machine path: C:\pinball\HauntedHouse
+2020-05-20 17:47:39,577 : INFO : Machine : Platform: win32
+2020-05-20 17:47:39,577 : INFO : Machine : Python executable location: c:\users\hans\appdata\local\programs\python\python36-32\python.exe
+2020-05-20 17:47:39,577 : INFO : Machine : Python version: 3.6.8 (32-bit)
+2020-05-20 17:47:39,577 : INFO : Machine : Machine config file #1: config.yaml
+2020-05-20 17:47:39,655 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\6e040aaf1f6a41fde2348c429eac1a1c.mpf_cache
+2020-05-20 17:47:39,686 : INFO : Machine : Initialise MPF.
+2020-05-20 17:47:43,321 : INFO : ConfigValidator : Config spec file cache created: C:\Users\Hans\AppData\Local\Temp\config_spec.mpf_cache
+2020-05-20 17:47:47,252 : INFO : P3-ROC : Connecting to P-ROC
+2020-05-20 17:47:47,798 : INFO : P3-ROC : Successfully connected to P-ROC/P3-ROC. Firmware Version: 2. Firmware Revision: 6. Hardware Board ID: 1
+2020-05-20 17:47:48,126 : INFO : EventManager : Event: ======'machine_var_p_roc_version'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,126 : INFO : EventManager : Event: ======'machine_var_p_roc_revision'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,126 : INFO : EventManager : Event: ======'machine_var_p_roc_hardware_version'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,204 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,656 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 120480, 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.3', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.3, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.8', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-7-6.1.7601-SP1', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '7', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '6.1.7601', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86', 'prev_value': None, 'change': True}
+2020-05-20 17:47:48,672 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-05-20 17:47:48,968 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\5bc0fa50944284867e966a154a822445.mpf_cache
+2020-05-20 17:47:49,046 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\fd4d0ac963aaaec6abb4cac3da0cded0.mpf_cache
+2020-05-20 17:47:49,078 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\7d6c1285f2e862430ea29e9aa05d0f73.mpf_cache
+2020-05-20 17:47:49,546 : INFO : EventManager : Event: ======'drop_target_bank_upper_up'====== Args={}
+2020-05-20 17:47:49,546 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:47:49,577 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (48, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (49, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (50, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (51, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (52, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (39, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (8, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (10, <Platform.P3-ROC>)
+2020-05-20 17:47:49,624 : INFO : SwitchController : Found active switch: (11, <Platform.P3-ROC>)
+2020-05-20 17:47:49,717 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2020-05-20 17:47:49,733 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2020-05-20 17:47:59,321 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2020-05-20 17:47:59,324 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2020-05-20 17:47:59,367 : INFO : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.53.3', 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,369 : INFO : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.53.3 (config_version=5, BCP v1.1, Requires MPF v0.53.0)', 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,381 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,749 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2020-05-20 17:47:59,806 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2020-05-20 17:47:59,808 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,809 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,809 : INFO : EventManager : Event: ======'drop_target_u1_drop_down'====== Args={'device': <drop_target.u1_drop>}
+2020-05-20 17:47:59,810 : INFO : EventManager : Event: ======'drop_target_bank_upper_mixed'====== Args={'down': 1}
+2020-05-20 17:47:59,811 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,811 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,812 : INFO : EventManager : Event: ======'drop_target_u3_drop_down'====== Args={'device': <drop_target.u3_drop>}
+2020-05-20 17:47:59,812 : INFO : EventManager : Event: ======'drop_target_bank_upper_mixed'====== Args={'down': 2}
+2020-05-20 17:47:59,813 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,813 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,814 : INFO : EventManager : Event: ======'drop_target_u4_drop_down'====== Args={'device': <drop_target.u4_drop>}
+2020-05-20 17:47:59,816 : INFO : EventManager : Event: ======'drop_target_bank_upper_mixed'====== Args={'down': 3}
+2020-05-20 17:47:59,817 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,818 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,819 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:47:59,821 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:47:59,822 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,823 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,824 : INFO : EventManager : Event: ======'drop_target_l2_drop_down'====== Args={'device': <drop_target.l2_drop>}
+2020-05-20 17:47:59,826 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 2}
+2020-05-20 17:47:59,826 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,827 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,828 : INFO : EventManager : Event: ======'drop_target_l3_drop_down'====== Args={'device': <drop_target.l3_drop>}
+2020-05-20 17:47:59,830 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 3}
+2020-05-20 17:47:59,831 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,832 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,833 : INFO : EventManager : Event: ======'drop_target_l4_drop_down'====== Args={'device': <drop_target.l4_drop>}
+2020-05-20 17:47:59,834 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 4}
+2020-05-20 17:47:59,835 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:47:59,836 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:47:59,837 : INFO : EventManager : Event: ======'drop_target_l5_drop_down'====== Args={'device': <drop_target.l5_drop>}
+2020-05-20 17:47:59,839 : INFO : EventManager : Event: ======'drop_target_bank_lower_down'====== Args={}
+2020-05-20 17:47:59,847 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 41, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,849 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 84, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,851 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 17047.045454545456, 'top': [120480, 114590, 76090, 56770, 45090, 43120, 36560, 36090, 27560, 23530], 'total': 44}, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,853 : INFO : EventManager : Event: ======'machine_var_audits_shots_10pt'====== Args={'value': 115, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,855 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_inlane'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,858 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_outlane'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,860 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_10pt_drops'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,862 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_10pt_lower'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,864 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_10pt_upper'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,867 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,869 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_2_drop'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,871 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_3_drop'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,873 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_4_drop'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,876 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_5_drop'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,878 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_hole'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,881 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_kick_target'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,883 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_left'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,885 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_left_pop'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,887 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_pop'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,890 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_right'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,892 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_rollover'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,895 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_slingshot'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,898 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_1'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,901 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_2'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,903 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_3'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,906 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_4'====== Args={'value': 19, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,909 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_5'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,913 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_slingshot'====== Args={'value': 18, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,915 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_inlane'====== Args={'value': 48, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,922 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_kickout'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,926 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_outlane'====== Args={'value': 28, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,929 : INFO : EventManager : Event: ======'machine_var_audits_shots_rollunder'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,932 : INFO : EventManager : Event: ======'machine_var_audits_shots_standup_right'====== Args={'value': 54, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,936 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_1'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,939 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_1_drop'====== Args={'value': 32, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,942 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_2'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,945 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_2_drop'====== Args={'value': 35, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,948 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_3'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,952 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_3_drop'====== Args={'value': 33, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,955 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_4'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,958 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_4_drop'====== Args={'value': 40, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,962 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_left_pop'====== Args={'value': 26, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,965 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_pop'====== Args={'value': 136, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,969 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,973 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper2'====== Args={'value': 113, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,976 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_UPPER'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,979 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_drops'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,983 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_lower'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,986 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_upper'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,990 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 362, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,993 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_2_drop'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:47:59,997 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_3_drop'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,001 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_4_drop'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,004 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_5_drop'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,008 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_bonus_left'====== Args={'value': 3, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,012 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_bonus_right'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,015 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_kick_target'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,020 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_kickout_special'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,024 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_pop'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,027 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_rollover'====== Args={'value': 38, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,031 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_slingshot'====== Args={'value': 5, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,035 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_vuk'====== Args={'value': 158, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,039 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_10pt_left'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,043 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_1_target'====== Args={'value': 35, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,047 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_1_trough'====== Args={'value': 20, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,051 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_2_target'====== Args={'value': 35, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,055 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_2_trough'====== Args={'value': 45, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,059 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_3_target'====== Args={'value': 8, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,063 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_4_target'====== Args={'value': 35, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,068 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_5_target'====== Args={'value': 49, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,072 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_inlane_left'====== Args={'value': 13, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,076 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_inlane_right'====== Args={'value': 53, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,081 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_kickout_right'====== Args={'value': 122, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,085 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_lane_center'====== Args={'value': 68, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,089 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outhole'====== Args={'value': 304, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,094 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outlane_left'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,098 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outlane_right'====== Args={'value': 29, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,102 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_pop_bottom'====== Args={'value': 94, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,107 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_pop_top'====== Args={'value': 91, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,111 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_rollunder'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,115 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_roundabout_rollunder'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,120 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_secret_trough'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,125 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_slingshot'====== Args={'value': 213, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,129 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_target_right'====== Args={'value': 107, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,134 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_trapdoor_trough'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,138 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_vuk'====== Args={'value': 143, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,143 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper1'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,148 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper2'====== Args={'value': 85, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,152 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,157 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_10pt_center'====== Args={'value': 129, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,161 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_10pt_left'====== Args={'value': 82, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,166 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_1_drop'====== Args={'value': 40, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,171 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_1_target'====== Args={'value': 77, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,176 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_2_drop'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,181 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_2_target'====== Args={'value': 108, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,186 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_3_drop'====== Args={'value': 43, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,191 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_3_target'====== Args={'value': 49, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,195 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_4_drop'====== Args={'value': 58, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,200 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_4_target'====== Args={'value': 49, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,206 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_pop'====== Args={'value': 368, 'prev_value': None, 'change': True}
+2020-05-20 17:48:00,211 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2020-05-20 17:48:00,269 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2020-05-20 17:48:00,275 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2020-05-20 17:48:00,281 : INFO : EventManager : Event: ======'slide_welcome_slide_removed'====== Args={'_from_bcp': True}
+2020-05-20 17:48:00,298 : INFO : EventManager : Event: ======'slide_welcome_slide_created'====== Args={'_from_bcp': True}
+2020-05-20 17:48:00,303 : INFO : EventManager : Event: ======'slide_welcome_slide_active'====== Args={'_from_bcp': True}
+2020-05-20 17:48:00,319 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2020-05-20 17:48:00,321 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2020-05-20 17:48:00,323 : INFO : drop_target_bank.upper : 3 targets are down. Will reset those.
+2020-05-20 17:48:00,325 : INFO : coil.c_upper_drop : Pulsing Driver for 75ms (1.0 pulse_power)
+2020-05-20 17:48:00,327 : INFO : drop_target_bank.lower : 5 targets are down. Will reset those.
+2020-05-20 17:48:00,328 : INFO : coil.c_upper_drop : Pulsing Driver for 75ms (1.0 pulse_power)
+2020-05-20 17:48:00,331 : INFO : coil.c_upper_drop : Pulsing Driver for 75ms (1.0 pulse_power)
+2020-05-20 17:48:00,332 : INFO : coil.c_upper_drop : Pulsing Driver for 75ms (1.0 pulse_power)
+2020-05-20 17:48:00,334 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,336 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,338 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,339 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,341 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,346 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2020-05-20 17:48:00,353 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2020-05-20 17:48:00,357 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2020-05-20 17:48:00,358 : INFO : Mode.attract : Started. Priority: 10
+2020-05-20 17:48:00,358 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2020-05-20 17:48:00,361 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2020-05-20 17:48:00,457 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,459 : INFO : SwitchController : <<<<<<< 's_upper_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,460 : INFO : SwitchController : <<<<<<< 's_upper_3_drop' inactive >>>>>>>
+2020-05-20 17:48:00,460 : INFO : SwitchController : <<<<<<< 's_upper_4_drop' inactive >>>>>>>
+2020-05-20 17:48:00,508 : INFO : Machine : Starting the main run loop.
+2020-05-20 17:48:00,512 : INFO : EventManager : Event: ======'slide_attract_started_created'====== Args={'_from_bcp': True}
+2020-05-20 17:48:00,513 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2020-05-20 17:48:00,514 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_upper_pop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,515 : INFO : SwitchController : <<<<<<< 's_lower_5_drop' inactive >>>>>>>
+2020-05-20 17:48:00,516 : INFO : SwitchController : <<<<<<< 's_lower_2_drop' inactive >>>>>>>
+2020-05-20 17:48:00,516 : INFO : SwitchController : <<<<<<< 's_lower_3_drop' inactive >>>>>>>
+2020-05-20 17:48:00,517 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,517 : INFO : SwitchController : <<<<<<< 's_lower_4_drop' inactive >>>>>>>
+2020-05-20 17:48:00,518 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,575 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:00,576 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,576 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,577 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,577 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:00,578 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,680 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,686 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,701 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,763 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:00,810 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,811 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,811 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:00,856 : INFO : EventManager : Event: ======'drop_target_u1_drop_up'====== Args={'device': <drop_target.u1_drop>}
+2020-05-20 17:48:00,857 : INFO : EventManager : Event: ======'restore'====== Args={}
+2020-05-20 17:48:00,857 : INFO : EventManager : Event: ======'drop_target_bank_upper_mixed'====== Args={'down': 2}
+2020-05-20 17:48:00,858 : INFO : EventManager : Event: ======'restore'====== Args={}
+2020-05-20 17:48:00,859 : INFO : EventManager : Event: ======'drop_target_bank_lower_down'====== Args={}
+2020-05-20 17:48:00,859 : INFO : EventManager : Event: ======'drop_target_u3_drop_up'====== Args={'device': <drop_target.u3_drop>}
+2020-05-20 17:48:00,860 : INFO : EventManager : Event: ======'drop_target_bank_upper_mixed'====== Args={'down': 1}
+2020-05-20 17:48:00,861 : INFO : EventManager : Event: ======'drop_target_u4_drop_up'====== Args={'device': <drop_target.u4_drop>}
+2020-05-20 17:48:00,861 : INFO : EventManager : Event: ======'drop_target_bank_upper_up'====== Args={}
+2020-05-20 17:48:00,862 : INFO : EventManager : Event: ======'drop_target_l4_drop_up'====== Args={'device': <drop_target.l4_drop>}
+2020-05-20 17:48:00,863 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 4}
+2020-05-20 17:48:00,863 : INFO : EventManager : Event: ======'drop_target_l3_drop_up'====== Args={'device': <drop_target.l3_drop>}
+2020-05-20 17:48:00,864 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 3}
+2020-05-20 17:48:00,865 : INFO : EventManager : Event: ======'drop_target_l2_drop_up'====== Args={'device': <drop_target.l2_drop>}
+2020-05-20 17:48:00,867 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 2}
+2020-05-20 17:48:00,868 : INFO : EventManager : Event: ======'drop_target_l5_drop_up'====== Args={'device': <drop_target.l5_drop>}
+2020-05-20 17:48:00,869 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:00,869 : INFO : drop_target_bank.lower : 1 targets are down. Will reset those.
+2020-05-20 17:48:00,869 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:00,874 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,874 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:00,875 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:00,875 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:00,876 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:00,876 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:00,877 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:00,877 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:00,879 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:00,972 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:00,972 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:00,973 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:00,973 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,080 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:01,080 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:01,081 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:01,081 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:01,081 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,129 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:01,130 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:01,130 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:01,131 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,131 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:01,132 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:01,132 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:01,132 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,133 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:01,133 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:01,135 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:01,135 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,187 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:01,187 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:01,188 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:01,188 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,367 : INFO : EventManager : Event: ======'restore'====== Args={}
+2020-05-20 17:48:01,368 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:01,849 : INFO : drop_target_bank.lower : 1 targets are down. Will reset those.
+2020-05-20 17:48:01,849 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:01,901 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:01,901 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:01,901 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:01,902 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:01,996 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,014 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,029 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,045 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,046 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,073 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,089 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:02,128 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:02,129 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:02,129 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2020-05-20 17:48:02,130 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:02,350 : INFO : EventManager : Event: ======'restore'====== Args={}
+2020-05-20 17:48:02,351 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:03,595 : INFO : SwitchController : <<<<<<< 's_start' active >>>>>>>
+2020-05-20 17:48:03,769 : INFO : SwitchController : <<<<<<< 's_start' inactive >>>>>>>
+2020-05-20 17:48:03,770 : INFO : EventManager : Event: ======'request_to_start_game'====== Args={}
+2020-05-20 17:48:03,772 : INFO : EventManager : Event: ======'game_start'====== Args={'buttons': [], 'hold_time': 0.1869999999999976}
+2020-05-20 17:48:03,772 : INFO : EventManager : Event: ======'mode_game_will_start'====== Args={'buttons': [], 'hold_time': 0.1869999999999976}
+2020-05-20 17:48:03,775 : INFO : EventManager : Event: ======'mode_game_starting'====== Args={'buttons': [], 'hold_time': 0.1869999999999976}
+2020-05-20 17:48:03,776 : INFO : EventManager : Event: ======'mode_attract_will_stop'====== Args={}
+2020-05-20 17:48:03,776 : INFO : EventManager : Event: ======'mode_attract_stopping'====== Args={}
+2020-05-20 17:48:03,776 : INFO : Mode.attract : Stopped.
+2020-05-20 17:48:03,778 : INFO : EventManager : Event: ======'mode_attract_stopped'====== Args={}
+2020-05-20 17:48:03,779 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'attract'}
+2020-05-20 17:48:03,780 : INFO : Mode.game : Started. Priority: 20
+2020-05-20 17:48:03,780 : INFO : EventManager : Event: ======'mode_game_started'====== Args={'buttons': [], 'hold_time': 0.1869999999999976}
+2020-05-20 17:48:03,838 : INFO : EventManager : Event: ======'game_will_start'====== Args={}
+2020-05-20 17:48:03,840 : INFO : EventManager : Event: ======'game_starting'====== Args={'game': <Mode.game>}
+2020-05-20 17:48:03,845 : INFO : EventManager : Event: ======'player_add_request'====== Args={}
+2020-05-20 17:48:03,846 : INFO : EventManager : Event: ======'player_will_add'====== Args={'number': 1}
+2020-05-20 17:48:03,846 : INFO : EventManager : Event: ======'player_adding'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:03,847 : INFO : EventManager : Event: ======'player_added'====== Args={'player': <Player 1>, 'num': 1}
+2020-05-20 17:48:03,848 : INFO : Mode.game : Player added successfully. Total players: 1
+2020-05-20 17:48:03,849 : INFO : EventManager : Event: ======'player_index'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-05-20 17:48:03,851 : INFO : EventManager : Event: ======'player_number'====== Args={'value': 1, 'prev_value': 1, 'change': 0, 'player_num': 1}
+2020-05-20 17:48:03,852 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 0, 'prev_value': 0, 'change': 0, 'player_num': 1}
+2020-05-20 17:48:03,855 : INFO : EventManager : Event: ======'game_started'====== Args={}
+2020-05-20 17:48:03,980 : INFO : EventManager : Event: ======'player_turn_will_start'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:03,982 : INFO : EventManager : Event: ======'player_turn_starting'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:03,994 : INFO : EventManager : Event: ======'player_ball'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:03,995 : INFO : EventManager : Event: ======'player_turn_started'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:04,007 : INFO : EventManager : Event: ======'ball_will_start'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-05-20 17:48:04,100 : INFO : EventManager : Event: ======'ball_starting'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-05-20 17:48:04,102 : INFO : EventManager : Event: ======'mode_base_will_start'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-05-20 17:48:04,103 : INFO : EventManager : Event: ======'player_shot_upper_pop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,107 : INFO : EventManager : Event: ======'player_shot_lower_left_pop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,109 : INFO : EventManager : Event: ======'player_shot_upper_left_pop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,113 : INFO : EventManager : Event: ======'player_shot_10pt_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,115 : INFO : EventManager : Event: ======'player_shot_upper_1_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,118 : INFO : EventManager : Event: ======'player_shot_upper_2_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,120 : INFO : EventManager : Event: ======'player_shot_upper_3_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,123 : INFO : EventManager : Event: ======'player_shot_upper_4_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,126 : INFO : EventManager : Event: ======'player_shot_upper_1_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,128 : INFO : EventManager : Event: ======'player_shot_upper_2_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,130 : INFO : EventManager : Event: ======'player_shot_upper_3_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,133 : INFO : EventManager : Event: ======'player_shot_upper_4_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,135 : INFO : EventManager : Event: ======'player_shot_lower_1_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,139 : INFO : EventManager : Event: ======'player_shot_lower_2_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,142 : INFO : EventManager : Event: ======'player_shot_lower_3_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,144 : INFO : EventManager : Event: ======'player_shot_lower_4_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,146 : INFO : EventManager : Event: ======'player_shot_lower_5_drop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,149 : INFO : EventManager : Event: ======'player_shot_lower_hole_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,153 : INFO : EventManager : Event: ======'player_shot_lower_left_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,155 : INFO : EventManager : Event: ======'player_shot_lower_right_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,158 : INFO : EventManager : Event: ======'player_shot_lower_pop_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,160 : INFO : EventManager : Event: ======'player_shot_lower_10pt_lower_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,163 : INFO : EventManager : Event: ======'player_shot_lower_10pt_drops_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,165 : INFO : EventManager : Event: ======'player_shot_lower_10pt_upper_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,169 : INFO : EventManager : Event: ======'player_shot_lower_slingshot_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,171 : INFO : EventManager : Event: ======'player_shot_lower_kick_target_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,174 : INFO : EventManager : Event: ======'player_shot_lower_rollover_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,176 : INFO : EventManager : Event: ======'player_shot_main_1_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,178 : INFO : EventManager : Event: ======'player_shot_main_2_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,181 : INFO : EventManager : Event: ======'player_shot_main_3_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,185 : INFO : EventManager : Event: ======'player_shot_main_4_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,188 : INFO : EventManager : Event: ======'player_shot_main_5_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,190 : INFO : EventManager : Event: ======'player_shot_main_slingshot_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,193 : INFO : EventManager : Event: ======'player_shot_right_outlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,195 : INFO : EventManager : Event: ======'player_shot_right_inlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,199 : INFO : EventManager : Event: ======'player_shot_left_inlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,203 : INFO : EventManager : Event: ======'player_shot_left_outlane_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,205 : INFO : EventManager : Event: ======'player_shot_standup_right_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,208 : INFO : EventManager : Event: ======'player_shot_right_kickout_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,210 : INFO : EventManager : Event: ======'player_shot_rollunder_enabled'====== Args={'value': True, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,236 : INFO : EventManager : Event: ======'mode_base_starting'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-05-20 17:48:04,236 : INFO : drop_target_bank.upper : All targets are already up. Will not reset bank.
+2020-05-20 17:48:04,237 : INFO : drop_target_bank.lower : 1 targets are down. Will reset those.
+2020-05-20 17:48:04,237 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:04,242 : INFO : Mode.base : Started. Priority: 100
+2020-05-20 17:48:04,243 : INFO : EventManager : Event: ======'mode_base_started'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-05-20 17:48:04,247 : INFO : EventManager : Event: ======'balls_in_play'====== Args={'balls': 1}
+2020-05-20 17:48:04,247 : INFO : EventManager : Event: ======'ball_started'====== Args={'player': 1, 'ball': 1, 'balls_remaining': 2, 'is_extra_ball': False}
+2020-05-20 17:48:04,437 : INFO : EventManager : Event: ======'single_player_ball_started'====== Args={}
+2020-05-20 17:48:04,440 : INFO : coil.c_lower_drop : Pulsing Driver for 50ms (1.0 pulse_power)
+2020-05-20 17:48:04,443 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:04,447 : INFO : EventManager : Event: ======'slide_base.slide_player-mode_base_started_created'====== Args={'_from_bcp': True}
+2020-05-20 17:48:04,448 : INFO : EventManager : Event: ======'slide_base.slide_player-mode_base_started_active'====== Args={'_from_bcp': True}
+2020-05-20 17:48:04,448 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2020-05-20 17:48:04,507 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,507 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_4_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,508 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,510 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_drain>, 'mechanical_eject': False, 'num_attempts': 0}
+2020-05-20 17:48:04,513 : INFO : ball_device.bd_drain : Ejecting ball to <playfield.playfield>
+2020-05-20 17:48:04,514 : INFO : EventManager : Event: ======'balldevice_bd_drain_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_drain>, 'mechanical_eject': False, 'num_attempts': 0}
+2020-05-20 17:48:04,519 : INFO : coil.c_main_outhole : Pulsing Driver for 60ms (1.0 pulse_power)
+2020-05-20 17:48:04,538 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,539 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,566 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_4_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,567 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,583 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2020-05-20 17:48:04,688 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,716 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_4_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,732 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,735 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,735 : INFO : EventManager : Event: ======'restore'====== Args={}
+2020-05-20 17:48:04,736 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:04,753 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,759 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,798 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,814 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,815 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:04,815 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:04,816 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:04,816 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,817 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:04,817 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 363, 'prev_value': 362, 'change': 1}
+2020-05-20 17:48:04,824 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:04,824 : INFO : EventManager : Event: ======'player_shot_lower_1_drop'====== Args={'value': 1, 'prev_value': 0, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:04,827 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 9, 'prev_value': 8, 'change': 1}
+2020-05-20 17:48:04,832 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'unlit', 'advancing': True}
+2020-05-20 17:48:04,832 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'unlit', 'advancing': True}
+2020-05-20 17:48:04,833 : INFO : EventManager : Event: ======'lower_1_drop_default_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit', 'advancing': True}
+2020-05-20 17:48:04,833 : INFO : EventManager : Event: ======'lower_1_drop_unlit_hit'====== Args={'profile': 'default', 'state': 'unlit', 'advancing': True}
+2020-05-20 17:48:04,834 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 3000, 'prev_value': 0, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:04,914 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_eject_success'====== Args={'balls': 1, 'target': <playfield.playfield>}
+2020-05-20 17:48:04,915 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2020-05-20 17:48:04,916 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2020-05-20 17:48:04,918 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 0}
+2020-05-20 17:48:04,922 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:04,922 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,923 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:04,924 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:04,924 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:04,925 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,926 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:04,927 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 364, 'prev_value': 363, 'change': 1}
+2020-05-20 17:48:04,933 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:04,934 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,935 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:04,935 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:04,936 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:04,936 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,937 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:04,937 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 365, 'prev_value': 364, 'change': 1}
+2020-05-20 17:48:04,942 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:04,944 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,946 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:04,947 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,948 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:04,949 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:04,951 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:04,952 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,953 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:04,953 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 366, 'prev_value': 365, 'change': 1}
+2020-05-20 17:48:04,959 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:04,959 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:04,960 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:04,963 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 10, 'prev_value': 9, 'change': 1}
+2020-05-20 17:48:04,968 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,969 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,969 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,970 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,970 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 6000, 'prev_value': 3000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:04,973 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 11, 'prev_value': 10, 'change': 1}
+2020-05-20 17:48:04,978 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,979 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,979 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,980 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,980 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 9000, 'prev_value': 6000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:04,984 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 12, 'prev_value': 11, 'change': 1}
+2020-05-20 17:48:04,991 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,992 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,992 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,993 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:04,993 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 12000, 'prev_value': 9000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:05,071 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,072 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,072 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:05,072 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:05,073 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,074 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:05,074 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 367, 'prev_value': 366, 'change': 1}
+2020-05-20 17:48:05,080 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,081 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:05,081 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,082 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:05,083 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,085 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 13, 'prev_value': 12, 'change': 1}
+2020-05-20 17:48:05,090 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,091 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,091 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,091 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,092 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 15000, 'prev_value': 12000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:05,253 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,254 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:05,254 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:05,255 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,256 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:05,256 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 368, 'prev_value': 367, 'change': 1}
+2020-05-20 17:48:05,263 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:05,263 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,264 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:05,265 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:05,265 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:05,266 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,267 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:05,267 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 369, 'prev_value': 368, 'change': 1}
+2020-05-20 17:48:05,273 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:05,274 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,274 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:05,275 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,275 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:05,276 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:05,276 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,277 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:05,278 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 370, 'prev_value': 369, 'change': 1}
+2020-05-20 17:48:05,284 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,284 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,284 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:05,287 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 14, 'prev_value': 13, 'change': 1}
+2020-05-20 17:48:05,292 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,293 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,293 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,294 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,294 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 18000, 'prev_value': 15000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:05,298 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 15, 'prev_value': 14, 'change': 1}
+2020-05-20 17:48:05,302 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,303 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,303 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,304 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,304 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 21000, 'prev_value': 18000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:05,307 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 16, 'prev_value': 15, 'change': 1}
+2020-05-20 17:48:05,313 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,314 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,314 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,315 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,315 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 24000, 'prev_value': 21000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:05,391 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:05,392 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,393 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:05,393 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:05,394 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:05,394 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:05,395 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:05,396 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 371, 'prev_value': 370, 'change': 1}
+2020-05-20 17:48:05,404 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 17, 'prev_value': 16, 'change': 1}
+2020-05-20 17:48:05,409 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,410 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,410 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,410 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:05,411 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 27000, 'prev_value': 24000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:06,288 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:06,700 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:06,701 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:06,730 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:07,033 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:07,773 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:07,774 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:07,774 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:07,830 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:07,831 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:07,831 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:07,832 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:07,833 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 372, 'prev_value': 371, 'change': 1}
+2020-05-20 17:48:07,840 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 18, 'prev_value': 17, 'change': 1}
+2020-05-20 17:48:07,845 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:07,846 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:07,846 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:07,847 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:07,847 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 30000, 'prev_value': 27000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:08,216 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:08,217 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 11, 'prev_value': 10, 'change': 1}
+2020-05-20 17:48:08,284 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:08,285 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:08,286 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:08,286 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,342 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,342 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,343 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,343 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:08,398 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,399 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,399 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,416 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,422 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,488 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,685 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,702 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:08,703 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 12, 'prev_value': 11, 'change': 1}
+2020-05-20 17:48:08,772 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,773 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,778 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,807 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,824 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:08,825 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,880 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,880 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:08,881 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:08,881 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:08,882 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:08,883 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 373, 'prev_value': 372, 'change': 1}
+2020-05-20 17:48:08,888 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:08,889 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:08,890 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:08,890 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,891 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,893 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 19, 'prev_value': 18, 'change': 1}
+2020-05-20 17:48:08,900 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,900 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,901 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,901 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,901 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 33000, 'prev_value': 30000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:08,968 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,969 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:08,969 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:08,970 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:08,970 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:08,971 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 374, 'prev_value': 373, 'change': 1}
+2020-05-20 17:48:08,977 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:08,977 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:08,978 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:08,979 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,979 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,980 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,980 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:08,982 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 20, 'prev_value': 19, 'change': 1}
+2020-05-20 17:48:08,988 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,988 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,989 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,989 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:08,989 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 36000, 'prev_value': 33000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:09,105 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,106 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,106 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,178 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:09,178 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:09,179 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:09,180 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:09,180 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 375, 'prev_value': 374, 'change': 1}
+2020-05-20 17:48:09,187 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 21, 'prev_value': 20, 'change': 1}
+2020-05-20 17:48:09,192 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:09,192 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:09,193 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:09,193 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:09,194 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 39000, 'prev_value': 36000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:09,262 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:09,263 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:09,264 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:09,319 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,319 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,320 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,320 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,338 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,463 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,480 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,496 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,514 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,680 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,681 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,687 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,687 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,777 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:09,777 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,022 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,022 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,039 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,055 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,055 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,159 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,208 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,377 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,394 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:10,395 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 13, 'prev_value': 12, 'change': 1}
+2020-05-20 17:48:10,400 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,463 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,463 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,464 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:10,520 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,520 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,521 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,538 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,538 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:10,981 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:10,982 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 14, 'prev_value': 13, 'change': 1}
+2020-05-20 17:48:11,049 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:11,050 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:11,050 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,051 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:11,052 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 376, 'prev_value': 375, 'change': 1}
+2020-05-20 17:48:11,057 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:11,058 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,058 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:11,059 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:11,059 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:11,060 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,061 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:11,061 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 377, 'prev_value': 376, 'change': 1}
+2020-05-20 17:48:11,067 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:11,068 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,068 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:11,070 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 22, 'prev_value': 21, 'change': 1}
+2020-05-20 17:48:11,076 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,077 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,077 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,077 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,078 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 42000, 'prev_value': 39000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:11,081 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 23, 'prev_value': 22, 'change': 1}
+2020-05-20 17:48:11,087 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,092 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,094 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,094 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,095 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 45000, 'prev_value': 42000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:11,167 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:11,167 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:11,168 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:11,168 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:11,224 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:11,224 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:11,225 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,226 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:11,226 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 378, 'prev_value': 377, 'change': 1}
+2020-05-20 17:48:11,232 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:11,234 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 24, 'prev_value': 23, 'change': 1}
+2020-05-20 17:48:11,239 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,240 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,240 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,241 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,241 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 48000, 'prev_value': 45000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:11,380 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:11,381 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,381 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:11,382 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:11,382 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:11,383 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,384 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:11,384 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 379, 'prev_value': 378, 'change': 1}
+2020-05-20 17:48:11,394 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:11,395 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,396 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:11,411 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 25, 'prev_value': 24, 'change': 1}
+2020-05-20 17:48:11,416 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,416 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,417 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,417 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,418 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 51000, 'prev_value': 48000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:11,851 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:11,851 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:11,852 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,853 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:11,853 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 380, 'prev_value': 379, 'change': 1}
+2020-05-20 17:48:11,860 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 26, 'prev_value': 25, 'change': 1}
+2020-05-20 17:48:11,865 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,865 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,866 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,866 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:11,867 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 54000, 'prev_value': 51000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:11,936 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:11,937 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:11,938 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:11,938 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:12,185 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:12,186 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 15, 'prev_value': 14, 'change': 1}
+2020-05-20 17:48:12,253 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:12,253 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:12,254 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:12,254 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:12,255 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:12,256 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 381, 'prev_value': 380, 'change': 1}
+2020-05-20 17:48:12,262 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:12,262 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:12,263 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:12,264 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:12,267 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 27, 'prev_value': 26, 'change': 1}
+2020-05-20 17:48:12,272 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:12,272 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:12,273 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:12,273 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:12,274 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 57000, 'prev_value': 54000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:12,341 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:12,341 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:12,342 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:12,342 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:13,120 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:13,121 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 16, 'prev_value': 15, 'change': 1}
+2020-05-20 17:48:13,189 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:13,194 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:13,223 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:13,279 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:14,127 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:14,128 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 17, 'prev_value': 16, 'change': 1}
+2020-05-20 17:48:14,196 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:14,197 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:14,214 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:14,214 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:14,215 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:14,215 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:14,216 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:14,217 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 382, 'prev_value': 381, 'change': 1}
+2020-05-20 17:48:14,223 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 28, 'prev_value': 27, 'change': 1}
+2020-05-20 17:48:14,228 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,229 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,229 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,229 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,230 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 60000, 'prev_value': 57000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:14,299 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:14,299 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:14,300 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:14,301 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:14,880 : INFO : SwitchController : <<<<<<< 's_left_flipper1' active >>>>>>>
+2020-05-20 17:48:14,880 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 18, 'prev_value': 17, 'change': 1}
+2020-05-20 17:48:14,949 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:14,949 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:14,950 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:14,950 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:14,951 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:14,952 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:14,952 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 383, 'prev_value': 382, 'change': 1}
+2020-05-20 17:48:14,959 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 29, 'prev_value': 28, 'change': 1}
+2020-05-20 17:48:14,964 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,965 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,965 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,966 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:14,966 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 63000, 'prev_value': 60000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:15,036 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:15,037 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:15,037 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:15,038 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:15,039 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:15,039 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:15,039 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:15,040 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:15,042 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 384, 'prev_value': 383, 'change': 1}
+2020-05-20 17:48:15,047 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:15,048 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:15,048 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:15,049 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:15,049 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:15,050 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:15,051 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:15,051 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 385, 'prev_value': 384, 'change': 1}
+2020-05-20 17:48:15,057 : INFO : SwitchController : <<<<<<< 's_left_flipper1' inactive >>>>>>>
+2020-05-20 17:48:15,058 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 30, 'prev_value': 29, 'change': 1}
+2020-05-20 17:48:15,063 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,063 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,064 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,064 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,065 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 66000, 'prev_value': 63000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:15,068 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 31, 'prev_value': 30, 'change': 1}
+2020-05-20 17:48:15,073 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,074 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,074 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,074 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:15,075 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 69000, 'prev_value': 66000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:15,174 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:15,174 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:15,175 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:24,558 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2020-05-20 17:48:24,559 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outhole'====== Args={'value': 305, 'prev_value': 304, 'change': 1}
+2020-05-20 17:48:25,063 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 1}
+2020-05-20 17:48:25,063 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2020-05-20 17:48:25,065 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2020-05-20 17:48:25,066 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': -1}
+2020-05-20 17:48:25,068 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_drain>}
+2020-05-20 17:48:25,070 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_drain>, 'balls': 1}
+2020-05-20 17:48:25,072 : INFO : EventManager : Event: ======'ball_will_end'====== Args={}
+2020-05-20 17:48:25,073 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2020-05-20 17:48:25,073 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_drain>}
+2020-05-20 17:48:25,168 : INFO : EventManager : Event: ======'ball_ending'====== Args={}
+2020-05-20 17:48:25,176 : INFO : EventManager : Event: ======'mode_base_will_stop'====== Args={}
+2020-05-20 17:48:25,176 : INFO : EventManager : Event: ======'mode_base_stopping'====== Args={}
+2020-05-20 17:48:25,179 : INFO : Mode.base : Stopped.
+2020-05-20 17:48:25,183 : INFO : EventManager : Event: ======'mode_base_stopped'====== Args={}
+2020-05-20 17:48:25,184 : INFO : EventManager : Event: ======'clear'====== Args={'key': 'base'}
+2020-05-20 17:48:25,315 : INFO : EventManager : Event: ======'ball_ended'====== Args={}
+2020-05-20 17:48:25,316 : INFO : EventManager : Event: ======'slide_base.slide_player-mode_base_started_removed'====== Args={'_from_bcp': True}
+2020-05-20 17:48:25,317 : INFO : EventManager : Event: ======'slide_attract_started_active'====== Args={'_from_bcp': True}
+2020-05-20 17:48:25,327 : INFO : EventManager : Event: ======'player_turn_will_end'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:25,389 : INFO : EventManager : Event: ======'player_turn_ending'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:25,391 : INFO : EventManager : Event: ======'player_turn_ended'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:25,393 : INFO : EventManager : Event: ======'player_turn_will_start'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:25,394 : INFO : EventManager : Event: ======'player_turn_starting'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:25,396 : INFO : EventManager : Event: ======'player_ball'====== Args={'value': 2, 'prev_value': 1, 'change': 1, 'player_num': 1}
+2020-05-20 17:48:25,398 : INFO : EventManager : Event: ======'player_turn_started'====== Args={'player': <Player 1>, 'number': 1}
+2020-05-20 17:48:25,402 : INFO : EventManager : Event: ======'ball_will_start'====== Args={'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2020-05-20 17:48:25,465 : INFO : EventManager : Event: ======'ball_starting'====== Args={'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2020-05-20 17:48:25,468 : INFO : EventManager : Event: ======'mode_base_will_start'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2020-05-20 17:48:25,528 : INFO : EventManager : Event: ======'mode_base_starting'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2020-05-20 17:48:25,528 : INFO : drop_target_bank.upper : All targets are already up. Will not reset bank.
+2020-05-20 17:48:25,529 : INFO : drop_target_bank.lower : All targets are already up. Will not reset bank.
+2020-05-20 17:48:25,532 : INFO : Mode.base : Started. Priority: 100
+2020-05-20 17:48:25,533 : INFO : EventManager : Event: ======'mode_base_started'====== Args={'queue': <QueuedEvent>, 'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2020-05-20 17:48:25,536 : INFO : EventManager : Event: ======'balls_in_play'====== Args={'balls': 1}
+2020-05-20 17:48:25,536 : INFO : EventManager : Event: ======'ball_started'====== Args={'player': 1, 'ball': 2, 'balls_remaining': 1, 'is_extra_ball': False}
+2020-05-20 17:48:25,716 : INFO : EventManager : Event: ======'single_player_ball_started'====== Args={}
+2020-05-20 17:48:25,724 : INFO : EventManager : Event: ======'slide_base.slide_player-mode_base_started_created'====== Args={'_from_bcp': True}
+2020-05-20 17:48:25,724 : INFO : EventManager : Event: ======'slide_base.slide_player-mode_base_started_active'====== Args={'_from_bcp': True}
+2020-05-20 17:48:25,792 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2020-05-20 17:48:25,805 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_eject_attempt'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_drain>, 'mechanical_eject': False, 'num_attempts': 0}
+2020-05-20 17:48:25,809 : INFO : ball_device.bd_drain : Ejecting ball to <playfield.playfield>
+2020-05-20 17:48:25,810 : INFO : EventManager : Event: ======'balldevice_bd_drain_ejecting_ball'====== Args={'balls': 1, 'target': <playfield.playfield>, 'source': <ball_device.bd_drain>, 'mechanical_eject': False, 'num_attempts': 0}
+2020-05-20 17:48:25,817 : INFO : coil.c_main_outhole : Pulsing Driver for 60ms (1.0 pulse_power)
+2020-05-20 17:48:25,870 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:25,899 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:25,918 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:25,960 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_lower_1_drop from the platform interface. Log Code: Log-SwitchController-1 (https://docs.missionpinball.org/en/0.53/logs/Log-SwitchController-1.html)
+2020-05-20 17:48:25,978 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' active >>>>>>>
+2020-05-20 17:48:25,979 : INFO : EventManager : Event: ======'s_lower_1_drop_active'====== Args={}
+2020-05-20 17:48:25,979 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:25,980 : INFO : EventManager : Event: ======'drop_target_l1_drop_down'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:25,981 : INFO : EventManager : Event: ======'drop_target_bank_lower_mixed'====== Args={'down': 1}
+2020-05-20 17:48:25,981 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 386, 'prev_value': 385, 'change': 1}
+2020-05-20 17:48:25,989 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:25,990 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 32, 'prev_value': 31, 'change': 1}
+2020-05-20 17:48:25,994 : INFO : EventManager : Event: ======'lower_1_drop_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:25,996 : INFO : EventManager : Event: ======'lower_1_drop_default_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:25,996 : INFO : EventManager : Event: ======'lower_1_drop_default_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:25,996 : INFO : EventManager : Event: ======'lower_1_drop_lit_hit'====== Args={'profile': 'default', 'state': 'lit', 'advancing': False}
+2020-05-20 17:48:25,997 : INFO : EventManager : Event: ======'player_score'====== Args={'value': 72000, 'prev_value': 69000, 'change': 3000, 'player_num': 1}
+2020-05-20 17:48:26,163 : INFO : SwitchController : <<<<<<< 's_lower_1_drop' inactive >>>>>>>
+2020-05-20 17:48:26,163 : INFO : EventManager : Event: ======'playfield_active'====== Args={}
+2020-05-20 17:48:26,164 : INFO : EventManager : Event: ======'drop_target_l1_drop_up'====== Args={'device': <drop_target.l1_drop>}
+2020-05-20 17:48:26,165 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2020-05-20 17:48:29,686 : INFO : Machine : Shutting down...
+2020-05-20 17:48:29,686 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2020-05-20 17:48:29,715 : INFO : root : MPF run loop ended.

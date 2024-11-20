@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://6j5ejrvmod6r"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ectyi"]
+[ext_resource type="Script" path="res://slides/control.gd" id="2_cmc72"]
+[ext_resource type="FontFile" uid="uid://dkoa04aw20tji" path="res://slides/ProtestRevolution-Regular.ttf" id="3_4xc7j"]
+[ext_resource type="Texture2D" uid="uid://d4exvtl7l6eh2" path="res://slides/HHbackglass.png" id="3_56nv1"]
+
+[node name="Attract" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ectyi")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 650.0
+color = Color(0.0581871, 0.400336, 0.421095, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_cmc72")
+
+[node name="Label" type="Label" parent="Control"]
+z_index = 2
+layout_mode = 0
+offset_left = 389.0
+offset_top = 584.0
+offset_right = 1552.0
+offset_bottom = 1981.0
+theme_override_fonts/font = ExtResource("3_4xc7j")
+theme_override_font_sizes/font_size = 100
+text = "Haunted House
+Re-Mastered
+
+
+A Mission Pinball
+Framework Project
+
+Hardware and
+Software By 
+C. Alan Whitten"
+horizontal_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="HHbackglass" type="Sprite2D" parent="."]
+position = Vector2(987, 345)
+scale = Vector2(0.911706, 0.843651)
+texture = ExtResource("3_56nv1")

@@ -1,0 +1,77 @@
+2020-05-25 18:41:18,275 : INFO : Machine : Mission Pinball Framework Core Engine v0.53.3
+2020-05-25 18:41:18,275 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'mpfconfigfile': 'c:\\users\\hans\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\mpf\\mpfconfig.yaml', 'force_assets_load': False, 'jsonlogging': False, 'logfile': 'logs\\2020-05-25-18-41-18-mpf-Hans-PC.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'mc_file_name': None, 'no_sound': False}
+2020-05-25 18:41:18,275 : INFO : Machine : MPF path: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf
+2020-05-25 18:41:18,275 : INFO : Machine : Machine path: C:\pinball\HauntedHouse
+2020-05-25 18:41:18,275 : INFO : Machine : Platform: win32
+2020-05-25 18:41:18,275 : INFO : Machine : Python executable location: c:\users\hans\appdata\local\programs\python\python36-32\python.exe
+2020-05-25 18:41:18,275 : INFO : Machine : Python version: 3.6.8 (32-bit)
+2020-05-25 18:41:18,275 : INFO : Machine : Machine config file #1: config.yaml
+2020-05-25 18:41:18,291 : WARNING : ConfigProcessor : Config file in cache changed: C:\pinball\HauntedHouse\config\config.yaml
+2020-05-25 18:41:18,291 : INFO : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\mpfconfig.yaml.
+2020-05-25 18:41:19,024 : INFO : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\mpfconfig.yaml
+2020-05-25 18:41:22,784 : INFO : ConfigValidator : Config spec file cache created: C:\Users\Hans\AppData\Local\Temp\config_spec.mpf_cache
+2020-05-25 18:41:22,846 : INFO : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\config\config.yaml.
+2020-05-25 18:41:23,704 : INFO : ConfigProcessor : Loading config: C:\pinball\HauntedHouse\config\config.yaml
+2020-05-25 18:41:23,720 : INFO : ConfigProcessor : Config file cache created: C:\Users\Hans\AppData\Local\Temp\6e040aaf1f6a41fde2348c429eac1a1c.mpf_cache
+2020-05-25 18:41:23,720 : INFO : Machine : Initialise MPF.
+2020-05-25 18:41:24,437 : INFO : P3-ROC : Connecting to P-ROC
+2020-05-25 18:41:24,734 : INFO : P3-ROC : Successfully connected to P-ROC/P3-ROC. Firmware Version: 2. Firmware Revision: 6. Hardware Board ID: 1
+2020-05-25 18:41:25,030 : INFO : EventManager : Event: ======'machine_var_p_roc_version'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,030 : INFO : EventManager : Event: ======'machine_var_p_roc_revision'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,030 : INFO : EventManager : Event: ======'machine_var_p_roc_hardware_version'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,077 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 29150, 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.3', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.3, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.8', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-7-6.1.7601-SP1', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '7', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '6.1.7601', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86', 'prev_value': None, 'change': True}
+2020-05-25 18:41:25,389 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-05-25 18:41:25,576 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\ac83460c407a763630a505790089d322.mpf_cache
+2020-05-25 18:41:25,623 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\7d6c1285f2e862430ea29e9aa05d0f73.mpf_cache
+2020-05-25 18:41:25,654 : INFO : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\fd4d0ac963aaaec6abb4cac3da0cded0.mpf_cache
+2020-05-25 18:41:25,763 : ERROR : ConfigValidator : Your config contains a value for the setting "lights:l_left_lane:playform_settings", but this is not a valid setting name.
+2020-05-25 18:41:25,763 : ERROR : asyncio : Exception in callback EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...ting name.',)>) at c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py:99
+handle: <Handle EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...ting name.',)>) at c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py:99>
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py", line 102, in _async_handler_done
+    future.result()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\device_manager.py", line 113, in _load_device_modules
+    self.load_devices_config(validate=True)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\device_manager.py", line 177, in load_devices_config
+    config[device_name] = collection[device_name].validate_and_parse_config(config[device_name], False)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\device.py", line 104, in validate_and_parse_config
+    self.config_section, config, self.name, "device", prefix=debug_prefix)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_validator.py", line 251, in validate_config
+    validation_failure_info)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_validator.py", line 418, in check_for_invalid_sections
+    'setting name.', 2, self.log.name)
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Your config contains a value for the setting "lights:l_left_lane:playform_settings", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://docs.missionpinball.org/en/0.53/logs/CFE-ConfigValidator-2.html)
+2020-05-25 18:41:25,810 : INFO : Machine : Starting the main run loop.
+2020-05-25 18:41:25,826 : INFO : Machine : Shutting down...
+2020-05-25 18:41:25,826 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2020-05-25 18:41:25,841 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\machine.py", line 765, in _run_loop
+    raise self._exception['exception']
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\asyncio\events.py", line 145, in _run
+    self._callback(*self._args)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py", line 102, in _async_handler_done
+    future.result()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\device_manager.py", line 113, in _load_device_modules
+    self.load_devices_config(validate=True)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\device_manager.py", line 177, in load_devices_config
+    config[device_name] = collection[device_name].validate_and_parse_config(config[device_name], False)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\device.py", line 104, in validate_and_parse_config
+    self.config_section, config, self.name, "device", prefix=debug_prefix)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_validator.py", line 251, in validate_config
+    validation_failure_info)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_validator.py", line 418, in check_for_invalid_sections
+    'setting name.', 2, self.log.name)
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Your config contains a value for the setting "lights:l_left_lane:playform_settings", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://docs.missionpinball.org/en/0.53/logs/CFE-ConfigValidator-2.html)
+2020-05-25 18:41:25,873 : INFO : root : MPF run loop ended.

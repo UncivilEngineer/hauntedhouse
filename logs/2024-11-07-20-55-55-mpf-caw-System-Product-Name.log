@@ -1,0 +1,120 @@
+2024-11-07 20:55:55,712 : INFO : root : Loading config.
+2024-11-07 20:55:55,740 : INFO : ConfigProcessor : Config spec file cache created: /tmp/config_spec.mpf_cache
+2024-11-07 20:55:55,740 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-11-07 20:55:55,740 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml.
+2024-11-07 20:55:55,747 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
+2024-11-07 20:55:55,747 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/config/config.yaml.
+2024-11-07 20:55:55,752 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/config/config.yaml
+2024-11-07 20:55:55,753 : INFO : ConfigProcessor : Config file cache created: /tmp/248da7825a7099821037453685569d45.mpf_cache
+2024-11-07 20:55:55,805 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml.
+2024-11-07 20:55:55,806 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-07 20:55:55,806 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml.
+2024-11-07 20:55:55,806 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml
+2024-11-07 20:55:55,807 : INFO : ConfigProcessor : Config file cache created: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-07 20:55:55,807 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/game/config/game.yaml.
+2024-11-07 20:55:55,808 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/game/config/game.yaml
+2024-11-07 20:55:55,808 : INFO : ConfigProcessor : Config file cache created: /tmp/03ef85df1864fb5ef5b7e38cbf9eb8a8.mpf_cache
+2024-11-07 20:55:55,808 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml.
+2024-11-07 20:55:55,810 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-11-07 20:55:55,811 : INFO : ConfigProcessor : Config file cache created: /tmp/6dcc9600f5dbf9a99f5346cc5ca34ea9.mpf_cache
+2024-11-07 20:55:55,811 : INFO : ConfigProcessor : Loading config from cache: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-07 20:55:55,811 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/attract/shows/./attract_light_show.yaml.
+2024-11-07 20:55:55,812 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/attract/shows/./attract_light_show.yaml
+2024-11-07 20:55:55,812 : INFO : ConfigProcessor : Config file cache created: /tmp/2e5ac6493c6686883ff244e5da957f67.mpf_cache
+2024-11-07 20:55:55,812 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev5
+2024-11-07 20:55:55,812 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2024-11-07-20-55-55-mpf-caw-System-Product-Name.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'virtual', 'syslog_address': None, 'full_logfile_path': '/home/caw/pinball/hauntedhouse/logs/2024-11-07-20-55-55-mpf-caw-System-Product-Name.log'}
+2024-11-07 20:55:55,812 : INFO : Machine : MPF path: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf
+2024-11-07 20:55:55,812 : INFO : Machine : Machine path: /home/caw/pinball/hauntedhouse
+2024-11-07 20:55:55,812 : INFO : Machine : Platform: linux
+2024-11-07 20:55:55,812 : INFO : Machine : Python executable location: /home/caw/miniconda3/envs/envp311/bin/python
+2024-11-07 20:55:55,812 : INFO : Machine : Python version: 3.11.10 (64-bit)
+2024-11-07 20:55:55,813 : INFO : Machine : Initializing MPF...
+2024-11-07 20:55:55,918 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,929 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,929 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 7000, 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,930 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,930 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,930 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.10', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Linux-6.8.0-48-generic-x86_64-with-glibc2.39', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Linux', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '6.8.0-48-generic', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '#48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86_64', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/home/caw/pinball/hauntedhouse/logs/2024-11-07-20-55-55-mpf-caw-System-Product-Name.log', 'prev_value': None, 'change': True}
+2024-11-07 20:55:55,931 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2024-11-07 20:55:55,952 : INFO : EventManager : Event: ======'drop_target_bank_upper_up'====== Args={}
+2024-11-07 20:55:55,952 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2024-11-07 20:55:55,953 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2024-11-07 20:55:55,956 : ERROR : ConfigValidator : Your config contains a value for the setting "slide_player:initial_value", but this is not a valid setting name.
+2024-11-07 20:55:55,957 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...tting name.')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...tting name.')>)>
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/slide_player.py", line 21, in _validate_config_item
+    device_settings = self.machine.config_validator.validate_config(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 177, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 345, in check_for_invalid_sections
+    raise ConfigFileError('Your config contains a value for the '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player player_vars:slides with settings {'bonusx': {'initial_value': 1}} >> Your config contains a value for the setting "slide_player:initial_value", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://missionpinball.org/logs)
+2024-11-07 20:55:55,960 : INFO : Machine : Starting the main run loop with active modes: []
+2024-11-07 20:55:55,960 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2024-11-07 20:55:55,961 : INFO : Machine : Shutting down...
+2024-11-07 20:55:55,961 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2024-11-07 20:55:56,961 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/slide_player.py", line 21, in _validate_config_item
+    device_settings = self.machine.config_validator.validate_config(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 177, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 345, in check_for_invalid_sections
+    raise ConfigFileError('Your config contains a value for the '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player player_vars:slides with settings {'bonusx': {'initial_value': 1}} >> Your config contains a value for the setting "slide_player:initial_value", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://missionpinball.org/logs)
+2024-11-07 20:55:56,963 : INFO : root : MPF run loop ended.

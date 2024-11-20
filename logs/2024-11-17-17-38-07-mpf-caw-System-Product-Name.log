@@ -1,0 +1,133 @@
+2024-11-17 17:38:07,098 : INFO : root : Loading config.
+2024-11-17 17:38:07,100 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-11-17 17:38:07,100 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml.
+2024-11-17 17:38:07,107 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
+2024-11-17 17:38:07,107 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/config/config.yaml.
+2024-11-17 17:38:07,112 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/config/config.yaml
+2024-11-17 17:38:07,113 : INFO : ConfigProcessor : Config file cache created: /tmp/248da7825a7099821037453685569d45.mpf_cache
+2024-11-17 17:38:07,176 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml.
+2024-11-17 17:38:07,178 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-17 17:38:07,178 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml.
+2024-11-17 17:38:07,178 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml
+2024-11-17 17:38:07,178 : INFO : ConfigProcessor : Config file cache created: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-17 17:38:07,179 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/game/config/game.yaml.
+2024-11-17 17:38:07,180 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/game/config/game.yaml
+2024-11-17 17:38:07,180 : INFO : ConfigProcessor : Config file cache created: /tmp/03ef85df1864fb5ef5b7e38cbf9eb8a8.mpf_cache
+2024-11-17 17:38:07,180 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml.
+2024-11-17 17:38:07,182 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-11-17 17:38:07,183 : INFO : ConfigProcessor : Config file cache created: /tmp/6dcc9600f5dbf9a99f5346cc5ca34ea9.mpf_cache
+2024-11-17 17:38:07,183 : INFO : ConfigProcessor : Loading config from cache: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-17 17:38:07,183 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/attract/shows/./attract_light_show.yaml.
+2024-11-17 17:38:07,184 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/attract/shows/./attract_light_show.yaml
+2024-11-17 17:38:07,184 : INFO : ConfigProcessor : Config file cache created: /tmp/2e5ac6493c6686883ff244e5da957f67.mpf_cache
+2024-11-17 17:38:07,184 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev5
+2024-11-17 17:38:07,184 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2024-11-17-17-38-07-mpf-caw-System-Product-Name.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': '/home/caw/pinball/hauntedhouse/logs/2024-11-17-17-38-07-mpf-caw-System-Product-Name.log'}
+2024-11-17 17:38:07,184 : INFO : Machine : MPF path: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf
+2024-11-17 17:38:07,184 : INFO : Machine : Machine path: /home/caw/pinball/hauntedhouse
+2024-11-17 17:38:07,184 : INFO : Machine : Platform: linux
+2024-11-17 17:38:07,184 : INFO : Machine : Python executable location: /home/caw/miniconda3/envs/envp311/bin/python
+2024-11-17 17:38:07,184 : INFO : Machine : Python version: 3.11.10 (64-bit)
+2024-11-17 17:38:07,184 : INFO : Machine : Initializing MPF...
+2024-11-17 17:38:07,250 : INFO : P-Roc : Connecting to P-ROC
+2024-11-17 17:38:07,534 : INFO : P-Roc : Successfully connected to P-ROC/P3-ROC. Firmware Version: 2. Firmware Revision: 6. Hardware Board ID: 1
+2024-11-17 17:38:07,534 : WARNING : P-Roc : Consider upgrading the firmware of your P/P3-Roc to at least 2.14. Your version contains known bugs. See: https://missionpinball.org/logs
+2024-11-17 17:38:07,557 : INFO : EventManager : Event: ======'machine_var_p_roc_version'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,557 : INFO : EventManager : Event: ======'machine_var_p_roc_revision'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,557 : INFO : EventManager : Event: ======'machine_var_p_roc_hardware_version'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,557 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,570 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,570 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 81180, 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,570 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,570 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,570 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.10', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,571 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Linux-6.8.0-48-generic-x86_64-with-glibc2.39', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,572 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Linux', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,572 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '6.8.0-48-generic', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,572 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '#48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,572 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86_64', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,572 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/home/caw/pinball/hauntedhouse/logs/2024-11-17-17-38-07-mpf-caw-System-Product-Name.log', 'prev_value': None, 'change': True}
+2024-11-17 17:38:07,572 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2024-11-17 17:38:07,596 : INFO : EventManager : Event: ======'drop_target_bank_upper_up'====== Args={}
+2024-11-17 17:38:07,596 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2024-11-17 17:38:07,597 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2024-11-17 17:38:07,615 : INFO : ball_device.bd_drain : BCH: Initial count: 0
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_drain : State: idle
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_lower_vuk : BCH: Initial count: 0
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_lower_vuk : State: idle
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_lower_kickout_special : BCH: Initial count: 0
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_lower_kickout_special : State: idle
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_main_vuk : BCH: Initial count: 0
+2024-11-17 17:38:07,616 : INFO : ball_device.bd_main_vuk : State: idle
+2024-11-17 17:38:07,617 : INFO : ball_device.bd_main_kickout_right : BCH: Initial count: 0
+2024-11-17 17:38:07,617 : INFO : ball_device.bd_main_kickout_right : State: idle
+2024-11-17 17:38:07,617 : INFO : ball_device.bd_main_kickout_lane : BCH: Initial count: 0
+2024-11-17 17:38:07,617 : INFO : ball_device.bd_main_kickout_lane : State: idle
+2024-11-17 17:38:07,624 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2024-11-17 17:38:07,625 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...arget:_1\']')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...arget:_1\']')>)>
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/assets/show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/assets/show.py", line 201, in _process_step_actions
+    raise e
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/assets/show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 85, in _validate_config_item
+    devices = self._expand_device(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 114, in _expand_device
+    return self.raise_config_error(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light_player: Show "attract_light_show" >> Failed to load config player attract_light_show:lights with settings {'l_left_lane': '00ff00', 'l_upper_target:_1': 'ffffff'} >> Could not find a lights device with name or tag l_upper_target:_1, from list ['l_upper_target:_1'] Error Code: CFE-light_player-101 (https://missionpinball.org/logs)
+2024-11-17 17:38:07,629 : INFO : Machine : Starting the main run loop with active modes: []
+2024-11-17 17:38:07,629 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2024-11-17 17:38:07,629 : INFO : Machine : Shutting down...
+2024-11-17 17:38:07,629 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2024-11-17 17:38:08,632 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/assets/show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/assets/show.py", line 201, in _process_step_actions
+    raise e
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/assets/show.py", line 197, in _process_step_actions
+    self.machine.show_controller.show_players[key].validate_config_entry(value, self.name)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 85, in _validate_config_item
+    devices = self._expand_device(device)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 114, in _expand_device
+    return self.raise_config_error(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/logging.py", line 174, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in light_player: Show "attract_light_show" >> Failed to load config player attract_light_show:lights with settings {'l_left_lane': '00ff00', 'l_upper_target:_1': 'ffffff'} >> Could not find a lights device with name or tag l_upper_target:_1, from list ['l_upper_target:_1'] Error Code: CFE-light_player-101 (https://missionpinball.org/logs)
+2024-11-17 17:38:08,634 : INFO : root : MPF run loop ended.

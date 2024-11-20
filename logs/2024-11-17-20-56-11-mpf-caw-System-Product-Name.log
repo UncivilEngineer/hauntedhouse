@@ -1,0 +1,6 @@
+2024-11-17 20:56:11,714 : INFO : root : Loading config.
+2024-11-17 20:56:11,715 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-11-17 20:56:11,715 : WARNING : ConfigProcessor : Config file in cache changed: /home/caw/pinball/hauntedhouse/config/config.yaml
+2024-11-17 20:56:11,716 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml.
+2024-11-17 20:56:11,722 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
+2024-11-17 20:56:11,723 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/config/config.yaml.

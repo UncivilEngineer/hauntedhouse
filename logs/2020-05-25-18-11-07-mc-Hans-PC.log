@@ -1,0 +1,94 @@
+2020-05-25 18:11:07,548 : kivy : Factory: 184 symbols loaded
+2020-05-25 18:11:08,172 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2020-05-25 18:11:08,453 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-05-25 18:11:08,453 : kivy : Video: Provider: gstplayer
+2020-05-25 18:11:08,796 : kivy : Loading MPF-MC controller
+2020-05-25 18:11:08,796 : mpfmc : Mission Pinball Framework Media Controller v0.53.3
+2020-05-25 18:11:08,812 : mpfmc : Mission Pinball Framework Game Engine v0.53.3
+2020-05-25 18:11:08,812 : mpfmc : Machine path: C:\pinball\HauntedHouse
+2020-05-25 18:11:08,812 : ConfigProcessor : Config file in cache changed: C:\pinball\HauntedHouse\config\config
+2020-05-25 18:11:08,812 : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-05-25 18:11:09,202 : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\mcconfig.yaml
+2020-05-25 18:11:12,805 : ConfigValidator : Config spec file cache created: C:\Users\Hans\AppData\Local\Temp\config_spec.mpf_cache
+2020-05-25 18:11:12,868 : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\config\config.
+2020-05-25 18:11:13,695 : ConfigProcessor : Loading config: C:\pinball\HauntedHouse\config\config
+2020-05-25 18:11:13,710 : ConfigProcessor : Config file cache created: C:\Users\Hans\AppData\Local\Temp\1db0e0e3fd8cb1ead45d2e51d225dce4.mpf_cache
+2020-05-25 18:11:13,710 : mpfmc : Starting clock at 60.0Hz
+2020-05-25 18:11:13,773 : kivy : Text: Provider: sdl2
+2020-05-25 18:11:13,991 : kivy : Window: Provider: sdl2
+2020-05-25 18:11:14,565 : kivy : GL: Using the "OpenGL" graphics system
+2020-05-25 18:11:14,568 : kivy : GL: GLEW initialization succeeded
+2020-05-25 18:11:14,569 : kivy : GL: Backend used <glew>
+2020-05-25 18:11:14,569 : kivy : GL: OpenGL version <b'3.0'>
+2020-05-25 18:11:14,570 : kivy : GL: OpenGL vendor <b'Intel Corporation'>
+2020-05-25 18:11:14,570 : kivy : GL: OpenGL renderer <b'Intel(R) Graphics Media Accelerator 3600 Series'>
+2020-05-25 18:11:14,573 : kivy : GL: OpenGL parsed version: 3, 0
+2020-05-25 18:11:14,573 : kivy : GL: Shading version <b'1.30'>
+2020-05-25 18:11:14,574 : kivy : GL: Texture max size <8192>
+2020-05-25 18:11:14,574 : kivy : GL: Texture max units <16>
+2020-05-25 18:11:14,691 : kivy : Window: auto add sdl2 input provider
+2020-05-25 18:11:14,692 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2020-05-25 18:11:14,727 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2020-05-25 18:11:15,948 : AudioInterface : Initialized
+2020-05-25 18:11:15,949 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2020-05-25 18:11:15,965 : kivy : Base: Start application main loop
+2020-05-25 18:11:15,966 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2020-05-25 18:11:16,011 : mpfmc : Display: Setting 'window' as default display
+2020-05-25 18:11:16,035 : EventManager : Event: ======'displays_initialized'====== Args={}
+2020-05-25 18:11:16,040 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2020-05-25 18:11:16,041 : EventManager : Event: ======'display_window_ready'====== Args={}
+2020-05-25 18:11:16,092 : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-05-25 18:11:16,116 : EventManager : Event: ======'mc_ready'====== Args={}
+2020-05-25 18:11:16,117 : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-05-25 18:11:16,129 : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\modes\game\config\game.yaml.
+2020-05-25 18:11:16,145 : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\modes\game\config\game.yaml
+2020-05-25 18:11:16,146 : ConfigProcessor : Config file cache created: C:\Users\Hans\AppData\Local\Temp\7d6c1285f2e862430ea29e9aa05d0f73.mpf_cache
+2020-05-25 18:11:16,149 : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2020-05-25 18:11:16,162 : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2020-05-25 18:11:16,163 : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\modes\attract\config\attract.yaml.
+2020-05-25 18:11:16,169 : ConfigProcessor : Loading config: C:\pinball\HauntedHouse\modes\attract\config\attract.yaml
+2020-05-25 18:11:16,171 : ConfigProcessor : Config file cache created: C:\Users\Hans\AppData\Local\Temp\ac83460c407a763630a505790089d322.mpf_cache
+2020-05-25 18:11:16,173 : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\modes\base\config\base.yaml.
+2020-05-25 18:11:16,496 : ConfigProcessor : Loading config: C:\pinball\HauntedHouse\modes\base\config\base.yaml
+2020-05-25 18:11:16,500 : ConfigProcessor : Config file cache created: C:\Users\Hans\AppData\Local\Temp\fd4d0ac963aaaec6abb4cac3da0cded0.mpf_cache
+2020-05-25 18:11:16,504 : EventManager : Event: ======'init_phase_3'====== Args={}
+2020-05-25 18:11:16,508 : EventManager : Event: ======'init_phase_4'====== Args={}
+2020-05-25 18:11:16,509 : EventManager : Event: ======'init_phase_5'====== Args={}
+2020-05-25 18:11:16,509 : EventManager : Event: ======'init_done'====== Args={}
+2020-05-25 18:11:16,510 : MPF-MC BCP Server : Starting up on localhost port 5050
+2020-05-25 18:11:16,520 : MPF-MC BCP Server : Waiting for a connection...
+2020-05-25 18:11:16,520 : mpfmc : SlidePlayer: Play called with settings={'slides': {welcome_slide-None-None: {'priority': None, 'target': None, 'background_color': [0.0, 0.0, 0.0, 1.0], 'show': True, 'force': False, 'expire': None, 'slide': None, 'tokens': {}, 'action': 'play', 'transition': None, 'transition_out': None}}}
+2020-05-25 18:11:16,540 : kivy : GL: NPOT texture support is available
+2020-05-25 18:11:16,549 : EventManager : Event: ======'slide_welcome_slide_created'====== Args={}
+2020-05-25 18:11:16,572 : EventManager : Event: ======'slide_welcome_slide_active'====== Args={}
+2020-05-25 18:11:16,604 : EventManager : Event: ======'client_disconnected'====== Args={'host': '127.0.0.1', 'port': 5050}
+2020-05-25 18:11:17,617 : MPF-MC BCP Server : Received connection from: 127.0.0.1:49267
+2020-05-25 18:11:17,625 : EventManager : Event: ======'client_connected'====== Args={'host': '127.0.0.1', 'port': 49267}
+2020-05-25 18:11:17,674 : EventManager : Event: ======'machine_var_p_roc_version'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,675 : EventManager : Event: ======'machine_var_p_roc_revision'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,676 : EventManager : Event: ======'machine_var_p_roc_hardware_version'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,676 : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,677 : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 29150, 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,677 : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'MPF v0.53.3', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,678 : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'MPF v0.53.3, Config version:5, Show version: 5, BCP version:1.1', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,679 : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.6.8', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,680 : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-7-6.1.7601-SP1', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,680 : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,681 : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '7', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,682 : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '6.1.7601', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,683 : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,683 : EventManager : Event: ======'machine_var_mc_version'====== Args={'value': 'MPF-MC v0.53.3', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,684 : EventManager : Event: ======'machine_var_mc_extended_version'====== Args={'value': 'MPF-MC v0.53.3 (config_version=5, BCP v1.1, Requires MPF v0.53.0)', 'prev_value': None, 'change': True}
+2020-05-25 18:11:17,698 : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2020-05-25 18:11:18,267 : mpfmc : Stopping...
+2020-05-25 18:11:18,267 : EventManager : Event: ======'shutdown'====== Args={}
+2020-05-25 18:11:18,322 : mpfmc : Loop rate 58.8 Hz
+2020-05-25 18:11:18,323 : kivy : Base: Leaving application in progress...
+2020-05-25 18:11:18,331 : kivy : WindowSDL: exiting mainloop and closing.
+2020-05-25 18:11:18,443 : mpfmc : Stopping...
+2020-05-25 18:11:18,443 : EventManager : Event: ======'shutdown'====== Args={}
+2020-05-25 18:11:18,443 : mpfmc : Loop rate 55.91 Hz
+2020-05-25 18:11:18,443 : kivy : MC run loop ended.
+2020-05-25 18:11:18,443 : kivy : Stopping child threads... (2 remaining)
+2020-05-25 18:11:19,021 : MPF-MC BCP Server : Stopping BCP sending thread
+2020-05-25 18:11:19,099 : kivy : All child threads stopped.

@@ -1,0 +1,537 @@
+2024-11-17 13:50:17,256 : INFO : root : Loading config.
+2024-11-17 13:50:17,258 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-11-17 13:50:17,258 : INFO : ConfigProcessor : Loading config from cache: /tmp/248da7825a7099821037453685569d45.mpf_cache
+2024-11-17 13:50:17,281 : INFO : ConfigProcessor : Loading config from cache: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-17 13:50:17,281 : INFO : ConfigProcessor : Loading config from cache: /tmp/03ef85df1864fb5ef5b7e38cbf9eb8a8.mpf_cache
+2024-11-17 13:50:17,281 : INFO : ConfigProcessor : Loading config from cache: /tmp/6dcc9600f5dbf9a99f5346cc5ca34ea9.mpf_cache
+2024-11-17 13:50:17,281 : INFO : ConfigProcessor : Loading config from cache: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-17 13:50:17,282 : INFO : ConfigProcessor : Loading config from cache: /tmp/2e5ac6493c6686883ff244e5da957f67.mpf_cache
+2024-11-17 13:50:17,282 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev5
+2024-11-17 13:50:17,282 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2024-11-17-13-50-17-mpf-caw-System-Product-Name.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': '/home/caw/pinball/hauntedhouse/logs/2024-11-17-13-50-17-mpf-caw-System-Product-Name.log'}
+2024-11-17 13:50:17,282 : INFO : Machine : MPF path: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf
+2024-11-17 13:50:17,282 : INFO : Machine : Machine path: /home/caw/pinball/hauntedhouse
+2024-11-17 13:50:17,282 : INFO : Machine : Platform: linux
+2024-11-17 13:50:17,282 : INFO : Machine : Python executable location: /home/caw/miniconda3/envs/envp311/bin/python
+2024-11-17 13:50:17,282 : INFO : Machine : Python version: 3.11.10 (64-bit)
+2024-11-17 13:50:17,283 : INFO : Machine : Initializing MPF...
+2024-11-17 13:50:17,308 : INFO : P-Roc : Connecting to P-ROC
+2024-11-17 13:50:17,388 : INFO : P-Roc : Successfully connected to P-ROC/P3-ROC. Firmware Version: 2. Firmware Revision: 6. Hardware Board ID: 1
+2024-11-17 13:50:17,388 : WARNING : P-Roc : Consider upgrading the firmware of your P/P3-Roc to at least 2.14. Your version contains known bugs. See: https://missionpinball.org/logs
+2024-11-17 13:50:17,395 : INFO : EventManager : Event: ======'machine_var_p_roc_version'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,395 : INFO : EventManager : Event: ======'machine_var_p_roc_revision'====== Args={'value': 6, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,395 : INFO : EventManager : Event: ======'machine_var_p_roc_hardware_version'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,396 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,404 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,404 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 3090, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,404 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,405 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,405 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.10', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,406 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Linux-6.8.0-48-generic-x86_64-with-glibc2.39', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,407 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Linux', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,407 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '6.8.0-48-generic', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,407 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '#48-Ubuntu SMP PREEMPT_DYNAMIC Fri Sep 27 14:04:52 UTC 2024', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,407 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86_64', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,407 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/home/caw/pinball/hauntedhouse/logs/2024-11-17-13-50-17-mpf-caw-System-Product-Name.log', 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,407 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2024-11-17 13:50:17,438 : INFO : EventManager : Event: ======'drop_target_bank_upper_up'====== Args={}
+2024-11-17 13:50:17,438 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2024-11-17 13:50:17,439 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_drain : BCH: Initial count: 0
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_drain : State: idle
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_lower_vuk : BCH: Initial count: 0
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_lower_vuk : State: idle
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_lower_kickout_special : BCH: Initial count: 0
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_lower_kickout_special : State: idle
+2024-11-17 13:50:17,460 : INFO : ball_device.bd_main_vuk : BCH: Initial count: 0
+2024-11-17 13:50:17,461 : INFO : ball_device.bd_main_vuk : State: idle
+2024-11-17 13:50:17,461 : INFO : ball_device.bd_main_kickout_right : BCH: Initial count: 0
+2024-11-17 13:50:17,461 : INFO : ball_device.bd_main_kickout_right : State: idle
+2024-11-17 13:50:17,461 : INFO : ball_device.bd_main_kickout_lane : BCH: Initial count: 0
+2024-11-17 13:50:17,461 : INFO : ball_device.bd_main_kickout_lane : State: idle
+2024-11-17 13:50:17,467 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2024-11-17 13:50:17,468 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2024-11-17 13:50:17,468 : INFO : BallController : Initial balls found: 0
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 63, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 125, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper1'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_left_flipper2'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_10pt_drops'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_10pt_lower'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_10pt_upper'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_1_drop'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_2_drop'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_3_drop'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_4_drop'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,469 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_5_drop'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_bonus_left'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_bonus_right'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_kick_target'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_kickout_special'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_pop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_rollover'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_slingshot'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_lower_vuk'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_1_target'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_2_target'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_2_trough'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_3_target'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_5_target'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_inlane_left'====== Args={'value': 9, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_inlane_right'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_kickout_right'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_lane_center'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_outlane_left'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,470 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_outlane_right'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_pop_top'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_rollunder'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_secret_trough'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_slingshot'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_target_right'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_trapdoor_trough'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_main_vuk'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_flipper1'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_right_flipper2'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_start'====== Args={'value': 1, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_10pt_center'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_10pt_left'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_1_drop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_1_target'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_2_drop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,471 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_2_target'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_3_drop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_3_target'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_4_drop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_4_target'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_missing_switches_s_upper_pop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'average': 29374, 'top': [211150, 162330, 120480, 114590, 92630, 78890, 76090, 75800, 75650, 71920], 'total': 66}, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_10pt'====== Args={'value': 223, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_inlane'====== Args={'value': 22, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_left_outlane'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_10pt_drops'====== Args={'value': 34, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_10pt_lower'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_10pt_upper'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,472 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_1_drop'====== Args={'value': 43, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_2_drop'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_3_drop'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_4_drop'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_5_drop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_hole'====== Args={'value': 21, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_kick_target'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_left'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_left_pop'====== Args={'value': 180, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_pop'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_right'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_rollover'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,473 : INFO : EventManager : Event: ======'machine_var_audits_shots_lower_slingshot'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_1'====== Args={'value': 26, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_2'====== Args={'value': 28, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_3'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_4'====== Args={'value': 29, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_5'====== Args={'value': 21, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_slingshot'====== Args={'value': 33, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_main_trough_1'====== Args={'value': 14, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_inlane'====== Args={'value': 68, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,474 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_kickout'====== Args={'value': 32, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_right_outlane'====== Args={'value': 43, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_rollunder'====== Args={'value': 87, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_standup_right'====== Args={'value': 88, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_1'====== Args={'value': 31, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_1_drop'====== Args={'value': 49, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_2'====== Args={'value': 58, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_2_drop'====== Args={'value': 35, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_3'====== Args={'value': 24, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_3_drop'====== Args={'value': 53, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_4'====== Args={'value': 20, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,475 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_4_drop'====== Args={'value': 66, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_left_pop'====== Args={'value': 60, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_shots_upper_pop'====== Args={'value': 524, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper1'====== Args={'value': 328, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_left_flipper2'====== Args={'value': 389, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_UPPER'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_drops'====== Args={'value': 34, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_lower'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_10pt_upper'====== Args={'value': 12, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_1_drop'====== Args={'value': 398, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,476 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_2_drop'====== Args={'value': 10, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_3_drop'====== Args={'value': 11, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_4_drop'====== Args={'value': 16, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_5_drop'====== Args={'value': 15, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_bonus_left'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_bonus_right'====== Args={'value': 4, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_kick_target'====== Args={'value': 2, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_kickout_special'====== Args={'value': 21, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_pop'====== Args={'value': 27, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,477 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_rollover'====== Args={'value': 55, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_slingshot'====== Args={'value': 17, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_lower_vuk'====== Args={'value': 220, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_10pt_left'====== Args={'value': 28, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_1_target'====== Args={'value': 53, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_1_trough'====== Args={'value': 47, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_2_target'====== Args={'value': 51, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_2_trough'====== Args={'value': 59, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_3_target'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,478 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_4_target'====== Args={'value': 45, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_5_target'====== Args={'value': 55, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_inlane_left'====== Args={'value': 25, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_inlane_right'====== Args={'value': 73, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_kickout_right'====== Args={'value': 130, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_lane_center'====== Args={'value': 96, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outhole'====== Args={'value': 430, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,479 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outlane_left'====== Args={'value': 18, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_outlane_right'====== Args={'value': 44, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_pop_bottom'====== Args={'value': 208, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_pop_top'====== Args={'value': 125, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_rollunder'====== Args={'value': 87, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_roundabout_rollunder'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_secret_trough'====== Args={'value': 28, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_slingshot'====== Args={'value': 228, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,480 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_target_right'====== Args={'value': 141, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_trapdoor_trough'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_main_vuk'====== Args={'value': 257, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper1'====== Args={'value': 296, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_right_flipper2'====== Args={'value': 349, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_start'====== Args={'value': 7, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_10pt_center'====== Args={'value': 185, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_10pt_left'====== Args={'value': 119, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,481 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_1_drop'====== Args={'value': 57, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_1_target'====== Args={'value': 92, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_2_drop'====== Args={'value': 52, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_2_target'====== Args={'value': 144, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_3_drop'====== Args={'value': 63, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_3_target'====== Args={'value': 61, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_4_drop'====== Args={'value': 84, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,482 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_4_target'====== Args={'value': 58, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,483 : INFO : EventManager : Event: ======'machine_var_audits_switches_s_upper_pop'====== Args={'value': 756, 'prev_value': None, 'change': True}
+2024-11-17 13:50:17,483 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2024-11-17 13:50:17,486 : INFO : drop_target_bank.upper : All targets are already up. Will not reset bank.
+2024-11-17 13:50:17,486 : INFO : drop_target_bank.lower : All targets are already up. Will not reset bank.
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2024-11-17 13:50:17,486 : INFO : Mode.attract : Started. Priority: 10
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2024-11-17 13:50:17,486 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2024-11-17 13:50:17,487 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2024-11-17 13:50:17,487 : INFO : Machine : Starting the main run loop with active modes: [<Mode.attract>]
+2024-11-17 13:50:23,240 : INFO : SwitchController : <<<<<<< 's_main_slingshot' active >>>>>>>
+2024-11-17 13:50:23,240 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'main_slingshot'}
+2024-11-17 13:50:23,240 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:23,480 : INFO : SwitchController : <<<<<<< 's_main_slingshot' inactive >>>>>>>
+2024-11-17 13:50:24,005 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_slingshot from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:24,115 : INFO : SwitchController : <<<<<<< 's_main_slingshot' active >>>>>>>
+2024-11-17 13:50:24,116 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'main_slingshot'}
+2024-11-17 13:50:24,116 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:24,386 : INFO : SwitchController : <<<<<<< 's_main_slingshot' inactive >>>>>>>
+2024-11-17 13:50:24,936 : INFO : SwitchController : <<<<<<< 's_main_slingshot' active >>>>>>>
+2024-11-17 13:50:24,936 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'main_slingshot'}
+2024-11-17 13:50:24,936 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:25,452 : INFO : SwitchController : <<<<<<< 's_main_slingshot' inactive >>>>>>>
+2024-11-17 13:50:26,000 : INFO : SwitchController : <<<<<<< 's_main_slingshot' active >>>>>>>
+2024-11-17 13:50:26,000 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'main_slingshot'}
+2024-11-17 13:50:26,000 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:26,452 : INFO : SwitchController : <<<<<<< 's_main_slingshot' inactive >>>>>>>
+2024-11-17 13:50:30,661 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:30,661 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:30,661 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:30,661 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:30,661 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:30,661 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:30,888 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:30,946 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:30,946 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:30,946 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:30,947 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:30,947 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:30,947 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:31,238 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:31,479 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:31,479 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:31,479 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:31,479 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:31,479 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:31,479 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:32,019 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:32,237 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:32,237 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:32,237 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:32,237 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:32,237 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:32,237 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:32,351 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:32,987 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:32,987 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:32,987 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:32,987 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:32,987 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:32,987 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:33,399 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:33,637 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:33,637 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:33,637 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:33,637 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:33,637 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:33,637 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:33,747 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:34,093 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:50:34,093 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_inlane'}
+2024-11-17 13:50:34,093 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:34,093 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:34,093 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:34,093 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:34,375 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:50:35,735 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:50:35,735 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_outlane'}
+2024-11-17 13:50:35,735 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:35,735 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:35,735 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:35,735 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:36,027 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:50:36,201 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:50:36,202 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_outlane'}
+2024-11-17 13:50:36,202 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:36,202 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:36,202 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:36,202 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:37,015 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:50:37,307 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:50:37,307 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': 'right_outlane'}
+2024-11-17 13:50:37,307 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:37,307 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:50:37,307 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:37,308 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:38,121 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:50:40,874 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:41,102 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:41,863 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:41,899 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:42,795 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:43,295 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 1}
+2024-11-17 13:50:43,296 : INFO : ball_device.bd_drain : Received unexpected ball
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'playfield_active'====== Args={'source': None}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'unexpected_ball_on_playfield'====== Args={}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': -1, 'change': -1}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': 1}
+2024-11-17 13:50:43,296 : INFO : BallController : Found a new ball which was captured from playfield. Known balls: 1
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'found_new_ball'====== Args={}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_drain>, 'balls': 1}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2024-11-17 13:50:43,296 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:50:43,385 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:43,855 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:44,051 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:44,607 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:44,779 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:44,889 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:45,361 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:45,481 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:46,123 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:46,704 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:48,460 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:48,688 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:49,236 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:50,280 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:50,824 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:50,863 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 0}
+2024-11-17 13:50:50,863 : WARNING : ball_device.bd_drain : Ball disappeared while idle. This should not normally happen.
+2024-11-17 13:50:50,863 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2024-11-17 13:50:50,863 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2024-11-17 13:50:50,863 : INFO : ball_device.bd_drain : 1 ball(s) missing from device. Mechanical eject? False
+2024-11-17 13:50:50,863 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_missing'====== Args={'balls': 1}
+2024-11-17 13:50:50,863 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_drain'}
+2024-11-17 13:50:51,373 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:50:51,778 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:52,280 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 1}
+2024-11-17 13:50:52,280 : INFO : ball_device.bd_drain : Received unexpected ball
+2024-11-17 13:50:52,280 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2024-11-17 13:50:52,280 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2024-11-17 13:50:52,280 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': -1}
+2024-11-17 13:50:52,280 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:50:52,280 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_drain>, 'balls': 1}
+2024-11-17 13:50:52,281 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2024-11-17 13:50:52,281 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:50:52,942 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:53,180 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:50:54,408 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:50:59,910 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 0}
+2024-11-17 13:50:59,910 : WARNING : ball_device.bd_drain : Ball disappeared while idle. This should not normally happen.
+2024-11-17 13:50:59,910 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2024-11-17 13:50:59,910 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2024-11-17 13:50:59,910 : INFO : ball_device.bd_drain : 1 ball(s) missing from device. Mechanical eject? False
+2024-11-17 13:50:59,910 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_missing'====== Args={'balls': 1}
+2024-11-17 13:50:59,910 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_drain'}
+2024-11-17 13:51:00,243 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outlane_right from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:00,351 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:51:00,351 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:00,939 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:51:01,421 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:51:01,421 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:01,881 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:51:02,319 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:51:02,319 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:02,759 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:51:04,279 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:04,483 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:05,037 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 1}
+2024-11-17 13:51:05,539 : INFO : ball_device.bd_drain : Received unexpected ball
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': -1}
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_drain>, 'balls': 1}
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2024-11-17 13:51:05,539 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:51:05,551 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:05,746 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:05,964 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:06,500 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:06,728 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:06,870 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:06,968 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:07,026 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:07,190 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:07,310 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:08,014 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:08,070 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:08,251 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:08,475 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:09,234 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:09,546 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:10,578 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:15,049 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 0}
+2024-11-17 13:51:15,049 : WARNING : ball_device.bd_drain : Ball disappeared while idle. This should not normally happen.
+2024-11-17 13:51:15,049 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2024-11-17 13:51:15,049 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2024-11-17 13:51:15,049 : INFO : ball_device.bd_drain : 1 ball(s) missing from device. Mechanical eject? False
+2024-11-17 13:51:15,049 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_missing'====== Args={'balls': 1}
+2024-11-17 13:51:15,049 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_drain'}
+2024-11-17 13:51:18,633 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:51:18,634 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:18,753 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:51:18,927 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:51:18,928 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:19,867 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:51:19,997 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:51:19,998 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:20,160 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:51:20,386 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:51:20,386 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:22,002 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:51:22,252 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:51:22,252 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:22,425 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:51:23,112 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' active >>>>>>>
+2024-11-17 13:51:23,112 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:23,948 : INFO : SwitchController : <<<<<<< 's_main_inlane_right' inactive >>>>>>>
+2024-11-17 13:51:24,764 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' active >>>>>>>
+2024-11-17 13:51:24,764 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={}
+2024-11-17 13:51:25,462 : INFO : SwitchController : <<<<<<< 's_main_outlane_right' inactive >>>>>>>
+2024-11-17 13:51:27,086 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:27,387 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:27,497 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:27,510 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:27,567 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:28,029 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:28,671 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:28,729 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:29,085 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:29,547 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:29,879 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:30,149 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 1}
+2024-11-17 13:51:30,381 : INFO : ball_device.bd_drain : Received unexpected ball
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'balldevice_captured_from_playfield'====== Args={'balls': 1}
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'sw_playfield_active'====== Args={'balls': 1}
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 0, 'change': -1}
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'new_available_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'ball_drain'====== Args={'device': <ball_device.bd_drain>, 'balls': 1}
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'balldevice_balls_available'====== Args={}
+2024-11-17 13:51:30,381 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_entered'====== Args={'new_balls': 1, 'device': <ball_device.bd_drain>}
+2024-11-17 13:51:30,951 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:31,541 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:32,110 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:32,240 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:32,414 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:32,555 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:32,823 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:33,284 : WARNING : SwitchController : Received duplicate switch state 0 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:33,862 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:33,898 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:34,222 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:34,682 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:34,984 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:35,178 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:35,384 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:35,506 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:35,794 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:35,914 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:36,034 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:36,260 : WARNING : SwitchController : Received duplicate switch state 1 for switch s_main_outhole from the platform interface. Log Code: Log-SwitchController-1 (https://missionpinball.org/logs)
+2024-11-17 13:51:36,358 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:36,426 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:36,546 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:36,838 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:37,152 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:37,240 : INFO : SwitchController : <<<<<<< 's_main_outhole' active >>>>>>>
+2024-11-17 13:51:37,264 : INFO : SwitchController : <<<<<<< 's_main_outhole' inactive >>>>>>>
+2024-11-17 13:51:42,765 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_count_changed'====== Args={'balls': 0}
+2024-11-17 13:51:42,765 : WARNING : ball_device.bd_drain : Ball disappeared while idle. This should not normally happen.
+2024-11-17 13:51:42,765 : INFO : EventManager : Event: ======'balldevice_playfield_ball_enter'====== Args={'new_balls': 1, 'unclaimed_balls': 1, 'device': <playfield.playfield>}
+2024-11-17 13:51:42,765 : INFO : EventManager : Event: ======'playfield_ball_count_change'====== Args={'balls': 1, 'change': 1}
+2024-11-17 13:51:42,766 : INFO : ball_device.bd_drain : 1 ball(s) missing from device. Mechanical eject? False
+2024-11-17 13:51:42,766 : INFO : EventManager : Event: ======'balldevice_bd_drain_ball_missing'====== Args={'balls': 1}
+2024-11-17 13:51:42,766 : INFO : EventManager : Event: ======'balldevice_ball_missing'====== Args={'balls': 1, 'name': 'bd_drain'}
+2024-11-17 13:51:48,328 : ERROR : asyncio : Exception in callback Util.raise_exceptions(<Task finishe...wer supply.')>) at /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/utility_functions.py:790
+handle: <Handle Util.raise_exceptions(<Task finishe...wer supply.')>) at /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/utility_functions.py:790>
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 144, in read_events_and_watchdog
+    events = self.proc.get_events()
+             ^^^^^^^^^^^^^^^^^^^^^^
+OSError: GetEvents ERROR: Error in CollectReadData
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/utility_functions.py", line 798, in raise_exceptions
+    future.result()
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 304, in _poll_events
+    events = await asyncio.wrap_future(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 154, in read_events_and_watchdog
+    raise MpfRuntimeError("Communication with P/P3-Roc broke down. Check USB cable and power supply.", 2,
+mpf.exceptions.runtime_error.MpfRuntimeError: Runtime Error in P-Roc: Communication with P/P3-Roc broke down. Check USB cable and power supply. Error Code: RE-P-Roc-2 (https://missionpinball.org/logs)
+2024-11-17 13:51:48,336 : INFO : Machine : Shutting down...
+2024-11-17 13:51:48,336 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2024-11-17 13:51:48,338 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 144, in read_events_and_watchdog
+    events = self.proc.get_events()
+             ^^^^^^^^^^^^^^^^^^^^^^
+OSError: GetEvents ERROR: Error in CollectReadData
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/asyncio/events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/core/utility_functions.py", line 798, in raise_exceptions
+    future.result()
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 304, in _poll_events
+    events = await asyncio.wrap_future(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 154, in read_events_and_watchdog
+    raise MpfRuntimeError("Communication with P/P3-Roc broke down. Check USB cable and power supply.", 2,
+mpf.exceptions.runtime_error.MpfRuntimeError: Runtime Error in P-Roc: Communication with P/P3-Roc broke down. Check USB cable and power supply. Error Code: RE-P-Roc-2 (https://missionpinball.org/logs)
+2024-11-17 13:51:48,339 : INFO : root : MPF run loop ended.

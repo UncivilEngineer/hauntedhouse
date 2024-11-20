@@ -1,0 +1,35 @@
+2024-11-02 20:39:35,072 : INFO : root : Loading config.
+2024-11-02 20:39:35,074 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-11-02 20:39:35,074 : DEBUG : ConfigProcessor : Cache file not found: /tmp/248da7825a7099821037453685569d45.mpf_cache
+2024-11-02 20:39:35,074 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml.
+2024-11-02 20:39:35,074 : DEBUG : YAML File Interface : Loading file: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
+2024-11-02 20:39:35,081 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
+2024-11-02 20:39:35,081 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/config/config.yaml.
+2024-11-02 20:39:35,081 : DEBUG : YAML File Interface : Loading file: /home/caw/pinball/hauntedhouse/config/config.yaml
+2024-11-02 20:39:35,086 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/config/config.yaml
+2024-11-02 20:39:35,086 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.
+2024-11-02 20:39:35,087 : INFO : ConfigProcessor : Config file cache created: /tmp/248da7825a7099821037453685569d45.mpf_cache
+2024-11-02 20:39:35,109 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,109 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,109 : DEBUG : ConfigProcessor : Cache file not found: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-02 20:39:35,109 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml.
+2024-11-02 20:39:35,109 : DEBUG : YAML File Interface : Loading file: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,110 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,110 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml.
+2024-11-02 20:39:35,110 : DEBUG : YAML File Interface : Loading file: /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,111 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,111 : INFO : ConfigProcessor : Config file cache created: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-02 20:39:35,111 : DEBUG : YamlMultifileConfigLoader : Loading mode game from /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/game/config/game.yaml
+2024-11-02 20:39:35,111 : INFO : ConfigProcessor : Loading config from cache: /tmp/03ef85df1864fb5ef5b7e38cbf9eb8a8.mpf_cache
+2024-11-02 20:39:35,111 : DEBUG : YamlMultifileConfigLoader : Loading mode base from /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/base/config/base.yaml
+2024-11-02 20:39:35,111 : DEBUG : ConfigProcessor : Cache file not found: /tmp/6dcc9600f5dbf9a99f5346cc5ca34ea9.mpf_cache
+2024-11-02 20:39:35,111 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml.
+2024-11-02 20:39:35,111 : DEBUG : YAML File Interface : Loading file: /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-11-02 20:39:35,114 : INFO : ConfigProcessor : Loading config: /home/caw/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-11-02 20:39:35,114 : INFO : ConfigProcessor : Config file cache created: /tmp/6dcc9600f5dbf9a99f5346cc5ca34ea9.mpf_cache
+2024-11-02 20:39:35,114 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,114 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
+2024-11-02 20:39:35,114 : INFO : ConfigProcessor : Loading config from cache: /tmp/95514865456cf95aac1ab02b2b9c91d4.mpf_cache
+2024-11-02 20:39:35,114 : DEBUG : ConfigProcessor : Cache file not found: /tmp/36c02cbf49993445eaef209ae49a8ef3.mpf_cache
+2024-11-02 20:39:35,114 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/modes/attract/shows/./attract_display_loop.yaml.
+2024-11-02 20:39:35,114 : DEBUG : YAML File Interface : Loading file: /home/caw/pinball/hauntedhouse/modes/attract/shows/./attract_display_loop.yaml

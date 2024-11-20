@@ -1,0 +1,41 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk6pa7yrs2k8t"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_m267s"]
+
+[node name="Attract" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_m267s")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 1
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 650.0
+color = Color(0.0581871, 0.400336, 0.421095, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Labelmain" type="Label" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 127.0
+offset_top = 187.0
+offset_right = 1044.0
+offset_bottom = 1584.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 100
+text = "Haunted House
+Re-Mastered
+
+
+A Mission Pinball
+Framework Project
+
+Hardware and
+Software By 
+C. Alan Whitten"
+horizontal_alignment = 1

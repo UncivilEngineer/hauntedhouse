@@ -1,0 +1,122 @@
+2020-05-25 18:32:46,654 : kivy : Factory: 184 symbols loaded
+2020-05-25 18:32:47,262 : kivy : Image: Providers: img_tex, img_dds, img_sdl2, img_pil, img_gif (img_ffpyplayer ignored)
+2020-05-25 18:32:47,528 : kivy : VideoGstplayer: Using Gstreamer 1.16.0.0
+2020-05-25 18:32:47,528 : kivy : Video: Provider: gstplayer
+2020-05-25 18:32:47,808 : kivy : Loading MPF-MC controller
+2020-05-25 18:32:47,824 : mpfmc : Mission Pinball Framework Media Controller v0.53.3
+2020-05-25 18:32:47,824 : mpfmc : Mission Pinball Framework Game Engine v0.53.3
+2020-05-25 18:32:47,824 : mpfmc : Machine path: C:\pinball\HauntedHouse
+2020-05-25 18:32:47,824 : ConfigProcessor : Config file in cache changed: C:\pinball\HauntedHouse\config\config
+2020-05-25 18:32:47,824 : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\mcconfig.yaml.
+2020-05-25 18:32:48,214 : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\mcconfig.yaml
+2020-05-25 18:32:51,818 : ConfigValidator : Config spec file cache created: C:\Users\Hans\AppData\Local\Temp\config_spec.mpf_cache
+2020-05-25 18:32:51,880 : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\config\config.
+2020-05-25 18:32:52,691 : ConfigProcessor : Loading config: C:\pinball\HauntedHouse\config\config
+2020-05-25 18:32:52,707 : ConfigProcessor : Config file cache created: C:\Users\Hans\AppData\Local\Temp\1db0e0e3fd8cb1ead45d2e51d225dce4.mpf_cache
+2020-05-25 18:32:52,707 : mpfmc : Starting clock at 60.0Hz
+2020-05-25 18:32:52,754 : kivy : Text: Provider: sdl2
+2020-05-25 18:32:52,925 : kivy : Window: Provider: sdl2
+2020-05-25 18:32:53,453 : kivy : GL: Using the "OpenGL" graphics system
+2020-05-25 18:32:53,457 : kivy : GL: GLEW initialization succeeded
+2020-05-25 18:32:53,458 : kivy : GL: Backend used <glew>
+2020-05-25 18:32:53,459 : kivy : GL: OpenGL version <b'3.0'>
+2020-05-25 18:32:53,459 : kivy : GL: OpenGL vendor <b'Intel Corporation'>
+2020-05-25 18:32:53,459 : kivy : GL: OpenGL renderer <b'Intel(R) Graphics Media Accelerator 3600 Series'>
+2020-05-25 18:32:53,460 : kivy : GL: OpenGL parsed version: 3, 0
+2020-05-25 18:32:53,460 : kivy : GL: Shading version <b'1.30'>
+2020-05-25 18:32:53,461 : kivy : GL: Texture max size <8192>
+2020-05-25 18:32:53,461 : kivy : GL: Texture max units <16>
+2020-05-25 18:32:53,578 : kivy : Window: auto add sdl2 input provider
+2020-05-25 18:32:53,579 : kivy : Window: virtual keyboard not allowed, single mode, not docked
+2020-05-25 18:32:53,609 : SoundSystem : SoundSystem: Using default 'sound_system' settings
+2020-05-25 18:32:54,633 : AudioInterface : Initialized
+2020-05-25 18:32:54,634 : SoundSystem : No audio tracks are specified in your machine config file. a track named 'default' has been created.
+2020-05-25 18:32:54,650 : kivy : Base: Start application main loop
+2020-05-25 18:32:54,652 : EventManager : Event: ======'display_window_initialized'====== Args={}
+2020-05-25 18:32:54,695 : mpfmc : Display: Setting 'window' as default display
+2020-05-25 18:32:54,717 : EventManager : Event: ======'displays_initialized'====== Args={}
+2020-05-25 18:32:54,722 : EventManager : Event: ======'slide_window_blank_created'====== Args={}
+2020-05-25 18:32:54,723 : EventManager : Event: ======'display_window_ready'====== Args={}
+2020-05-25 18:32:54,762 : EventManager : Event: ======'init_phase_1'====== Args={}
+2020-05-25 18:32:54,787 : EventManager : Event: ======'mc_ready'====== Args={}
+2020-05-25 18:32:54,787 : EventManager : Event: ======'init_phase_2'====== Args={}
+2020-05-25 18:32:54,794 : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\fd4d0ac963aaaec6abb4cac3da0cded0.mpf_cache
+2020-05-25 18:32:54,801 : ConfigProcessor : Loading config from cache: C:\Users\Hans\AppData\Local\Temp\7d6c1285f2e862430ea29e9aa05d0f73.mpf_cache
+2020-05-25 18:32:54,804 : ConfigProcessor : Config file in cache changed: C:\pinball\HauntedHouse\modes\attract\config\attract.yaml
+2020-05-25 18:32:54,805 : ConfigProcessor : Loading config from file c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\modes\attract\config\attract.yaml.
+2020-05-25 18:32:54,819 : ConfigProcessor : Loading config: c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\modes\attract\config\attract.yaml
+2020-05-25 18:32:54,819 : ConfigProcessor : Loading config from file C:\pinball\HauntedHouse\modes\attract\config\attract.yaml.
+2020-05-25 18:32:54,828 : kivy : Base: Leaving application in progress...
+2020-05-25 18:32:54,829 : kivy : Exception while processing RegisteredHandler(callback=<bound method ModeController._load_modes of <mpfmc.core.mode_controller.ModeController object at 0x033B4050>>, priority=1, kwargs={}, key=UUID('68c209e5-5991-4ce1-819f-e95676e4e1b2'), condition=None, blocking_facility=None) for event init_phase_2
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 193, in load
+    config = self.process(f)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 218, in process
+    return yaml.load(data_string, Loader=MpfLoader)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\main.py", line 935, in load
+    return loader._constructor.get_single_data()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\constructor.py", line 111, in get_single_data
+    return self.construct_document(node)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\constructor.py", line 121, in construct_document
+    for _dummy in generator:
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\ruamel\yaml\constructor.py", line 713, in construct_yaml_map
+    value = self.construct_mapping(node)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 135, in construct_mapping
+    format(key, key_node.start_mark))
+KeyError: 'Key "mode_attract_started" was defined multiple times in config   in "C:\\pinball\\HauntedHouse\\modes\\attract\\config\\attract.yaml", line 4, column 3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py", line 665, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\core\mode_controller.py", line 59, in _load_modes
+    self.mc.modes[mode] = self._load_mode(mode)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\core\mode_controller.py", line 132, in _load_mode
+    store_to_cache=self.mc.options['create_config_cache'], ignore_unknown_sections=True)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_processor.py", line 113, in load_config_files_with_cache
+    ignore_unknown_sections)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\config_processor.py", line 169, in _load_config_file_and_return_loaded_files
+    config = FileManager.load(filename, expected_version_str, True)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\file_manager.py", line 98, in load
+    return interface.load(file, verify_version, halt_on_error)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\file_interfaces\yaml_interface.py", line 207, in load
+    raise ValueError(msg)
+ValueError: Error found in file C:\pinball\HauntedHouse\modes\attract\config\attract.yaml: 'Key "mode_attract_started" was defined multiple times in config   in "C:\\pinball\\HauntedHouse\\modes\\attract\\config\\attract.yaml", line 4, column 3'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\commands\mc.py", line 213, in __init__
+    thread_stopper=thread_stopper).run()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\kivy\app.py", line 855, in run
+    runTouchApp()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\kivy\base.py", line 504, in runTouchApp
+    EventLoop.window.mainloop()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\kivy\core\window\window_sdl2.py", line 747, in mainloop
+    self._mainloop()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\kivy\core\window\window_sdl2.py", line 479, in _mainloop
+    EventLoop.idle()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\kivy\base.py", line 339, in idle
+    Clock.tick()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\kivy\clock.py", line 591, in tick
+    self._process_events()
+  File "kivy\_clock.pyx", line 384, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 414, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 412, in kivy._clock.CyClockBase._process_events
+  File "kivy\_clock.pyx", line 167, in kivy._clock.ClockEvent.tick
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\uix\display.py", line 205, in _displays_initialized
+    self.mc.displays_initialized()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\core\mc.py", line 336, in displays_initialized
+    self._init()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpfmc\core\mc.py", line 380, in _init
+    self.events.process_event_queue()
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py", line 752, in process_event_queue
+    **event[3])
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py", line 711, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+  File "c:\users\hans\appdata\local\programs\python\python36-32\lib\site-packages\mpf\core\events.py", line 667, in _run_handlers
+    raise Exception("Exception while processing {} for event {}".format(handler, event)) from e
+Exception: Exception while processing RegisteredHandler(callback=<bound method ModeController._load_modes of <mpfmc.core.mode_controller.ModeController object at 0x033B4050>>, priority=1, kwargs={}, key=UUID('68c209e5-5991-4ce1-819f-e95676e4e1b2'), condition=None, blocking_facility=None) for event init_phase_2
+2020-05-25 18:32:54,872 : kivy : Stopping child threads... (1 remaining)
+2020-05-25 18:32:55,675 : kivy : All child threads stopped.

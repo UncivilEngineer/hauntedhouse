@@ -1,0 +1,192 @@
+#config_version=6
+##! mode: base
+
+mode:
+  start_events: ball_starting
+  priority: 100 
+  
+slide_player:
+  mode_base_started: base
+  
+  
+
+
+############################################
+## Shot definitions
+############################################
+shots:
+  upper_pop: 
+    switch: s_upper_pop 
+  lower_left_pop:
+    switch: s_main_pop_bottom
+  upper_left_pop:
+    switch: s_main_pop_top
+  10pt:
+    switches: s_upper_10pt_left, s_upper_10pt_center, s_main_10pt_left
+  upper_1:
+    switch: s_upper_1_target 
+    show_tokens:
+      led: l_upper_target_1
+  upper_2:
+    switch: s_upper_2_target
+    show_tokens:
+      led: l_upper_target_2
+  upper_3:
+    switch: s_upper_3_target
+    show_tokens:
+      led: l_upper_target_3
+  upper_4:
+    switch: s_upper_4_target
+    show_tokens:
+      led: l_upper_target_4
+  upper_1_drop:
+    switch: s_upper_1_drop
+  upper_2_drop:
+    switch: s_upper_2_drop
+  upper_3_drop:
+    switch: s_upper_3_drop
+  upper_4_drop:
+    switch: s_upper_4_drop
+  lower_1_drop:
+    switch: s_lower_1_drop
+  lower_2_drop:
+    switch: s_lower_2_drop
+  lower_3_drop:
+    switch: s_lower_3_drop
+  lower_4_drop:
+    switch: s_lower_4_drop
+  lower_5_drop:
+    switch: s_lower_5_drop
+  lower_hole:
+    switch: s_lower_kickout_special
+  lower_left:
+    switch: s_lower_bonus_left
+  lower_right:
+    switch: s_lower_bonus_right
+  lower_pop:
+    switch: s_lower_pop
+  lower_10pt_lower:
+    switch: s_lower_10pt_lower
+  lower_10pt_drops:
+    switch: s_lower_10pt_drops
+  lower_10pt_upper:
+    switch: s_lower_10pt_upper
+  lower_slingshot:
+    switch: s_lower_slingshot
+  lower_kick_target:
+    switch: s_lower_kick_target
+  lower_rollover:
+    switch: s_lower_rollover
+  main_1:
+    switch: s_main_1_target
+  main_2:
+    switch: s_main_2_target
+  main_3:
+    switch: s_main_3_target
+  main_4:
+    switch: s_main_4_target
+  main_5: 
+    switch: s_main_5_target
+  main_slingshot:
+    switch: s_main_slingshot
+  right_outlane:
+    switch: s_main_outlane_right
+  right_inlane:
+    switch: s_main_inlane_right
+  left_inlane:
+    switch: s_main_inlane_left
+  left_outlane: 
+    switch: s_main_outlane_left
+  standup_right:
+    switch: s_main_target_right
+  right_kickout:
+    switch: s_main_kickout_right
+  rollunder:
+    switch: s_main_rollunder
+  main_trough_1:
+    switch: s_main_1_trough
+   
+############################################
+## Player Variables
+############################################
+variable_player: 
+  upper_pop_hit: 
+    score: 1000
+  lower_left_pop_hit:
+    score: 1000
+  upper_left_pop_hit:
+    score: 1000
+  10pt_hit:
+    score: 30
+  upper_1_hit:
+    score: 500
+  upper_2_hit:
+    score: 500
+  upper_3_hit:
+    score: 500
+  upper_4_hit:
+    score: 500
+  upper_1_drop_hit:
+    score: 3000
+  upper_2_drop_hit:
+    score: 3000
+  upper_3_drop_hit:
+    score: 3000
+  upper_4_drop_hit:
+    score: 3000
+  lower_1_drop_hit:
+    score: 3000
+  lower_2_drop_hit:
+    score: 3000
+  lower_3_drop_hit:
+    score: 3000
+  lower_4_drop_hit:
+    score: 3000
+  lower_5_drop_hit:
+    score: 3000
+  lower_hole_hit:
+    score: 5000
+  lower_left_hit:
+    score: 1000
+  lower_right_hit:
+    score: 1000
+  lower_pop_hit:
+    score: 1000
+  lower_10pt_lower_hit:
+    score: 30
+  lower_10pt_upper_hit:
+    score: 30
+  lower_10pt_drops_hit:
+    score: 30
+  lower_slingshot_hit:
+    score: 1000
+  lower_kick_target_hit:
+    score: 1000
+  lower_rollover_hit:
+    score: 1000
+  main_1_hit:
+    score: 500
+  main_2_hit:
+    score: 500
+  main_3_hit:
+    score: 500
+  main_4_hit:
+    score: 500
+  main_5_hit:
+    score: 500
+  right_outlane_hit:
+    score: 5000
+  right_inlane_hit:
+    score: 5000
+  main_slingshot_hit:
+    score: 1000
+  left_inlane_hit:
+    score: 5000
+  left_outlane_hit:
+    score: 5000
+  standup_right_hit:
+    score: 500
+  right_kickout_hit:
+    score: 500
+  rollunder_hit:
+    score: 500
