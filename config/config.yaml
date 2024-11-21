@@ -27,8 +27,12 @@ modes:
 ####################################################################
 
 player_vars:
-  bonusx:
-    initial_value: 1
+  bonus_attic_targets:
+    initial_value: 0
+  bonus_attic_drops:
+    inital_value: 0
+  bonus_lower_drops:
+    inital_value: 0
 
 switches:   
   s_left_flipper1:                    # front flipper button
