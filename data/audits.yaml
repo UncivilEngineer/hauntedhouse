@@ -1,58 +1,57 @@
 events:
-  game_ended: 65
-  game_started: 131
+  game_ended: 66
+  game_started: 144
 missing_switches:
-  s_left_flipper1: 2
-  s_left_flipper2: 2
-  s_lower_10pt_drops: 4
-  s_lower_10pt_lower: 5
-  s_lower_10pt_upper: 4
-  s_lower_1_drop: 5
-  s_lower_2_drop: 4
-  s_lower_3_drop: 5
-  s_lower_4_drop: 17
-  s_lower_5_drop: 5
-  s_lower_bonus_left: 4
-  s_lower_bonus_right: 21
-  s_lower_kick_target: 21
-  s_lower_kickout_special: 4
-  s_lower_pop: 4
-  s_lower_rollover: 1
-  s_lower_slingshot: 4
-  s_lower_vuk: 1
-  s_main_10pt_left: 4
-  s_main_1_target: 4
-  s_main_1_trough: 4
-  s_main_2_target: 4
-  s_main_2_trough: 1
-  s_main_3_target: 4
-  s_main_4_target: 1
-  s_main_5_target: 2
-  s_main_inlane_left: 15
-  s_main_inlane_right: 1
-  s_main_kickout_right: 1
-  s_main_lane_center: 1
-  s_main_outlane_left: 21
-  s_main_outlane_right: 4
-  s_main_pop_bottom: 2
-  s_main_pop_top: 1
-  s_main_rollunder: 1
-  s_main_secret_trough: 4
-  s_main_slingshot: 1
-  s_main_target_right: 4
-  s_main_trapdoor_trough: 21
-  s_right_flipper1: 1
-  s_right_flipper2: 1
-  s_start: 5
-  s_upper_10pt_left: 2
-  s_upper_1_drop: 2
-  s_upper_2_drop: 2
-  s_upper_3_drop: 2
-  s_upper_4_drop: 2
-  s_upper_pop: 2
+  s_left_flipper1: 15
+  s_left_flipper2: 15
+  s_lower_10pt_drops: 17
+  s_lower_10pt_lower: 18
+  s_lower_10pt_upper: 17
+  s_lower_1_drop: 18
+  s_lower_2_drop: 17
+  s_lower_3_drop: 18
+  s_lower_4_drop: 30
+  s_lower_5_drop: 18
+  s_lower_bonus_left: 17
+  s_lower_bonus_right: 34
+  s_lower_kick_target: 34
+  s_lower_kickout_special: 17
+  s_lower_pop: 17
+  s_lower_rollover: 14
+  s_lower_slingshot: 17
+  s_lower_vuk: 14
+  s_main_10pt_left: 17
+  s_main_1_target: 17
+  s_main_1_trough: 1
+  s_main_2_target: 17
+  s_main_2_trough: 14
+  s_main_3_target: 1
+  s_main_4_target: 14
+  s_main_5_target: 15
+  s_main_inlane_left: 28
+  s_main_inlane_right: 14
+  s_main_kickout_right: 14
+  s_main_lane_center: 12
+  s_main_outhole: 1
+  s_main_outlane_left: 34
+  s_main_outlane_right: 17
+  s_main_pop_bottom: 15
+  s_main_rollunder: 14
+  s_main_secret_trough: 17
+  s_main_slingshot: 14
+  s_main_target_right: 17
+  s_main_trapdoor_trough: 34
+  s_main_vuk: 13
+  s_right_flipper1: 14
+  s_right_flipper2: 14
+  s_start: 9
+  s_upper_10pt_center: 13
+  s_upper_10pt_left: 15
+  s_upper_3_target: 10
+  s_upper_4_target: 10
 player:
   score:
-    average: 30746
+    average: 31169
     top:
     - 211150
     - 162330
@@ -64,7 +63,7 @@ player:
     - 76090
     - 75800
     - 75650
-    total: 68
+    total: 69
 shots:
   10pt: 248
   left_inlane: 22
@@ -87,26 +86,26 @@ shots:
   lower_slingshot: 19
   main_1: 30
   main_2: 33
-  main_3: 26
+  main_3: 27
   main_4: 44
   main_5: 24
   main_slingshot: 45
-  main_trough_1: 16
+  main_trough_1: 19
   right_inlane: 75
   right_kickout: 34
   right_outlane: 44
   rollunder: 106
   standup_right: 91
-  upper_1: 37
-  upper_1_drop: 51
-  upper_2: 64
-  upper_2_drop: 39
-  upper_3: 26
-  upper_3_drop: 57
-  upper_4: 23
-  upper_4_drop: 70
-  upper_left_pop: 68
-  upper_pop: 544
+  upper_1: 58
+  upper_1_drop: 85
+  upper_2: 73
+  upper_2_drop: 62
+  upper_3: 32
+  upper_3_drop: 81
+  upper_4: 29
+  upper_4_drop: 100
+  upper_left_pop: 106
+  upper_pop: 560
 switches:
   s_left_flipper1: 420
   s_left_flipper2: 469
@@ -129,21 +128,21 @@ switches:
   s_lower_vuk: 239
   s_main_10pt_left: 33
   s_main_1_target: 57
-  s_main_1_trough: 49
+  s_main_1_trough: 52
   s_main_2_target: 56
   s_main_2_trough: 64
-  s_main_3_target: 26
+  s_main_3_target: 27
   s_main_4_target: 60
   s_main_5_target: 58
   s_main_inlane_left: 25
   s_main_inlane_right: 80
   s_main_kickout_right: 132
-  s_main_lane_center: 110
-  s_main_outhole: 452
+  s_main_lane_center: 111
+  s_main_outhole: 469
   s_main_outlane_left: 18
   s_main_outlane_right: 45
   s_main_pop_bottom: 227
-  s_main_pop_top: 133
+  s_main_pop_top: 171
   s_main_rollunder: 106
   s_main_roundabout_rollunder: 52
   s_main_secret_trough: 30
@@ -156,12 +155,12 @@ switches:
   s_start: 7
   s_upper_10pt_center: 198
   s_upper_10pt_left: 126
-  s_upper_1_drop: 59
-  s_upper_1_target: 98
-  s_upper_2_drop: 56
-  s_upper_2_target: 150
-  s_upper_3_drop: 67
-  s_upper_3_target: 63
-  s_upper_4_drop: 88
-  s_upper_4_target: 61
-  s_upper_pop: 776
+  s_upper_1_drop: 93
+  s_upper_1_target: 120
+  s_upper_2_drop: 80
+  s_upper_2_target: 159
+  s_upper_3_drop: 93
+  s_upper_3_target: 69
+  s_upper_4_drop: 120
+  s_upper_4_target: 67
+  s_upper_pop: 792

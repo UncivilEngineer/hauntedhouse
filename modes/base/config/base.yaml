@@ -25,20 +25,20 @@ shots:
     switches: s_upper_10pt_left, s_upper_10pt_center, s_main_10pt_left
   upper_1:
     switch: s_upper_1_target 
-    show_tokens:
-      led: l_upper_target_1
+    #show_tokens:
+     # led: l_upper_target_1
   upper_2:
     switch: s_upper_2_target
-    show_tokens:
-      led: l_upper_target_2
+    #show_tokens:
+     # led: l_upper_target_2
   upper_3:
     switch: s_upper_3_target
-    show_tokens:
-      led: l_upper_target_3
+    #show_tokens:
+     # led: l_upper_target_3
   upper_4:
     switch: s_upper_4_target
-    show_tokens:
-      led: l_upper_target_4
+    #show_tokens:
+     # led: l_upper_target_4
   upper_1_drop:
     switch: s_upper_1_drop
   upper_2_drop:
@@ -118,8 +118,10 @@ variable_player:
     score: 1000
   10pt_hit:
     score: 30
-  upper_1_hit:
+  upper_1_hit{device.counters.attic_drop_counter.value == 0}:
     score: 500
+  upper_1_hit{device.counters.attic_drop_counter.value >= 1}:
+    score: 3000  
   upper_2_hit:
     score: 500
   upper_3_hit:
@@ -190,3 +192,18 @@ variable_player:
     score: 500
   rollunder_hit:
     score: 500
+    
+#### counter to track attic drop complete events
+counters:
+  attic_drop_counter:
+    count_events: drop_target_bank_upper_down
+    reset_on_complete: false
+    count_complete_value: 4
+    
+### event players ####
+##attic target lights added by drops
+light_player:
+  logicblock_attic_drop_counter_updated{value == 1}:
+    l_upper_target_1: "ffffff"
+  logicblock_attic_drop_counter_updated{value == 2}:
+    l_upper_target_2: "ffffff"
