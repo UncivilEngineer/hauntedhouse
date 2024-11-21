@@ -122,12 +122,18 @@ variable_player:
     score: 500
   upper_1_hit{device.counters.attic_drop_counter.value >= 1}:
     score: 3000  
-  upper_2_hit:
+  upper_2_hit{device.counters.attic_drop_counter.value < 2}:
     score: 500
-  upper_3_hit:
+  upper_2_hit{device.counters.attic_drop_counter.value >= 2}:
+    score: 3000
+  upper_3_hit{device.counters.attic_drop_counter.value < 3}:
     score: 500
-  upper_4_hit:
+  upper_3_hit{device.counters.attic_drop_counter.value >= 3}:
+    score: 3000
+  upper_4_hit{device.counters.attic_drop_counter.value < 4}:
     score: 500
+  upper_4_hit{device.counters.attic_drop_counter.value >= 4}:
+    score: 3000
   upper_1_drop_hit:
     score: 3000
   upper_2_drop_hit:
@@ -207,3 +213,7 @@ light_player:
     l_upper_target_1: "ffffff"
   logicblock_attic_drop_counter_updated{value == 2}:
     l_upper_target_2: "ffffff"
+  logicblock_attic_drop_counter_updated{value == 3}:
+    l_upper_target_3: "ffffff"
+  logicblock_attic_drop_counter_updated{value == 4}:
+    l_upper_target_4: "ffffff"
