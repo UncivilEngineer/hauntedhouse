@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://bft8lcv87vrk0"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_a8m14"]
+[ext_resource type="FontFile" uid="uid://dkoa04aw20tji" path="res://slides/ProtestRevolution-Regular.ttf" id="2_845tn"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_46qv2"]
+
+[node name="base_bonus_slide" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_a8m14")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 600.0
+color = Color(0.305882, 0.309804, 1, 1)
+
+[node name="MPFVariable" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 740.0
+offset_top = 208.0
+offset_right = 1124.0
+offset_bottom = 413.0
+theme_override_fonts/font = ExtResource("2_845tn")
+theme_override_font_sizes/font_size = 150
+text = "1,000"
+script = ExtResource("3_46qv2")
+variable_name = "attic_bonus"
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 94.0
+offset_right = 1195.0
+offset_bottom = 214.0
+theme_override_fonts/font = ExtResource("2_845tn")
+theme_override_font_sizes/font_size = 100
+text = "Attic Bonus:"

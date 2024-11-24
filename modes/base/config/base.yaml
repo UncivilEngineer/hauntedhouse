@@ -109,7 +109,30 @@ shots:
 ############################################
 ## Player Variables
 ############################################
-variable_player: 
+variable_player:
+ ## this is the base bonus value setup.  This based on the random events
+ ## player in the file
+  base_bonus_100:
+    base_bonus: 100
+  base_bonus_200:
+    base_bonus: 200
+  base_bonus_300:
+    base_bonus: 300
+  base_bonus_400:
+    base_bonus: 400
+  base_bonus_500:
+    base_bonus: 500
+  base_bonus_600:
+    base_bonus: 600
+  base_bonus_700:
+    base_bonus: 700
+  base_bonus_800:
+    base_bonus: 800
+  base_bonus_900:
+    base_bonus: 900
+  base_bonus_1000:
+    base_bonus: 1000
+    
   upper_pop_hit: 
     score: 1000
   lower_left_pop_hit:
@@ -121,27 +144,35 @@ variable_player:
   upper_1_hit{device.counters.attic_drop_counter.value == 0}:
     score: 500
   upper_1_hit{device.counters.attic_drop_counter.value >= 1}:
-    score: 3000  
+    score: 3000
+    bonus_attic_targets: 1
   upper_2_hit{device.counters.attic_drop_counter.value < 2}:
     score: 500
   upper_2_hit{device.counters.attic_drop_counter.value >= 2}:
     score: 3000
+    bonus_attic_targets: 1
   upper_3_hit{device.counters.attic_drop_counter.value < 3}:
     score: 500
   upper_3_hit{device.counters.attic_drop_counter.value >= 3}:
     score: 3000
+    bonus_attic_targets: 1
   upper_4_hit{device.counters.attic_drop_counter.value < 4}:
     score: 500
   upper_4_hit{device.counters.attic_drop_counter.value >= 4}:
     score: 3000
+    bonus_attic_targets: 1
   upper_1_drop_hit:
     score: 3000
+    bonus_attic_drops: 1
   upper_2_drop_hit:
     score: 3000
+    bonus_attic_drops: 1
   upper_3_drop_hit:
     score: 3000
+    bonus_attic_drops: 1
   upper_4_drop_hit:
     score: 3000
+    bonus_attic_drops: 1
   lower_1_drop_hit:
     score: 3000
   lower_2_drop_hit:
@@ -206,6 +237,21 @@ counters:
     reset_on_complete: false
     count_complete_value: 4
     
+  attic_hits:
+    count_events:
+      - upper_pop_hit
+      - upper_1_drop_hit
+      - upper_2_drop_hit
+      - upper_3_drop_hit
+      - upper_4_drop_hit
+      - upper_1_hit
+      - upper_2_hit
+      - upper_3_hit
+      - upper_4_hit
+    reset_on_complete: false
+    count_complete_value: 11
+      
+    
 ### event players ####
 ##attic target lights added by drops
 light_player:
@@ -217,3 +263,19 @@ light_player:
     l_upper_target_3: "ffffff"
   logicblock_attic_drop_counter_updated{value == 4}:
     l_upper_target_4: "ffffff"
+
+##HH has a random base value for the bonus.  This simulates it.
+random_event_player:
+  mode_base_started:
+    events:
+      - base_bonus_100
+      - base_bonus_200
+      - base_bonus_300
+      - base_bonus_400
+      - base_bonus_500
+      - base_bonus_600
+      - base_bonus_700
+      - base_bonus_800
+      - base_bonus_900
+      - base_bonus_1000
+      

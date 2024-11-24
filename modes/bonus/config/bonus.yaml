@@ -1,0 +1,24 @@
+#config_version=6
+##! mode: bonus
+##
+mode_settings:
+  #display_delay_ms: '1s'
+  #hurry_up_delay_ms: 0
+  bonus_entries:
+    - event: attic_bonus
+      score: base_bonus
+      player_score_entry: bonus_attic_drops
+      reset_player_score_entry: True
+      #score: (current_player.base_bonus * current_player.bonus_attic_drops) + (current_player.base_bonus * curent_player.bonus_attic_targets)
+    - event: cellar_bonus
+      score: base_bonus
+      player_score_entry: bonus_lower_drops
+      reset_player_score_entry: True
+      #score: (current_player.base_bonus * current_player.lower_bonus_drops) + (current_player.base_bonus * current_player.lower_bonus_targets)
+      
+slide_player:
+  mode_bonus_started: base_bonus_slide
+  attic_bonus: attic_bonus_slide
+  cellar_bonus: cellar_bonus_slide
+  bonus_multiplier: bonus_multiplier_slide
+  bonus_total: bonus_total_slide

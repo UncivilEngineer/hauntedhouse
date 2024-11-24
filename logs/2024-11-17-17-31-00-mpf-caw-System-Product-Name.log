@@ -1,5 +1,0 @@
-2024-11-17 17:31:00,068 : INFO : root : Loading config.
-2024-11-17 17:31:00,070 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2024-11-17 17:31:00,070 : INFO : ConfigProcessor : Loading config from file /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml.
-2024-11-17 17:31:00,077 : INFO : ConfigProcessor : Loading config: /home/caw/miniconda3/envs/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
-2024-11-17 17:31:00,077 : INFO : ConfigProcessor : Loading config from file /home/caw/pinball/hauntedhouse/config/config.yaml.
