@@ -1,0 +1,111 @@
+2024-11-24 21:27:31,219 : INFO : root : Loading config.
+2024-11-24 21:27:31,221 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-11-24 21:27:31,221 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/a187413b8cf7049e0b91852f54cd1afa.mpf_cache
+2024-11-24 21:27:31,251 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/2e30198d1c841d95b9b3e69c8a0bb49b.mpf_cache
+2024-11-24 21:27:31,252 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/40928215bbb65374348eff3d4cd7b8bc.mpf_cache
+2024-11-24 21:27:31,252 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/167ddff969183ffa73a4682c84ddf638.mpf_cache
+2024-11-24 21:27:31,252 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/2e30198d1c841d95b9b3e69c8a0bb49b.mpf_cache
+2024-11-24 21:27:31,252 : WARNING : ConfigProcessor : Config file in cache changed: /Users/C_Alan/pinball/hauntedhouse/modes/bonus/config/bonus.yaml
+2024-11-24 21:27:31,252 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/modes/bonus/config/bonus.yaml.
+2024-11-24 21:27:31,253 : INFO : ConfigProcessor : Loading config: /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/modes/bonus/config/bonus.yaml
+2024-11-24 21:27:31,253 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/pinball/hauntedhouse/modes/bonus/config/bonus.yaml.
+2024-11-24 21:27:31,254 : INFO : ConfigProcessor : Loading config: /Users/C_Alan/pinball/hauntedhouse/modes/bonus/config/bonus.yaml
+2024-11-24 21:27:31,255 : INFO : ConfigProcessor : Config file cache created: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/f3e7df0542012602a298ddb9f31df321.mpf_cache
+2024-11-24 21:27:31,255 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/1ab5c5e749213b44f20a4087626085fd.mpf_cache
+2024-11-24 21:27:31,255 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev5
+2024-11-24 21:27:31,255 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2024-11-24-21-27-31-mpf-Macpro.local.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'virtual', 'syslog_address': None, 'full_logfile_path': '/Users/C_Alan/pinball/hauntedhouse/logs/2024-11-24-21-27-31-mpf-Macpro.local.log'}
+2024-11-24 21:27:31,255 : INFO : Machine : MPF path: /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf
+2024-11-24 21:27:31,255 : INFO : Machine : Machine path: /Users/C_Alan/pinball/hauntedhouse
+2024-11-24 21:27:31,255 : INFO : Machine : Platform: darwin
+2024-11-24 21:27:31,255 : INFO : Machine : Python executable location: /Users/C_Alan/envp311/bin/python3.11
+2024-11-24 21:27:31,255 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2024-11-24 21:27:31,256 : INFO : Machine : Initializing MPF...
+2024-11-24 21:27:31,287 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,294 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,294 : INFO : EventManager : Event: ======'machine_var_player1_score'====== Args={'value': 30200, 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,294 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,294 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0.dev5, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,294 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.0', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-14.6.1-x86_64-i386-64bit', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '23.6.0', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 23.6.0: Mon Jul 29 21:13:00 PDT 2024; root:xnu-10063.141.2~1/RELEASE_X86_64', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'x86_64', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/C_Alan/pinball/hauntedhouse/logs/2024-11-24-21-27-31-mpf-Macpro.local.log', 'prev_value': None, 'change': True}
+2024-11-24 21:27:31,305 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2024-11-24 21:27:31,341 : INFO : EventManager : Event: ======'drop_target_bank_upper_up'====== Args={}
+2024-11-24 21:27:31,342 : INFO : EventManager : Event: ======'drop_target_bank_lower_up'====== Args={}
+2024-11-24 21:27:31,342 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2024-11-24 21:27:31,347 : ERROR : ConfigValidator : Your config contains a value for the setting "slide_player:attic_bonus", but this is not a valid setting name.
+2024-11-24 21:27:31,348 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...tting name.')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...tting name.')>)>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/config_players/slide_player.py", line 21, in _validate_config_item
+    device_settings = self.machine.config_validator.validate_config(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 177, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 345, in check_for_invalid_sections
+    raise ConfigFileError('Your config contains a value for the '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player bonus_start:slides with settings {'bonus': {'action': 'update', 'tokens': {'entry': 'initial'}, 'target': None, 'priority': None, 'expire': None, 'slide': None, 'queue': None, 'max_queue_time': None, 'method': None}, 'bonus_entry': {'attic_bonus': {'action': 'update'}}} >> Your config contains a value for the setting "slide_player:attic_bonus", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://missionpinball.org/logs)
+2024-11-24 21:27:31,349 : INFO : Machine : Starting the main run loop with active modes: []
+2024-11-24 21:27:31,349 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2024-11-24 21:27:31,351 : INFO : Machine : Shutting down...
+2024-11-24 21:27:31,351 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2024-11-24 21:27:32,353 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 808, in _run_loop
+    raise self._exception['exception']
+  File "/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/config_players/slide_player.py", line 21, in _validate_config_item
+    device_settings = self.machine.config_validator.validate_config(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 177, in _validate_config
+    self.check_for_invalid_sections(this_spec, source, validation_failure_info)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/config_validator.py", line 345, in check_for_invalid_sections
+    raise ConfigFileError('Your config contains a value for the '
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player bonus_start:slides with settings {'bonus': {'action': 'update', 'tokens': {'entry': 'initial'}, 'target': None, 'priority': None, 'expire': None, 'slide': None, 'queue': None, 'max_queue_time': None, 'method': None}, 'bonus_entry': {'attic_bonus': {'action': 'update'}}} >> Your config contains a value for the setting "slide_player:attic_bonus", but this is not a valid setting name. Error Code: CFE-ConfigValidator-2 (https://missionpinball.org/logs)
+2024-11-24 21:27:32,355 : INFO : root : MPF run loop ended.
