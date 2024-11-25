@@ -38,6 +38,7 @@ theme_override_font_sizes/font_size = 100
 text = "Bonus Multiplier:"
 
 [node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
 offset_left = 826.0
 offset_top = 252.0
 offset_right = 1550.0

@@ -16,6 +16,7 @@ offset_bottom = 600.0
 color = Color(0.305882, 0.309804, 1, 1)
 
 [node name="MPFVariable" type="Label" parent="ColorRect"]
+z_index = 1
 layout_mode = 0
 offset_left = 740.0
 offset_top = 208.0
@@ -25,7 +26,7 @@ theme_override_fonts/font = ExtResource("2_845tn")
 theme_override_font_sizes/font_size = 150
 text = "1,000"
 script = ExtResource("3_46qv2")
-variable_name = "attic_bonus"
+variable_name = "score"
 
 [node name="Label" type="Label" parent="ColorRect"]
 layout_mode = 0

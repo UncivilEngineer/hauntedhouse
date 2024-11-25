@@ -105,6 +105,12 @@ shots:
     switch: s_main_rollunder
   main_trough_1:
     switch: s_main_1_trough
+  main_trough_2:
+    switch: s_main_2_trough
+  secret_passage_trough:
+    switch: s_main_secret_trough
+  trapdoor_trough:
+    switch: s_main_trapdoor_trough
    
 ############################################
 ## Player Variables
@@ -113,26 +119,51 @@ variable_player:
  ## this is the base bonus value setup.  This based on the random events
  ## player in the file
   base_bonus_100:
-    base_bonus: 100
+    base_bonus:
+      int: 100
+      action: set
   base_bonus_200:
-    base_bonus: 200
+    base_bonus: 
+      int: 200
+      action: set
   base_bonus_300:
-    base_bonus: 300
+    base_bonus:
+      int: 300
+      action: set
   base_bonus_400:
-    base_bonus: 400
+    base_bonus:
+      int: 400
+      action: set
   base_bonus_500:
-    base_bonus: 500
+    base_bonus:
+      int: 500
+      action: set
   base_bonus_600:
-    base_bonus: 600
+    base_bonus:
+      int: 600
+      action: set
   base_bonus_700:
-    base_bonus: 700
+    base_bonus:
+      int: 700
+      action: set
   base_bonus_800:
-    base_bonus: 800
+    base_bonus:
+      int: 800
+      action: set
   base_bonus_900:
-    base_bonus: 900
+    base_bonus:
+      int: 900
+      action: set
   base_bonus_1000:
-    base_bonus: 1000
-    
+    base_bonus:
+      int: 1000
+      action: set
+  
+  ## the troughs for bonusx
+  secret_passage_trough_hit:
+    bonus_multiplier: 1
+  trapdoor_trough_hit:
+    bonus_multiplier: 1
   upper_pop_hit: 
     score: 1000
   lower_left_pop_hit:

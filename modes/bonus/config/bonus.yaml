@@ -2,23 +2,43 @@
 ##! mode: bonus
 ##
 mode_settings:
-  #display_delay_ms: '1s'
+  display_delay_ms: '1s'
   #hurry_up_delay_ms: 0
   bonus_entries:
-    - event: attic_bonus
-      score: base_bonus
-      player_score_entry: bonus_attic_drops
-      reset_player_score_entry: True
-      #score: (current_player.base_bonus * current_player.bonus_attic_drops) + (current_player.base_bonus * curent_player.bonus_attic_targets)
-    - event: cellar_bonus
-      score: base_bonus
-      player_score_entry: bonus_lower_drops
-      reset_player_score_entry: True
-      #score: (current_player.base_bonus * current_player.lower_bonus_drops) + (current_player.base_bonus * current_player.lower_bonus_targets)
+    - entry: attic_bonus
+      text: "Attic Bonus Scores"
+      score: current_player.base_bonus * current_player.bonus_attic_drops
+      #player_score_entry: current_player.bonus_attic_drops
+      #reset_player_score_entry: True
+      #skip_if_zero: False
+      
+    - entry: cellar_bonus
+      text: "Cellar Bonus Score"
+      #score: base_bonus
+      #player_score_entry: bonus_lower_drops
+      #reset_player_score_entry: True
+      score: (current_player.base_bonus * current_player.lower_bonus_drops) + (current_player.base_bonus * current_player.lower_bonus_targets)
+      skip_if_zero: False
       
 slide_player:
-  mode_bonus_started: base_bonus_slide
-  attic_bonus: attic_bonus_slide
-  cellar_bonus: cellar_bonus_slide
-  bonus_multiplier: bonus_multiplier_slide
-  bonus_total: bonus_total_slide
+  #mode_bonus_started: base_bonus_slide
+  bonus_entry_attic_bonus: attic_bonus_slide
+  bonus_entry_cellar_bonus: cellar_bonus_slide
+  bonus_entry_multiplier: bonus_multiplier_slide
+  bonus_entry_total: bonus_total_slide
+
+#event_player:
+#  mode_bonus_stopped:
+#    - reset_bonus_values
+
+variable_player:
+  mode_bonus_will_stop:
+    base_bonus:
+      int: 0
+      action: set
+    bonus_attic_drops:
+      int: 0
+      action: set
+    bonus_attic_targets:
+      int: 0
+      action: set
