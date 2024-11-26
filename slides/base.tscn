@@ -13,18 +13,19 @@ script = ExtResource("1_oudoe")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
+offset_top = 40.0
 offset_right = 1920.0
-offset_bottom = 600.0
+offset_bottom = 565.0
 color = Color(0.305882, 0.309804, 1, 1)
 
 [node name="p1 score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1647.0
-offset_top = 487.0
-offset_right = 1823.0
-offset_bottom = 537.0
+offset_left = 1634.0
+offset_top = 460.0
+offset_right = 1810.0
+offset_bottom = 520.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "1000"
 horizontal_alignment = 2
 script = ExtResource("2_3yg74")
@@ -35,37 +36,24 @@ min_digits = 0
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1615.0
-offset_top = 451.0
-offset_right = 1805.0
-offset_bottom = 488.0
+offset_left = 1639.0
+offset_top = 407.0
+offset_right = 1829.0
+offset_bottom = 467.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 50
 text = "Player 1"
 horizontal_alignment = 1
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = -0.036
-anchor_right = -0.036
-offset_left = 284.44
-offset_top = 429.0
-offset_right = 358.44
-offset_bottom = 466.0
-theme_override_fonts/font = ExtResource("2_ry4s7")
-theme_override_font_sizes/font_size = 30
-text = "BALL:"
-
 [node name="main score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 589.0
-offset_top = 185.0
-offset_right = 1323.0
-offset_bottom = 465.0
+offset_left = 580.0
+offset_top = 129.0
+offset_right = 1314.0
+offset_bottom = 409.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 200
-text = "test"
+text = "10,000"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("2_3yg74")
@@ -76,13 +64,14 @@ initialize_empty = false
 
 [node name="BALL" type="Label" parent="."]
 layout_mode = 0
-offset_left = 360.0
-offset_top = 428.0
-offset_right = 400.0
-offset_bottom = 465.0
+offset_left = 854.0
+offset_top = 389.0
+offset_right = 1005.0
+offset_bottom = 449.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
-theme_override_font_sizes/font_size = 30
-text = "1"
+theme_override_font_sizes/font_size = 50
+text = "BALL: 1"
 script = ExtResource("2_3yg74")
 variable_name = "ball"
 min_digits = 1
+template_string = "BALL: %s"

@@ -12,8 +12,9 @@ script = ExtResource("1_ectyi")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
+offset_top = 40.0
 offset_right = 1920.0
-offset_bottom = 650.0
+offset_bottom = 565.0
 color = Color(0.0581871, 0.400336, 0.421095, 1)
 metadata/_edit_use_anchors_ = true
 

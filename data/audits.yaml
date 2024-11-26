@@ -1,40 +1,60 @@
 events:
   game_ended: 87
-  game_started: 194
+  game_started: 196
 missing_switches:
-  s_lower_10pt_drops: 1
-  s_lower_10pt_lower: 1
-  s_lower_10pt_upper: 1
-  s_lower_1_drop: 1
-  s_lower_2_drop: 1
-  s_lower_3_drop: 1
-  s_lower_4_drop: 1
-  s_lower_5_drop: 1
-  s_lower_bonus_left: 1
-  s_lower_bonus_right: 1
-  s_lower_kick_target: 2
-  s_lower_kickout_special: 1
-  s_lower_pop: 1
-  s_lower_slingshot: 2
-  s_main_10pt_left: 1
-  s_main_1_target: 3
-  s_main_1_trough: 4
-  s_main_2_target: 2
-  s_main_2_trough: 1
-  s_main_5_target: 2
-  s_main_kickout_right: 2
-  s_main_rollunder: 2
-  s_main_secret_trough: 1
-  s_main_trapdoor_trough: 7
-  s_start: 1
-  s_upper_10pt_left: 2
-  s_upper_1_drop: 8
-  s_upper_1_target: 8
-  s_upper_2_drop: 8
-  s_upper_2_target: 3
-  s_upper_3_drop: 2
-  s_upper_3_target: 17
-  s_upper_4_target: 23
+  s_left_flipper1: 2
+  s_left_flipper2: 2
+  s_lower_10pt_drops: 3
+  s_lower_10pt_lower: 3
+  s_lower_10pt_upper: 3
+  s_lower_1_drop: 3
+  s_lower_2_drop: 3
+  s_lower_3_drop: 3
+  s_lower_4_drop: 3
+  s_lower_5_drop: 3
+  s_lower_bonus_left: 3
+  s_lower_bonus_right: 3
+  s_lower_kick_target: 4
+  s_lower_kickout_special: 3
+  s_lower_pop: 3
+  s_lower_rollover: 2
+  s_lower_slingshot: 4
+  s_lower_vuk: 2
+  s_main_10pt_left: 3
+  s_main_1_target: 5
+  s_main_1_trough: 6
+  s_main_2_target: 4
+  s_main_2_trough: 3
+  s_main_3_target: 2
+  s_main_4_target: 2
+  s_main_5_target: 4
+  s_main_inlane_left: 2
+  s_main_inlane_right: 2
+  s_main_kickout_right: 4
+  s_main_lane_center: 2
+  s_main_outlane_left: 2
+  s_main_outlane_right: 2
+  s_main_pop_bottom: 2
+  s_main_pop_top: 2
+  s_main_rollunder: 4
+  s_main_secret_trough: 3
+  s_main_slingshot: 2
+  s_main_target_right: 2
+  s_main_trapdoor_trough: 9
+  s_main_vuk: 2
+  s_right_flipper1: 2
+  s_right_flipper2: 2
+  s_start: 3
+  s_upper_10pt_center: 2
+  s_upper_10pt_left: 4
+  s_upper_1_drop: 10
+  s_upper_1_target: 10
+  s_upper_2_drop: 10
+  s_upper_2_target: 5
+  s_upper_3_drop: 4
+  s_upper_3_target: 19
+  s_upper_4_target: 25
+  s_upper_pop: 2
 player:
   score:
     average: 33129
@@ -92,7 +112,7 @@ shots:
   upper_3: 42
   upper_3_drop: 105
   upper_4: 43
-  upper_4_drop: 165
+  upper_4_drop: 168
   upper_left_pop: 120
   upper_pop: 600
 switches:
@@ -127,7 +147,7 @@ switches:
   s_main_inlane_right: 88
   s_main_kickout_right: 135
   s_main_lane_center: 143
-  s_main_outhole: 617
+  s_main_outhole: 618
   s_main_outlane_left: 22
   s_main_outlane_right: 48
   s_main_pop_bottom: 265
@@ -150,6 +170,6 @@ switches:
   s_upper_2_target: 179
   s_upper_3_drop: 117
   s_upper_3_target: 79
-  s_upper_4_drop: 185
+  s_upper_4_drop: 188
   s_upper_4_target: 81
   s_upper_pop: 832
