@@ -8,7 +8,6 @@ mode:
 slide_player:
   mode_base_started: base
   
-  
 
 
 ############################################
@@ -105,11 +104,65 @@ shots:
     switch: s_main_rollunder
   main_trough_1:
     switch: s_main_1_trough
+  main_trough_2:
+    switch: s_main_2_trough
+  secret_passage_trough:
+    switch: s_main_secret_trough
+  trapdoor_trough:
+    switch: s_main_trapdoor_trough
    
 ############################################
 ## Player Variables
 ############################################
-variable_player: 
+variable_player:
+ ## this is the base bonus value setup.  This based on the random events
+ ## player in the file
+  base_bonus_100:
+    base_bonus:
+      int: 100
+      action: set
+  base_bonus_200:
+    base_bonus: 
+      int: 200
+      action: set
+  base_bonus_300:
+    base_bonus:
+      int: 300
+      action: set
+  base_bonus_400:
+    base_bonus:
+      int: 400
+      action: set
+  base_bonus_500:
+    base_bonus:
+      int: 500
+      action: set
+  base_bonus_600:
+    base_bonus:
+      int: 600
+      action: set
+  base_bonus_700:
+    base_bonus:
+      int: 700
+      action: set
+  base_bonus_800:
+    base_bonus:
+      int: 800
+      action: set
+  base_bonus_900:
+    base_bonus:
+      int: 900
+      action: set
+  base_bonus_1000:
+    base_bonus:
+      int: 1000
+      action: set
+  
+  ## the troughs for bonusx
+  secret_passage_trough_hit:
+    bonus_multiplier: 1
+  trapdoor_trough_hit:
+    bonus_multiplier: 1
   upper_pop_hit: 
     score: 1000
   lower_left_pop_hit:
@@ -121,37 +174,50 @@ variable_player:
   upper_1_hit{device.counters.attic_drop_counter.value == 0}:
     score: 500
   upper_1_hit{device.counters.attic_drop_counter.value >= 1}:
-    score: 3000  
+    score: 3000
+    bonus_upper_playfield: 1
   upper_2_hit{device.counters.attic_drop_counter.value < 2}:
     score: 500
   upper_2_hit{device.counters.attic_drop_counter.value >= 2}:
     score: 3000
+    bonus_upper_playfield: 1
   upper_3_hit{device.counters.attic_drop_counter.value < 3}:
     score: 500
   upper_3_hit{device.counters.attic_drop_counter.value >= 3}:
     score: 3000
+    bonus_upper_playfield: 1
   upper_4_hit{device.counters.attic_drop_counter.value < 4}:
     score: 500
   upper_4_hit{device.counters.attic_drop_counter.value >= 4}:
     score: 3000
+    bonus_upper_playfield: 1
   upper_1_drop_hit:
     score: 3000
+    bonus_upper_playfield: 1
   upper_2_drop_hit:
     score: 3000
+    bonus_upper_playfield: 1
   upper_3_drop_hit:
     score: 3000
+    bonus_upper_playfield: 1
   upper_4_drop_hit:
     score: 3000
+    bonus_upper_playfield: 1
   lower_1_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_2_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_3_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_4_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_5_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_hole_hit:
     score: 5000
   lower_left_hit:
@@ -186,6 +252,7 @@ variable_player:
     score: 5000
   right_inlane_hit:
     score: 5000
+    bonus_main_playfield: 1
   main_slingshot_hit:
     score: 1000
   left_inlane_hit:
@@ -196,8 +263,10 @@ variable_player:
     score: 500
   right_kickout_hit:
     score: 500
+    bonus_main_playfield: 1
   rollunder_hit:
     score: 500
+    bonus_main_playfield: 1
     
 #### counter to track attic drop complete events
 counters:
@@ -205,6 +274,21 @@ counters:
     count_events: drop_target_bank_upper_down
     reset_on_complete: false
     count_complete_value: 4
+    
+  attic_hits:
+    count_events:
+      - upper_pop_hit
+      - upper_1_drop_hit
+      - upper_2_drop_hit
+      - upper_3_drop_hit
+      - upper_4_drop_hit
+      - upper_1_hit
+      - upper_2_hit
+      - upper_3_hit
+      - upper_4_hit
+    reset_on_complete: false
+    count_complete_value: 11
+      
     
 ### event players ####
 ##attic target lights added by drops
@@ -217,3 +301,19 @@ light_player:
     l_upper_target_3: "ffffff"
   logicblock_attic_drop_counter_updated{value == 4}:
     l_upper_target_4: "ffffff"
+
+##HH has a random base value for the bonus.  This simulates it.
+random_event_player:
+  mode_base_started:
+    events:
+      - base_bonus_100
+      - base_bonus_200
+      - base_bonus_300
+      - base_bonus_400
+      - base_bonus_500
+      - base_bonus_600
+      - base_bonus_700
+      - base_bonus_800
+      - base_bonus_900
+      - base_bonus_1000
+      

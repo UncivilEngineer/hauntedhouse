@@ -1,0 +1,51 @@
+#config_version=6
+##! mode: bonus
+##
+mode_settings:
+  display_delay_ms: '1s'
+  #hurry_up_delay_ms: 0
+  bonus_entries:
+    - entry: attic_bonus
+      text: "Attic Bonus Scores"
+      score: current_player.base_bonus * current_player.bonus_upper_playfield
+      skip_if_zero: False
+    
+    - entry:  main_bonus
+      text:  "Main Playfield Bonus Score"
+      score: current_player.base_bonus * current_player.bonus_main_playfield
+      
+    - entry: cellar_bonus
+      text: "Cellar Bonus Score"
+      #score: base_bonus
+      #player_score_entry: bonus_lower_drops
+      #reset_player_score_entry: True
+      score: current_player.base_bonus * current_player.bonus_lower_playfield
+      skip_if_zero: False
+      
+slide_player:
+  mode_bonus_started: bonus
+  bonus_start:
+    bonus:
+      action: update
+      tokens:
+        entry: initial
+  bonus_entry:
+    bonus:
+      action: update
+
+
+
+variable_player:
+  mode_bonus_will_stop:
+    base_bonus:
+      int: 0
+      action: set
+    bonus_upper_playfield:
+      int: 0
+      action: set
+    bonus_main_playfield:
+      int: 0
+      action: set
+    bonus_lower_playfield:
+      int: 0
+      action: set

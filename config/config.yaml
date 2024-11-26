@@ -19,6 +19,7 @@ p_roc:
 modes:
   - base
   - attract
+  - bonus
 ####################################################################
 # Switch Definitions
 # This section defines the switch naming and associated numbering to link with the P3-Roc controller
@@ -27,12 +28,22 @@ modes:
 ####################################################################
 
 player_vars:
-  bonus_attic_targets:
+  bonus_upper_playfield:
     initial_value: 0
-  bonus_attic_drops:
+  bonus_lower_playfield:
     initial_value: 0
-  bonus_lower_drops:
+  bonus_main_playfield:
     initial_value: 0
+  attic_double_score:
+    initial_value: 0
+  main_double_score:
+    initial_value: 0
+  lower_double_score:
+    initial_value: 0
+  base_bonus:
+    initial_value: 0
+  bonus_multiplier:
+    initial_value: 1
 
 switches:   
   s_left_flipper1:                    # front flipper button
