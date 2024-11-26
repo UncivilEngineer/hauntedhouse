@@ -262,7 +262,7 @@ coils:
 #    number:
   c_flipper_left1_main:                           # Main Playfield Left Inner Flipper
     number: A2-B1-0
-    default_pulse_ms: 30
+    default_pulse_ms: 40
   c_flipper_left1_hold:
     number: A2-B1-3
     allow_enable: true
