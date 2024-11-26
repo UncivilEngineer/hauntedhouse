@@ -28,13 +28,11 @@ modes:
 ####################################################################
 
 player_vars:
-  bonus_attic_targets:
+  bonus_upper_playfield:
     initial_value: 0
-  bonus_attic_drops:
+  bonus_lower_playfield:
     initial_value: 0
-  bonus_lower_drops:
-    initial_value: 0
-  bonus_lower_targets:
+  bonus_main_playfield:
     initial_value: 0
   attic_double_score:
     initial_value: 0

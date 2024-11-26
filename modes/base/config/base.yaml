@@ -8,7 +8,6 @@ mode:
 slide_player:
   mode_base_started: base
   
-  
 
 
 ############################################
@@ -176,44 +175,49 @@ variable_player:
     score: 500
   upper_1_hit{device.counters.attic_drop_counter.value >= 1}:
     score: 3000
-    bonus_attic_targets: 1
+    bonus_upper_playfield: 1
   upper_2_hit{device.counters.attic_drop_counter.value < 2}:
     score: 500
   upper_2_hit{device.counters.attic_drop_counter.value >= 2}:
     score: 3000
-    bonus_attic_targets: 1
+    bonus_upper_playfield: 1
   upper_3_hit{device.counters.attic_drop_counter.value < 3}:
     score: 500
   upper_3_hit{device.counters.attic_drop_counter.value >= 3}:
     score: 3000
-    bonus_attic_targets: 1
+    bonus_upper_playfield: 1
   upper_4_hit{device.counters.attic_drop_counter.value < 4}:
     score: 500
   upper_4_hit{device.counters.attic_drop_counter.value >= 4}:
     score: 3000
-    bonus_attic_targets: 1
+    bonus_upper_playfield: 1
   upper_1_drop_hit:
     score: 3000
-    bonus_attic_drops: 1
+    bonus_upper_playfield: 1
   upper_2_drop_hit:
     score: 3000
-    bonus_attic_drops: 1
+    bonus_upper_playfield: 1
   upper_3_drop_hit:
     score: 3000
-    bonus_attic_drops: 1
+    bonus_upper_playfield: 1
   upper_4_drop_hit:
     score: 3000
-    bonus_attic_drops: 1
+    bonus_upper_playfield: 1
   lower_1_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_2_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_3_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_4_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_5_drop_hit:
     score: 3000
+    bonus_lower_playfield: 1
   lower_hole_hit:
     score: 5000
   lower_left_hit:
@@ -248,6 +252,7 @@ variable_player:
     score: 5000
   right_inlane_hit:
     score: 5000
+    bonus_main_playfield: 1
   main_slingshot_hit:
     score: 1000
   left_inlane_hit:
@@ -258,8 +263,10 @@ variable_player:
     score: 500
   right_kickout_hit:
     score: 500
+    bonus_main_playfield: 1
   rollunder_hit:
     score: 500
+    bonus_main_playfield: 1
     
 #### counter to track attic drop complete events
 counters:

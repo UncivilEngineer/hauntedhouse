@@ -7,17 +7,19 @@ mode_settings:
   bonus_entries:
     - entry: attic_bonus
       text: "Attic Bonus Scores"
-      score: current_player.base_bonus * current_player.bonus_attic_drops
-      #player_score_entry: current_player.bonus_attic_drops
-      #reset_player_score_entry: True
+      score: current_player.base_bonus * current_player.bonus_upper_playfield
       skip_if_zero: False
+    
+    - entry:  main_bonus
+      text:  "Main Playfield Bonus Score"
+      score: current_player.base_bonus * current_player.bonus_main_playfield
       
     - entry: cellar_bonus
       text: "Cellar Bonus Score"
       #score: base_bonus
       #player_score_entry: bonus_lower_drops
       #reset_player_score_entry: True
-      score: current_player.base_bonus * current_player.lower_bonus_drops
+      score: current_player.base_bonus * current_player.bonus_lower_playfield
       skip_if_zero: False
       
 slide_player:
@@ -27,9 +29,9 @@ slide_player:
       action: update
       tokens:
         entry: initial
-    bonus_entry:
-      bonus:
-        action: update
+  bonus_entry:
+    bonus:
+      action: update
 
 
 
@@ -38,9 +40,12 @@ variable_player:
     base_bonus:
       int: 0
       action: set
-    bonus_attic_drops:
+    bonus_upper_playfield:
       int: 0
       action: set
-    bonus_attic_targets:
+    bonus_main_playfield:
+      int: 0
+      action: set
+    bonus_lower_playfield:
       int: 0
       action: set
