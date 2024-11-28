@@ -552,3 +552,23 @@ lights:
     number: 11-6-8-10
     platform_settings:
       polarity: true
+      
+  l_1x:
+    number: 11-60-61-62
+    platform_settings:
+      polarity: true
+    
+  l_2x:
+    number:  11-63-64-65
+    platform_settings:
+      polarity: true
+      
+  l_3x:
+    number: 11-66-67-68
+    platform_settings:
+      polarity: true
+
+  l_4x:
+    number: 11-69-70-71
+    platform_settings:
+      polarity: true
