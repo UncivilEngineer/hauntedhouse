@@ -1,63 +1,60 @@
 events:
-  game_ended: 87
-  game_started: 196
+  game_ended: 90
+  game_started: 203
 missing_switches:
-  s_left_flipper1: 2
-  s_left_flipper2: 2
-  s_lower_10pt_drops: 3
-  s_lower_10pt_lower: 3
-  s_lower_10pt_upper: 3
-  s_lower_1_drop: 3
-  s_lower_2_drop: 3
-  s_lower_3_drop: 3
-  s_lower_4_drop: 3
-  s_lower_5_drop: 3
-  s_lower_bonus_left: 3
-  s_lower_bonus_right: 3
-  s_lower_kick_target: 4
-  s_lower_kickout_special: 3
-  s_lower_pop: 3
-  s_lower_rollover: 2
-  s_lower_slingshot: 4
-  s_lower_vuk: 2
-  s_main_10pt_left: 3
-  s_main_1_target: 5
-  s_main_1_trough: 6
-  s_main_2_target: 4
-  s_main_2_trough: 3
-  s_main_3_target: 2
-  s_main_4_target: 2
-  s_main_5_target: 4
-  s_main_inlane_left: 2
-  s_main_inlane_right: 2
-  s_main_kickout_right: 4
-  s_main_lane_center: 2
-  s_main_outlane_left: 2
-  s_main_outlane_right: 2
-  s_main_pop_bottom: 2
-  s_main_pop_top: 2
-  s_main_rollunder: 4
-  s_main_secret_trough: 3
-  s_main_slingshot: 2
-  s_main_target_right: 2
-  s_main_trapdoor_trough: 9
-  s_main_vuk: 2
-  s_right_flipper1: 2
-  s_right_flipper2: 2
-  s_start: 3
-  s_upper_10pt_center: 2
-  s_upper_10pt_left: 4
-  s_upper_1_drop: 10
-  s_upper_1_target: 10
-  s_upper_2_drop: 10
-  s_upper_2_target: 5
-  s_upper_3_drop: 4
-  s_upper_3_target: 19
-  s_upper_4_target: 25
-  s_upper_pop: 2
+  s_left_flipper1: 9
+  s_left_flipper2: 9
+  s_lower_10pt_drops: 10
+  s_lower_10pt_lower: 10
+  s_lower_10pt_upper: 10
+  s_lower_1_drop: 10
+  s_lower_2_drop: 10
+  s_lower_3_drop: 10
+  s_lower_4_drop: 10
+  s_lower_5_drop: 10
+  s_lower_bonus_left: 10
+  s_lower_bonus_right: 10
+  s_lower_kick_target: 11
+  s_lower_kickout_special: 10
+  s_lower_pop: 10
+  s_lower_rollover: 9
+  s_lower_slingshot: 11
+  s_lower_vuk: 9
+  s_main_10pt_left: 10
+  s_main_1_target: 12
+  s_main_1_trough: 13
+  s_main_2_target: 11
+  s_main_3_target: 9
+  s_main_4_target: 3
+  s_main_5_target: 11
+  s_main_inlane_left: 9
+  s_main_inlane_right: 9
+  s_main_kickout_right: 11
+  s_main_lane_center: 9
+  s_main_outlane_left: 9
+  s_main_outlane_right: 9
+  s_main_pop_bottom: 9
+  s_main_pop_top: 9
+  s_main_rollunder: 11
+  s_main_secret_trough: 10
+  s_main_slingshot: 9
+  s_main_target_right: 9
+  s_main_trapdoor_trough: 1
+  s_main_vuk: 9
+  s_right_flipper1: 9
+  s_right_flipper2: 9
+  s_start: 10
+  s_upper_10pt_center: 9
+  s_upper_10pt_left: 11
+  s_upper_1_drop: 3
+  s_upper_1_target: 17
+  s_upper_2_drop: 3
+  s_upper_2_target: 12
+  s_upper_3_drop: 3
+  s_upper_3_target: 26
 player:
   score:
-    average: 33129
+    average: 32739
     top:
     - 211150
     - 170050
@@ -69,7 +66,7 @@ player:
     - 81180
     - 78890
     - 77830
-    total: 90
+    total: 93
 shots:
   10pt: 259
   left_inlane: 24
@@ -93,28 +90,28 @@ shots:
   main_1: 33
   main_2: 35
   main_3: 32
-  main_4: 53
+  main_4: 54
   main_5: 28
   main_slingshot: 57
   main_trough_1: 20
-  main_trough_2: 2
+  main_trough_2: 3
   right_inlane: 83
   right_kickout: 37
   right_outlane: 47
   rollunder: 116
   secret_passage_trough: 10
   standup_right: 103
-  trapdoor_trough: 10
+  trapdoor_trough: 11
   upper_1: 100
-  upper_1_drop: 182
+  upper_1_drop: 184
   upper_2: 93
-  upper_2_drop: 78
+  upper_2_drop: 81
   upper_3: 42
-  upper_3_drop: 105
-  upper_4: 43
-  upper_4_drop: 168
+  upper_3_drop: 107
+  upper_4: 46
+  upper_4_drop: 176
   upper_left_pop: 120
-  upper_pop: 600
+  upper_pop: 643
 switches:
   s_left_flipper1: 549
   s_left_flipper2: 573
@@ -139,15 +136,15 @@ switches:
   s_main_1_target: 60
   s_main_1_trough: 53
   s_main_2_target: 58
-  s_main_2_trough: 66
+  s_main_2_trough: 67
   s_main_3_target: 32
-  s_main_4_target: 69
+  s_main_4_target: 70
   s_main_5_target: 62
   s_main_inlane_left: 27
   s_main_inlane_right: 88
   s_main_kickout_right: 135
   s_main_lane_center: 143
-  s_main_outhole: 618
+  s_main_outhole: 633
   s_main_outlane_left: 22
   s_main_outlane_right: 48
   s_main_pop_bottom: 265
@@ -157,19 +154,19 @@ switches:
   s_main_secret_trough: 40
   s_main_slingshot: 252
   s_main_target_right: 156
-  s_main_trapdoor_trough: 10
+  s_main_trapdoor_trough: 11
   s_main_vuk: 293
   s_right_flipper1: 476
   s_right_flipper2: 486
   s_start: 7
   s_upper_10pt_center: 201
   s_upper_10pt_left: 127
-  s_upper_1_drop: 191
+  s_upper_1_drop: 194
   s_upper_1_target: 162
-  s_upper_2_drop: 96
+  s_upper_2_drop: 99
   s_upper_2_target: 179
-  s_upper_3_drop: 117
+  s_upper_3_drop: 119
   s_upper_3_target: 79
-  s_upper_4_drop: 188
-  s_upper_4_target: 81
-  s_upper_pop: 832
+  s_upper_4_drop: 196
+  s_upper_4_target: 84
+  s_upper_pop: 876

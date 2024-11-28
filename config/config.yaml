@@ -492,29 +492,7 @@ flippers:
  
 
 lights:
-  l_left_lane:
-    number: 11-1-3-5
-    platform_settings:
-      polarity: true
     
-  l_center_lane:
-    number: 11-7-9-11
-    platform_settings:
-      polarity: true
-    
-  l_right_lane: 
-    number: 11-25-27-29
-    platform_settings:
-      polarity: true
-    
-  l_main_5: 
-    number: 11-31-33-35
-    platform_settings:
-      polarity: true   
-  l_main_eb: 
-    number: 11-37-39-41
- #   platform_settings:
- #     polarity: false
   l_upper_target_4:       #upper lights
     number: 11-12-14-13
     platform_settings:
@@ -534,3 +512,43 @@ lights:
     number: 11-21-23-22
     platform_settings:
       polarity: true 
+      
+  l_attic_right_gi_1:
+    number: 11-25-27-29
+    platform_settings:
+      polarity: true
+
+  l_attic_right_gi_2:
+    number: 11-31-33-35
+    platform_settings:
+     polarity: true
+     
+  l_attic_left_gi_1:
+    number: 11-24-26-28
+    platform_settings:
+      polarity: true
+      
+  l_attic_left_gi_2:
+    number: 11-30-32-34
+    platform_settings:
+      polarity: true
+      
+  l_attic_pop:
+    number: 11-1-3-5
+    platform_settings:
+     polarity: true
+     
+  l_attic_special:
+    number: 11-7-9-11
+    platform_settings:
+      polarity: true
+      
+  l_attic_double_score:
+    number: 11-0-2-4
+    platform_settings:
+      polarity: true
+      
+  l_attic_center_gi:
+    number: 11-6-8-10
+    platform_settings:
+      polarity: true

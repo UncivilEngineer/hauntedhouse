@@ -15,7 +15,11 @@ slide_player:
 ############################################
 shots:
   upper_pop: 
-    switch: s_upper_pop 
+    switch: s_upper_pop
+    show_tokens:
+      led: l_attic_pop
+    profile: pop_hit
+    
   lower_left_pop:
     switch: s_main_pop_bottom
   upper_left_pop:
@@ -302,6 +306,11 @@ light_player:
   logicblock_attic_drop_counter_updated{value == 4}:
     l_upper_target_4: "ffffff"
 
+show_player:
+  mode_base_started: gi_on
+  mode_base_stopped: gi_off
+    
+
 ##HH has a random base value for the bonus.  This simulates it.
 random_event_player:
   mode_base_started:
@@ -316,4 +325,40 @@ random_event_player:
       - base_bonus_800
       - base_bonus_900
       - base_bonus_1000
-      
+
+shot_profiles:
+  pop_hit:
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: flash
+      - name: lit
+        show: on
+    loop: true
+    
+shows:
+  gi_on:
+    - time: 0
+      lights:
+        l_attic_right_gi_1: red
+        l_attic_right_gi_2: green
+        l_attic_left_gi_1: red
+        l_attic_left_gi_2: green
+        l_attic_center_gi: green
+    - time: 1
+      lights:
+        l_attic_right_gi_1: green
+        l_attic_right_gi_2: red
+        l_attic_left_gi_1: green
+        l_attic_left_gi_2: red
+        l_attic_center_gi: red
+        
+  gi_off:
+    - time: 0
+      lights:
+        l_attic_right_gi_1: off
+        l_attic_right_gi_2: off
+        l_attic_left_gi_1: off
+        l_attic_left_gi_2: off
+        l_attic_center_gi: off
