@@ -1,10 +1,10 @@
 #config_version=6
 ##! mode: attract
 show_player:
-  mode_attract_started: attract_light_show
-  mode_attract_started.1:
-    attract_light_show:
-      speed: 8
+  mode_attract_started: upper_rotate_show2
+  #mode_attract_started.1:
+    #attract_light_show:
+    #  speed: 8
 slide_player:
 # mode_attract_started: attract
   mode_attract_started: attract_scroll

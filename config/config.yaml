@@ -326,6 +326,8 @@ coils:
     default_pulse_ms: 75
   c_main_trapdoor_hold:                           # hold coil for trapdoor
     number: A0-B1-3
+    default_pulse_ms: 50
+    allow_enable: true
   c_main_slingshot:                               # right side slingshot                          - Autofire Device - 
     number: A0-B1-6
     default_pulse_ms: 75
@@ -372,7 +374,10 @@ coils:
     number: A1-B0-0 
     default_pulse_ms: 150
    
-
+dual_wound_coils:
+  c_dual_trapdoor:
+    hold_coil: c_main_trapdoor_hold
+    main_coil: c_main_trapdoor
 
 
 ####################################################################
@@ -572,3 +577,32 @@ lights:
     number: 11-69-70-71
     platform_settings:
       polarity: true
+      
+  l_main_right_gi_1:
+    number:  11-72-73-74
+    platform_settings:
+      polarity: true
+
+  l_extra_ball_kickout:
+    number: 11-75-76-77
+    platform_settings:
+      polarity: true
+
+  l_main_trap_door:
+    number: 11-78-79-80
+    platform_settings:
+      polarity: true
+
+  l_5x:
+    number: 11-81-82-83
+    platform_settings:
+      polarity: true
+
+diverters:
+  trapdoor_diverter:
+    activation_coil: c_dual_trapdoor
+    type: hold
+    activation_time: '8s'
+    activation_switches: s_main_inlane_left
+    enable_events: ball_started
+    disable_events: ball_ended

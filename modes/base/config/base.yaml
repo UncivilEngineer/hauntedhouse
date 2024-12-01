@@ -28,20 +28,12 @@ shots:
     switches: s_upper_10pt_left, s_upper_10pt_center, s_main_10pt_left
   upper_1:
     switch: s_upper_1_target 
-    #show_tokens:
-     # led: l_upper_target_1
   upper_2:
     switch: s_upper_2_target
-    #show_tokens:
-     # led: l_upper_target_2
   upper_3:
     switch: s_upper_3_target
-    #show_tokens:
-     # led: l_upper_target_3
   upper_4:
     switch: s_upper_4_target
-    #show_tokens:
-     # led: l_upper_target_4
   upper_1_drop:
     switch: s_upper_1_drop
   upper_2_drop:
@@ -114,6 +106,8 @@ shots:
     switch: s_main_secret_trough
   trapdoor_trough:
     switch: s_main_trapdoor_trough
+  main_vuk:
+    switch: s_main_vuk
    
 ############################################
 ## Player Variables
@@ -167,6 +161,13 @@ variable_player:
     bonus_multiplier: 1
   trapdoor_trough_hit:
     bonus_multiplier: 1
+  main_trough_1_hit:
+    bonus_multiplier: 1
+  main_trough_2_hit:
+    bonus_multiplier: 1
+  main_vuk_hit:
+    bonus_multiplier: 1
+    
   upper_pop_hit: 
     score: 1000
   lower_left_pop_hit:
@@ -176,23 +177,21 @@ variable_player:
   10pt_hit:
     score: 30
   upper_1_hit{device.counters.attic_drop_counter.value == 0}:
-    score: 500
-  upper_1_hit{device.counters.attic_drop_counter.value >= 1}:
     score: 3000
     bonus_upper_playfield: 1
-  upper_2_hit{device.counters.attic_drop_counter.value < 2}:
+  upper_2_hit{device.counters.attic_drop_counter.value < 1}:
     score: 500
-  upper_2_hit{device.counters.attic_drop_counter.value >= 2}:
+  upper_2_hit{device.counters.attic_drop_counter.value >= 1}:
     score: 3000
     bonus_upper_playfield: 1
-  upper_3_hit{device.counters.attic_drop_counter.value < 3}:
+  upper_3_hit{device.counters.attic_drop_counter.value < 2}:
     score: 500
-  upper_3_hit{device.counters.attic_drop_counter.value >= 3}:
+  upper_3_hit{device.counters.attic_drop_counter.value >= 2}:
     score: 3000
     bonus_upper_playfield: 1
-  upper_4_hit{device.counters.attic_drop_counter.value < 4}:
+  upper_4_hit{device.counters.attic_drop_counter.value < 3}:
     score: 500
-  upper_4_hit{device.counters.attic_drop_counter.value >= 4}:
+  upper_4_hit{device.counters.attic_drop_counter.value >= 3}:
     score: 3000
     bonus_upper_playfield: 1
   upper_1_drop_hit:
@@ -271,6 +270,11 @@ variable_player:
   rollunder_hit:
     score: 500
     bonus_main_playfield: 1
+
+  player_bonus_multiplier{value > 5}:  #we limit the maximum bonus multiplier to 5
+    bonus_multiplier:
+      int: 5
+      action: set
     
 #### counter to track attic drop complete events
 counters:
@@ -292,19 +296,48 @@ counters:
       - upper_4_hit
     reset_on_complete: false
     count_complete_value: 11
+
+  cellar_hits:
+    count_events:
+      - lower_1_drop_hit
+      - lower_2_drop_hit
+      - lower_3_drop_hit
+      - lower_4_drop_hit
+      - lower_5_drop_hit
+      - lower_hole_hit
+      - lower_10pt_drops_hit
+      - lower_10pt_lower_hit
+      - lower_10pt_upper_hit
+      - lower_pop_hit
+      - lower_slingshot_hit
+      - lower_kick_target_hit
+      - lower_rollover_hit
+    reset_on_complete: false
+    count_complete_value: 11
       
     
 ### event players ####
 ##attic target lights added by drops
 light_player:
-  logicblock_attic_drop_counter_updated{value == 1}:
+  logicblock_attic_drop_counter_updated{value == 0}:
     l_upper_target_1: "ffffff"
-  logicblock_attic_drop_counter_updated{value == 2}:
+  logicblock_attic_drop_counter_updated{value == 1}:
     l_upper_target_2: "ffffff"
-  logicblock_attic_drop_counter_updated{value == 3}:
+  logicblock_attic_drop_counter_updated{value == 2}:
     l_upper_target_3: "ffffff"
-  logicblock_attic_drop_counter_updated{value == 4}:
+  logicblock_attic_drop_counter_updated{value == 3}:
     l_upper_target_4: "ffffff"
+
+  mode_base_started:
+    l_1x: on
+  player_bonus_multiplier{value == 2}:
+    l_2x: on
+  player_bonus_multiplier{value == 3}:
+    l_3x: on
+  player_bonus_multiplier{value == 4}:
+    l_4x: on
+  player_bonus_multiplier{value == 5}:
+    l_5x: on
 
 show_player:
   mode_base_started: gi_on

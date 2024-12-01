@@ -1,0 +1,63 @@
+#show_version=6
+- time: 0
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+- time: '+1'
+  lights:
+    l_attic_special: 'AAA9A9'
+    
+- time: '+1'
+  lights:
+    l_attic_special: '000000'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+#No change this frame - take another step
+#  lights:
+- time: '+1'
+    
+- time: '+1'
+  lights:
+    l_upper_target_3: 'A4A1A2'
+    
+- time: '+1'
+  lights:
+    l_upper_target_3: '000000'
+    
+- time: '+1'
+  lights:
+    l_attic_left_gi_2: '7C7A7B'
+    l_upper_target_4: '151515'
+    
+- time: '+1'
+  lights:
+    l_attic_center_gi: '858384'
+    l_attic_left_gi_2: '000000'
+    l_attic_right_gi_2: '0F0F0F'
+    l_upper_target_4: '030303'
+    
+- time: '+1'
+  lights:
+    l_attic_center_gi: '0C0C0C'
+    l_attic_left_gi_1: '7A7879'
+    l_attic_right_gi_2: '000000'
+    l_upper_target_4: '000000'
+    
+- time: '+1'
+  lights:
+    l_attic_center_gi: '000000'
+    l_attic_left_gi_1: '000000'
+    l_attic_right_gi_1: '6F6D6E'
+    
