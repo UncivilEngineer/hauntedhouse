@@ -1,0 +1,63 @@
+2024-12-01 11:41:11,852 : INFO : root : Loading config.
+2024-12-01 11:41:11,855 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-12-01 11:41:11,855 : WARNING : ConfigProcessor : Config file in cache changed: /Users/C_Alan/pinball/hauntedhouse/config/config.yaml
+2024-12-01 11:41:11,855 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml.
+2024-12-01 11:41:11,863 : INFO : ConfigProcessor : Loading config: /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/mpfconfig.yaml
+2024-12-01 11:41:11,863 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/pinball/hauntedhouse/config/config.yaml.
+2024-12-01 11:41:11,871 : INFO : ConfigProcessor : Loading config: /Users/C_Alan/pinball/hauntedhouse/config/config.yaml
+2024-12-01 11:41:11,872 : INFO : ConfigProcessor : Config file cache created: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/a187413b8cf7049e0b91852f54cd1afa.mpf_cache
+2024-12-01 11:41:11,930 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/2e30198d1c841d95b9b3e69c8a0bb49b.mpf_cache
+2024-12-01 11:41:11,931 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/40928215bbb65374348eff3d4cd7b8bc.mpf_cache
+2024-12-01 11:41:11,931 : WARNING : ConfigProcessor : Config file in cache changed: /Users/C_Alan/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-12-01 11:41:11,931 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/pinball/hauntedhouse/modes/base/config/base.yaml.
+2024-12-01 11:41:11,937 : INFO : ConfigProcessor : Loading config: /Users/C_Alan/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-12-01 11:41:11,938 : INFO : ConfigProcessor : Config file cache created: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/167ddff969183ffa73a4682c84ddf638.mpf_cache
+2024-12-01 11:41:11,938 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/2e30198d1c841d95b9b3e69c8a0bb49b.mpf_cache
+2024-12-01 11:41:11,938 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/f3e7df0542012602a298ddb9f31df321.mpf_cache
+2024-12-01 11:41:11,939 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/ac27afd8b01174f1412801db135abc1d.mpf_cache
+2024-12-01 11:41:11,939 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/df2857c909c4a913cc732702f1a197bb.mpf_cache
+2024-12-01 11:41:11,940 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/1ab5c5e749213b44f20a4087626085fd.mpf_cache
+2024-12-01 11:41:11,940 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/176bdc82e0948b16c38e3d140ac1de4b.mpf_cache
+2024-12-01 11:41:11,940 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0.dev5
+2024-12-01 11:41:11,940 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2024-12-01-11-41-11-mpf-Macpro.local.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': '/Users/C_Alan/pinball/hauntedhouse/logs/2024-12-01-11-41-11-mpf-Macpro.local.log'}
+2024-12-01 11:41:11,941 : INFO : Machine : MPF path: /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf
+2024-12-01 11:41:11,941 : INFO : Machine : Machine path: /Users/C_Alan/pinball/hauntedhouse
+2024-12-01 11:41:11,941 : INFO : Machine : Platform: darwin
+2024-12-01 11:41:11,941 : INFO : Machine : Python executable location: /Users/C_Alan/envp311/bin/python3.11
+2024-12-01 11:41:11,941 : INFO : Machine : Python version: 3.11.0 (64-bit)
+2024-12-01 11:41:11,941 : INFO : Machine : Initializing MPF...
+2024-12-01 11:41:11,956 : ERROR : Machine : Failed to initialize MPF
+Traceback (most recent call last):
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 31, in <module>
+    import pinproc
+ModuleNotFoundError: No module named 'pinproc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 37, in <module>
+    from mpf.platforms.pinproc.osx import pinproc
+ImportError: dlopen(/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/platforms/pinproc/osx/pinproc.so, 0x0002): Library not loaded: /usr/local/lib/libusb-0.1.4.dylib
+  Referenced from: <854C99FF-27E9-3D94-8892-F128E2300626> /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/platforms/pinproc/osx/pinproc.so
+  Reason: tried: '/usr/local/lib/libusb-0.1.4.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libusb-0.1.4.dylib' (no such file), '/usr/local/lib/libusb-0.1.4.dylib' (no such file), '/usr/lib/libusb-0.1.4.dylib' (no such file, not in dyld cache)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 686, in initialize_mpf
+    raise init.exception()
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 248, in initialize
+    await self.initialize_core_and_hardware()
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 234, in initialize_core_and_hardware
+    self._load_hardware_platforms()
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 490, in _load_hardware_platforms
+    self.add_platform(hardware_platform)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/core/machine.py", line 620, in add_platform
+    self.hardware_platforms[name] = hardware_platform(self)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/platforms/p3_roc.py", line 113, in __init__
+    super().__init__(machine)
+  File "/Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/platforms/p_roc_common.py", line 180, in __init__
+    raise MpfRuntimeError('Could not import "pinproc". Either the library is not installed or is missing '
+mpf.exceptions.runtime_error.MpfRuntimeError: Runtime Error in P-Roc: Could not import "pinproc". Either the library is not installed or is missing some of its dependencies. Check the install instructions for your OS in Multimorphic section of the MPF docs. You can run mpf with "-X" to use virtual hardware in the meantime. Error Code: RE-P-Roc-3 (https://missionpinball.org/logs)
+2024-12-01 11:41:11,959 : INFO : root : MPF run loop ended.
