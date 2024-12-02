@@ -88,8 +88,14 @@ shots:
     switch: s_main_outlane_right
   right_inlane:
     switch: s_main_inlane_right
+    
   left_inlane:
     switch: s_main_inlane_left
+    show_tokens: 
+      light: l_main_trap_door
+    profile: trapdoor_profile
+    reset_events: diverter_trapdoor_diverter_deactivating
+    
   left_outlane: 
     switch: s_main_outlane_left
   standup_right:
@@ -320,13 +326,13 @@ counters:
 ##attic target lights added by drops
 light_player:
   logicblock_attic_drop_counter_updated{value == 0}:
-    l_upper_target_1: "ffffff"
+    l_upper_target_1: on
   logicblock_attic_drop_counter_updated{value == 1}:
-    l_upper_target_2: "ffffff"
+    l_upper_target_2: on
   logicblock_attic_drop_counter_updated{value == 2}:
-    l_upper_target_3: "ffffff"
+    l_upper_target_3: on
   logicblock_attic_drop_counter_updated{value == 3}:
-    l_upper_target_4: "ffffff"
+    l_upper_target_4: on
 
   mode_base_started:
     l_1x: on
@@ -339,9 +345,17 @@ light_player:
   player_bonus_multiplier{value == 5}:
     l_5x: on
 
+#  ball_started:
+#    l_main_trap_door: off
+#  diverter_trapdoor_diverter_activating:
+#    l_main_trap_door: on
+#  diverter_trapdoor_diverter_deactivating:
+#    l_main_trap_door: off
+  
 show_player:
   mode_base_started: gi_on
-  mode_base_stopped: gi_off
+  mode_base_stopping: gi_off
+  
     
 
 ##HH has a random base value for the bonus.  This simulates it.
@@ -366,9 +380,19 @@ shot_profiles:
         show: off
       - name: flashing
         show: flash
+        speed: 4
       - name: lit
         show: on
     loop: true
+  
+  trapdoor_profile:
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: flash_trapdoor_light
+        speed: 4
+
     
 shows:
   gi_on:
@@ -395,3 +419,11 @@ shows:
         l_attic_left_gi_1: off
         l_attic_left_gi_2: off
         l_attic_center_gi: off
+
+  flash_trapdoor_light:
+    - time: 0
+      lights:
+        l_main_trap_door: on
+    - time: 1
+      lights:
+        l_main_trap_door: off

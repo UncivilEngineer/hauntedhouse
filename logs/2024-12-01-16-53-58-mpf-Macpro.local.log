@@ -1,0 +1,7 @@
+2024-12-01 16:53:58,430 : INFO : root : Loading config.
+2024-12-01 16:53:58,432 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2024-12-01 16:53:58,433 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/a187413b8cf7049e0b91852f54cd1afa.mpf_cache
+2024-12-01 16:53:58,463 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/2e30198d1c841d95b9b3e69c8a0bb49b.mpf_cache
+2024-12-01 16:53:58,464 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/40928215bbb65374348eff3d4cd7b8bc.mpf_cache
+2024-12-01 16:53:58,464 : WARNING : ConfigProcessor : Config file in cache changed: /Users/C_Alan/pinball/hauntedhouse/modes/base/config/base.yaml
+2024-12-01 16:53:58,464 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/pinball/hauntedhouse/modes/base/config/base.yaml.
