@@ -25,7 +25,7 @@ offset_bottom = 40.0
 script = ExtResource("2_cmc72")
 
 [node name="Label" type="Label" parent="Control"]
-z_index = 2
+z_index = 1
 layout_mode = 0
 offset_left = 389.0
 offset_top = 584.0
