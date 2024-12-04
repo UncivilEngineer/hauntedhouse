@@ -1,11 +1,20 @@
 #config_version=6
 ##! mode: attract
+mode:
+  priority: 50
+
 show_player:
-  mode_attract_started: upper_rotate_show2
+  mode_attract_started: 
+    upper_rotate_show2:
+      speed: 8
   #mode_attract_started.1:
     #attract_light_show:
     #  speed: 8
 slide_player:
 # mode_attract_started: attract
   mode_attract_started: attract_scroll
+  s_right_flipper1_active: 
+    last_score:
+      expire: '5s'
+      priority: 100
   

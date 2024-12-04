@@ -26,6 +26,7 @@ variable_type = 1
 variable_name = "entry"
 
 [node name="initial" type="Node2D" parent="MPFConditionalChildren"]
+visible = false
 
 [node name="MPFVariable" type="Label" parent="MPFConditionalChildren/initial"]
 offset_left = 690.0
@@ -63,7 +64,6 @@ text = "Base Bonus Value"
 horizontal_alignment = 1
 
 [node name="__default__" type="Node2D" parent="MPFConditionalChildren"]
-visible = false
 
 [node name="text" type="Label" parent="MPFConditionalChildren/__default__"]
 offset_left = 588.0

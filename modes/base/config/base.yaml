@@ -19,6 +19,14 @@ shots:
     show_tokens:
       led: l_attic_pop
     profile: pop_hit
+  
+  attic_special:
+    enable_events:  logicblock_cellar_drop_counter_updated{value == 2}
+    hit_events:  drop_target_bank_upper_down
+    disable_events:  attic_special_lit_hit
+    profile: flash
+    show_tokens:
+      leds: l_attic_special
     
   lower_left_pop:
     switch: s_main_pop_bottom
@@ -52,7 +60,7 @@ shots:
     switch: s_lower_4_drop
   lower_5_drop:
     switch: s_lower_5_drop
-  lower_hole:
+  lower_special_hole:
     switch: s_lower_kickout_special
   lower_left:
     switch: s_lower_bonus_left
@@ -162,6 +170,8 @@ variable_player:
       int: 1000
       action: set
   
+  attic_special_hit:
+    score: 25000
   ## the troughs for bonusx
   secret_passage_trough_hit:
     bonus_multiplier: 1
@@ -227,8 +237,10 @@ variable_player:
   lower_5_drop_hit:
     score: 3000
     bonus_lower_playfield: 1
-  lower_hole_hit:
+    
+  lower_special_hole_hit:
     score: 5000
+    
   lower_left_hit:
     score: 1000
   lower_right_hit:
@@ -288,6 +300,11 @@ counters:
     count_events: drop_target_bank_upper_down
     reset_on_complete: false
     count_complete_value: 4
+
+  cellar_drop_counter:
+    count_events: drop_target_bank_lower_down
+    reset_on_complete: false
+    count_complete_value: 4
     
   attic_hits:
     count_events:
@@ -333,6 +350,9 @@ light_player:
     l_upper_target_3: on
   logicblock_attic_drop_counter_updated{value == 3}:
     l_upper_target_4: on
+
+  logicblock_cellar_drop_counter_updated{value == 1}:
+    l_attic_special: red
 
   mode_base_started:
     l_1x: on
@@ -392,6 +412,13 @@ shot_profiles:
       - name: flashing
         show: flash_trapdoor_light
         speed: 4
+
+  flash:
+    states:
+      - name: unlit
+        show: "off"
+      - name: lit
+        show: "flash"
 
     
 shows:
