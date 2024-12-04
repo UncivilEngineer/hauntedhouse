@@ -170,7 +170,7 @@ variable_player:
       int: 1000
       action: set
   
-  attic_special_hit:
+  attic_specialgi_hit:
     score: 25000
   ## the troughs for bonusx
   secret_passage_trough_hit:
