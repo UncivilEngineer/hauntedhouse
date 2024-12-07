@@ -597,7 +597,27 @@ lights:
     number: 11-81-82-83
     platform_settings:
       polarity: true
+      
+  l_db_main:
+    number: 11-35-37-38
+    platform_settings:
+      polarity: true
 
+  l_db_cellar:
+    number: 11-39-40-41
+    platform_settings:
+      polarity: true
+
+ l_db_attic:
+   number: 11-42-43-44
+   platform_settings:
+     polarity: true
+
+l_gi_post_left:
+  number: 11-45-46-47
+  platform_settings:
+    polarity: true
+    
 diverters:
   trapdoor_diverter:
     activation_coil: c_dual_trapdoor
