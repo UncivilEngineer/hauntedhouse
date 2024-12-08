@@ -599,7 +599,7 @@ lights:
       polarity: true
       
   l_db_main:
-    number: 11-35-37-38
+    number: 11-36-37-38
     platform_settings:
       polarity: true
 
