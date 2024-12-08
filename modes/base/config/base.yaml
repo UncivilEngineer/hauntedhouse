@@ -17,16 +17,17 @@ shots:
   upper_pop: 
     switch: s_upper_pop
     show_tokens:
-      led: l_attic_pop
+      leds: l_attic_pop
     profile: pop_hit
   
   attic_special:
     enable_events:  logicblock_cellar_drop_counter_updated{value == 2}
     hit_events:  drop_target_bank_upper_down
-    disable_events:  attic_special_lit_hit
-    profile: flash
+    disable_events:  attic_special_flash_hit
     show_tokens:
       leds: l_attic_special
+    profile: flash
+    persist_enable: false
     
   lower_left_pop:
     switch: s_main_pop_bottom
@@ -170,7 +171,7 @@ variable_player:
       int: 1000
       action: set
   
-  attic_specialgi_hit:
+  attic_special_flash_hit:
     score: 25000
   ## the troughs for bonusx
   secret_passage_trough_hit:
@@ -192,7 +193,7 @@ variable_player:
     score: 1000
   10pt_hit:
     score: 30
-  upper_1_hit{device.counters.attic_drop_counter.value == 0}:
+  upper_1_hit{device.counters.attic_drop_counter.value >= 0}:
     score: 3000
     bonus_upper_playfield: 1
   upper_2_hit{device.counters.attic_drop_counter.value < 1}:
@@ -351,8 +352,8 @@ light_player:
   logicblock_attic_drop_counter_updated{value == 3}:
     l_upper_target_4: on
 
-  logicblock_cellar_drop_counter_updated{value == 1}:
-    l_attic_special: red
+  # logicblock_cellar_drop_counter_updated{value == 1}:
+  #  l_attic_special: red
 
   mode_base_started:
     l_1x: on
@@ -374,7 +375,7 @@ light_player:
   
 show_player:
   mode_base_started: gi_on
-  mode_base_stopping: gi_off
+  mode_base_will_stop: gi_off
   
     
 
@@ -415,10 +416,11 @@ shot_profiles:
 
   flash:
     states:
-      - name: unlit
-        show: "off"
+      #- name: unlit
+      #  show: "off"
       - name: lit
         show: "flash"
+        speed: 4
 
     
 shows:
@@ -430,6 +432,9 @@ shows:
         l_attic_left_gi_1: red
         l_attic_left_gi_2: green
         l_attic_center_gi: green
+        l_main_right_gi_1: orange
+        l_gi_post_left: red
+        
     - time: 1
       lights:
         l_attic_right_gi_1: green
@@ -437,6 +442,8 @@ shows:
         l_attic_left_gi_1: green
         l_attic_left_gi_2: red
         l_attic_center_gi: red
+        l_main_right_gi_1: white
+        l_gi_post_left: green
         
   gi_off:
     - time: 0
@@ -446,7 +453,18 @@ shows:
         l_attic_left_gi_1: off
         l_attic_left_gi_2: off
         l_attic_center_gi: off
-
+        l_main_right_gi_1: off
+        l_gi_post_left: off
+    - time: 1
+      lights:
+        l_attic_right_gi_1: off
+        l_attic_right_gi_2: off
+        l_attic_left_gi_1: off
+        l_attic_left_gi_2: off
+        l_attic_center_gi: off
+        l_main_right_gi_1: off
+        l_gi_post_left: off
+        
   flash_trapdoor_light:
     - time: 0
       lights:
@@ -454,3 +472,4 @@ shows:
     - time: 1
       lights:
         l_main_trap_door: off
+  

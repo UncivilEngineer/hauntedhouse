@@ -608,15 +608,15 @@ lights:
     platform_settings:
       polarity: true
 
- l_db_attic:
-   number: 11-42-43-44
-   platform_settings:
-     polarity: true
+  l_db_attic:
+    number: 11-42-43-44
+    platform_settings:
+      polarity: true
 
-l_gi_post_left:
-  number: 11-45-46-47
-  platform_settings:
-    polarity: true
+  l_gi_post_left:
+    number: 11-45-46-47
+    platform_settings:
+      polarity: true
     
 diverters:
   trapdoor_diverter:
