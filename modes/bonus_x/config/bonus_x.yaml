@@ -1,0 +1,92 @@
+#config_version=6
+##! mode: base
+
+mode:
+  start_events: ball_starting
+  restart_on_next_ball: true
+  priority: 100
+   
+  
+shots:
+  main_pf_shots:
+    switch:
+      - s_main_pop_bottom
+      - s_main_outlane_left
+      - s_main_inlane_left
+      - s_main_outhole
+      - s_main_inlane_right
+      - s_main_outlane_right
+      - s_main_target_right
+      - s_main_slingshot
+      - s_main_rollunder
+      - s_main_1_target
+      - s_main_10pt_left
+      - s_main_2_target
+      - s_main_pop_top
+      - s_main_3_target
+      - s_main_4_target
+      - s_main_5_target
+      - s_main_lane_center
+      - s_main_vuk
+    
+  trough_shots:
+    switch:
+      - s_main_1_trough
+      - s_main_2_trough
+      - s_main_secret_trough
+      - s_main_trapdoor_trough
+    
+  attic_pf_shots:
+    switch:
+      - s_upper_1_target
+      - s_upper_2_target
+      - s_upper_3_target
+      - s_upper_4_target
+      - s_upper_1_drop
+      - s_upper_2_drop
+      - s_upper_3_drop
+      - s_upper_4_drop
+    
+  upper_pop_shot:
+    switch:  s_upper_pop
+
+############################################
+## Player Variables
+############################################
+variable_player:
+  main_pf_shots_hit{current_player.current_playfield == "attic_pf"}:
+    current_playfield:
+      string: "main_pf"
+      action: set
+
+  attic_pf_shots_hit{current_player.current_playfield == "main_pf"}:
+    bonus_multiplier: 1
+    current_playfield:
+      string: "attic_pf"
+      action: set
+
+  trough_shots_hit:
+    bonus_multiplier: 1
+
+  upper_pop_shot_hit:
+    current_playfield:
+      string: "attic_pf"
+      action: set
+
+  player_bonus_multiplier{value > 5}:  #we limit the maximum bonus multiplier to 5
+    bonus_multiplier:
+      int: 5
+      action: set
+
+light_player:
+  mode_bonus_x_started:
+    l_1x: on
+  player_bonus_multiplier{value == 2}:
+    l_2x: on
+  player_bonus_multiplier{value == 3}:
+    l_3x: on
+  player_bonus_multiplier{value == 4}:
+    l_4x: on
+  player_bonus_multiplier{value == 5}:
+    l_5x: on
+ 
