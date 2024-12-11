@@ -75,3 +75,16 @@ script = ExtResource("2_3yg74")
 variable_name = "ball"
 min_digits = 1
 template_string = "BALL: %s"
+
+[node name="EXTRA BALLS" type="Label" parent="."]
+offset_left = 779.0
+offset_top = 446.0
+offset_right = 1106.0
+offset_bottom = 506.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "EXTRA BALLS: 1"
+script = ExtResource("2_3yg74")
+variable_name = "extra_balls"
+min_digits = 1
+template_string = "EXTRA BALLS: %s"

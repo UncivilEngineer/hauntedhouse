@@ -29,40 +29,7 @@ shots:
     
   main_pf_shots_ds:
     switch:
-      - s_main_pop_bottom
-      - s_main_outlane_left
-      - s_main_inlane_left
-      - s_main_outhole
-      - s_main_inlane_right
-      - s_main_outlane_right
-      - s_main_target_right
-      - s_main_slingshot
-      - s_main_rollunder
-      - s_main_1_target
-      - s_main_10pt_left
-      - s_main_2_target
-      - s_main_pop_top
-      - s_main_3_target
-      - s_main_4_target
-      - s_main_5_target
-      - s_main_lane_center
-      - s_main_vuk
-      - s_main_1_trough
       - s_main_2_trough
-      - s_main_secret_trough
-      - s_main_trapdoor_trough
-    enable_events:
-      - upper_pop-ds_hit
-      - upper_1_ds_hit
-      - upper_2_ds_hit
-      - upper_3_ds_hit
-      - upper_4_ds_hit
-      - upper_1_ds_drop_hit
-      - upper_2_ds_drop_hit
-      - upper_3_ds_drop_hit
-      - upper_4_ds_drop_hit
-
-
 
 variable_player:
 

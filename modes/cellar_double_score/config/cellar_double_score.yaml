@@ -1,0 +1,89 @@
+#config_version=6
+##! mode: cellar_double_score
+
+mode:
+  start_events: logicblock_attic_hits_complete
+  #restart_on_next_ball: true
+  priority: 200
+  stop_events:  lower_vuk_ds_hit
+  
+shots:
+  lower_pop_ds:
+   switch: s_lower_pop
+  lower_slingshot_ds:
+    switch: s_lower_slingshot
+  lower_bonus_left_ds:
+    switch: s_lower_bonus_left
+  lower_1_drop_ds:
+    switch: s_lower_1_drop
+  lower_2_drop_ds:
+    switch: s_lower_2_drop
+  lower_3_drop_ds:
+    switch: s_lower_3_drop
+  lower_4_drop_ds:
+    switch: s_lower_4_drop
+  lower_5_drop_ds:
+    switch: s_lower_5_drop
+  lower_kickout_special_ds:
+    switch: s_lower_kickout_special
+  lower_10pt_ds:
+    switch: s_lower_10pt_upper
+  lower_kicker_target_ds:
+    switch: s_lower_kick_target
+  lower_bonus_right_ds:
+    switch: s_lower_bonus_right
+  lower_rollover_ds:
+    switch: s_lower_rollover
+    
+  lower_vuk_ds:
+    switch:
+      - s_lower_vuk
+
+variable_player:
+
+  lower_1_drop_ds_hit:
+    score: 3000
+  lower_2_drop_ds_hit:
+    score: 3000
+  lower_3_drop_ds_hit:
+    score: 3000
+  lower_4_drop_ds_hit:
+    score: 3000
+  lower_5_drop_ds_hit:
+    score: 3000
+  lower_kickout_special_ds_hit:
+    score: 5000
+    
+  lower_bonus_left_ds_hit:
+    score: 1000
+  lower_bonus_right_ds_hit:
+    score: 1000
+  lower_pop_ds_hit:
+    score: 1000
+#  lower_10pt_lower_hit:   verify target locations
+ #   score: 30
+  lower_10pt_upper_ds_hit:
+    score: 30
+  lower_10pt_drops_ds_hit:
+    score: 30
+  lower_slingshot_ds_hit:
+    score: 1000
+  lower_kick_target_ds_hit:
+    score: 1000
+  lower_rollover_ds_hit:
+    score: 1000
+
+#show_player:
+#  mode_cellar_double_score_started:   lights not installed in machine yet
+#    flash_attic_db_score:
+#      speed: 3
+  
+#shows:
+#  flash_cellar_db_score:
+#    - time: 0
+#      lights: 
+#        l_cellar_double_score: red
+#    - time: 1
+#      lights:
+#        l_cellar_double_score: off
+  

@@ -301,12 +301,12 @@ counters:
   attic_drop_counter:
     count_events: drop_target_bank_upper_down
     reset_on_complete: false
-    count_complete_value: 4
+    count_complete_value: 3
 
   cellar_drop_counter:
     count_events: drop_target_bank_lower_down
     reset_on_complete: false
-    count_complete_value: 4
+    count_complete_value: 2
     
   attic_hits:
     count_events:
@@ -319,8 +319,9 @@ counters:
       - upper_2_hit
       - upper_3_hit
       - upper_4_hit
-    reset_on_complete: false
+    #reset_on_complete: false
     count_complete_value: 11
+    restart_events: mode_cellar_double_score_stopped
     
 
   cellar_hits:

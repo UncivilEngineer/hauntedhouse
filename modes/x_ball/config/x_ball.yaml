@@ -1,0 +1,55 @@
+#config_version=6
+##! mode: x-ball
+
+mode:
+  start_events: 
+    - logicblock_attic_drop_counter_hit{count == 1 and current_player.extra_ball_main_x_ball_num_awarded == 0}
+    - logicblock_cellar_drop_counter_hit{count == 1 and current_player.extra_ball_main_x_ball_num_awarded == 0}
+    #- logicblock_attic_drop_counter_hit{count == 1}
+  #restart_on_next_ball: true
+  priority: 200
+  stop_events:  extra_ball_awarded
+  
+shots:
+  main_pf_x_ball_cycle:
+    switch:
+      - s_main_1_target
+      - s_main_2_target
+      - s_main_3_target
+      - s_main_4_target
+      - s_main_5_target
+      - s_main_pop_bottom
+      - s_main_pop_top
+      - s_main_lane_center
+      - s_main_rollunder
+      - s_main_slingshot
+      - s_main_target_right
+      - s_main_outlane_right
+      - s_main_inlane_right
+      - s_main_outlane_left
+      - s_main_inlane_left
+      - s_main_10pt_left
+    show_tokens:
+      leds: l_extra_ball_kickout
+    profile: main_pf_x_ball_cycle_profile
+    
+  main_pf_x_ball:
+    switch: s_main_kickout_right
+    profile: main_pf_x_ball_cycle_profile
+    advance_events:  main_pf_x_ball_cycle_unlit_hit, main_pf_x_ball_cycle_lit_hit   
+
+##cycle of ex_ball lights
+shot_profiles:
+  main_pf_x_ball_cycle_profile:
+    states:
+      - name: unlit
+        show: off
+      - name: lit
+        show: on
+    loop: true
+
+
+extra_balls:
+  main_x_ball:
+    award_events:  main_pf_x_ball_lit_hit
+    
