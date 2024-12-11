@@ -22,6 +22,8 @@ modes:
   - bonus
   - bonus_x
   - attic_double_score
+  - cellar_double_score
+  - x_ball
 ####################################################################
 # Switch Definitions
 # This section defines the switch naming and associated numbering to link with the P3-Roc controller
@@ -49,6 +51,9 @@ player_vars:
   current_playfield:
     value_type: str
     initial_value: "main_pf"
+  x_ball_awarded:
+    value_type: str
+    initial_value: "no"
 
 switches:   
   s_left_flipper1:                    # front flipper button

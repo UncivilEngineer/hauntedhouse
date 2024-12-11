@@ -11,7 +11,7 @@ mode_settings:
       skip_if_zero: False
     
     - entry:  main_bonus
-      text:  "Main Playfield Bonus Score"
+      text:  "Main Bonus Score"
       score: current_player.base_bonus * current_player.bonus_main_playfield
       
     - entry: cellar_bonus
