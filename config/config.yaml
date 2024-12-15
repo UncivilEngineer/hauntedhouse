@@ -627,6 +627,26 @@ lights:
     number: 11-45-46-47
     platform_settings:
       polarity: true
+
+  l_gi_post_right:
+    number: 11-48-49-50
+    platform_settings:
+      polarity: true
+
+  l_target_5:
+    number: 11-51-52-53
+    platform_settings:
+      polarity: true
+
+  l_target_4:
+    number: 11-54-55-56
+    platform_settings:
+      polarity: true
+
+  l_main_secret_passage:
+    number: 11-57-58-59
+    platform_settings:
+      polarity: true
     
 diverters:
   trapdoor_diverter:

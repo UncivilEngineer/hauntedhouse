@@ -11,6 +11,7 @@
     l_attic_center_gi: red
     l_main_right_gi_1: orange
     l_gi_post_left: red
+    l_gi_post_right: orange
     
     l_attic_double_score: on
     l_attic_pop: green
@@ -20,6 +21,7 @@
     l_extra_ball_kickout: red
     l_1x: red
     l_db_attic: on
+    l_target_5: green
     
 - duration: 1s
   lights: 
@@ -35,11 +37,13 @@
     l_attic_center_gi: green
     l_main_right_gi_1: white
     l_gi_post_left: orange
+    l_gi_post_right: red
     
     l_main_trap_door: off
     l_extra_ball_kickout: off
     l_2x: red
     l_db_cellar: on
+    l_target_4: green
     
 - duration: 1s
   lights: 
@@ -54,11 +58,14 @@
     l_attic_left_gi_2: red
     l_attic_center_gi: red
     l_main_right_gi_1: orange
+    l_gi_post_right: red
+    
     l_gi_post_left: red
     l_main_trap_door: on
     l_extra_ball_kickout: red
     l_3x: red
     l_db_main: on
+    l_main_secret_passage: on
     
 - duration: 1s
   lights: 
@@ -73,6 +80,8 @@
     l_attic_left_gi_2: green
     l_attic_center_gi: green
     l_main_right_gi_1: white
+    l_gi_post_right: white
+    
     l_gi_post_left: red
     l_main_trap_door: off
     l_extra_ball_kickout: off
@@ -94,6 +103,7 @@
     l_attic_center_gi: red
     l_main_right_gi_1: orange
     l_gi_post_left: orange
+    l_gi_post_right: red
     l_5x: red
     
     l_db_attic: orange
@@ -116,6 +126,7 @@
     l_attic_left_gi_2: off
     l_attic_center_gi: off
     l_main_right_gi_1: off
+    l_gi_post_right: off
     l_gi_post_left: off
     l_attic_pop: off
     l_attic_special: off
@@ -131,6 +142,10 @@
     
     l_db_attic: off
     l_db_main: off
-    l_db_cellar: off   
+    l_db_cellar: off  
+    
+    l_target_4: off
+    l_target_5: off
+    l_main_secret_passage: off
     
 
