@@ -647,6 +647,26 @@ lights:
     number: 11-57-58-59
     platform_settings:
       polarity: true
+
+  l_lower_double_score:
+    number: 12-0-1-2
+    platform_settings:
+      polarity: true
+
+  l_lower_bank_count_3:
+    number: 12-3-4-5
+    platform_settings:
+      polarity: true
+
+  l_lower_bank_count_2:
+    number: 12-6-7-8
+    platform_settings:
+      polarity: true
+
+  l_lower_bank_count_1:
+    number: 12-9-10-11
+    platform_settings:
+      polarity: true
     
 diverters:
   trapdoor_diverter:

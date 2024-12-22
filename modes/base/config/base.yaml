@@ -357,6 +357,13 @@ light_player:
     l_upper_target_3: on
   logicblock_attic_drop_counter_updated{value == 3}:
     l_upper_target_4: on
+    
+  logicblock_cellar_drop_counter_updated{value == 0}:
+    l_lower_bank_count_1: on
+  logicblock_cellar_drop_counter_updated{value == 1}:
+    l_lower_bank_count_2: on
+  logicblock_cellar_drop_counter_updated{value == 2}:
+    l_lower_bank_count_3: on
 
 ### moved to bonus_x mode 12/8/2024
 #  mode_base_started:
