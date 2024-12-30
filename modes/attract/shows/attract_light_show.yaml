@@ -24,6 +24,8 @@
     l_target_5: green
     
     l_lower_double_score: orange
+    l_lower_special: red
+    l_lower_pop: red
     
 - duration: 1s
   lights: 
@@ -48,6 +50,8 @@
     l_target_4: green
     
     l_lower_bank_count_1: on
+    l_lower_right_bonus: green
+    l_lower_pop: green
     
 - duration: 1s
   lights: 
@@ -72,6 +76,8 @@
     l_main_secret_passage: on
     
     l_lower_bank_count_2: on
+    l_lower_left_bonus: green
+    l_lower_pop: purple
     
 - duration: 1s
   lights: 
@@ -96,7 +102,8 @@
     l_db_main: red
     l_db_cellar: red
     
-    l_lower_bank_count_3: on 
+    l_lower_bank_count_3: on
+    l_lower_pop: white 
     
 - duration: 1s
   lights: 
@@ -164,5 +171,10 @@
     l_lower_bank_count_1: off
     l_lower_bank_count_2: off
     l_lower_bank_count_3: off
+    
+    l_lower_special: off
+    l_lower_pop: off
+    l_lower_left_bonus: off
+    l_lower_right_bonus: off
     
 

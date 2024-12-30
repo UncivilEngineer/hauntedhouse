@@ -667,6 +667,26 @@ lights:
     number: 12-9-10-11
     platform_settings:
       polarity: true
+
+  l_lower_pop:
+    number: 12-12-13-14
+    platform_settings:
+      polarity: true
+
+  l_lower_special:
+    number: 12-15-16-17
+    platform_settings:
+      polarity: true
+
+  l_lower_right_bonus:
+    number: 12-18-19-20
+    platform_settings:
+      polarity: true
+
+  l_lower_left_bonus:
+    number: 12-21-22-23
+    platform_settings:
+      polarity: true
     
 diverters:
   trapdoor_diverter:
