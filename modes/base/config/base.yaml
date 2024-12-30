@@ -28,7 +28,33 @@ shots:
       leds: l_attic_special
     profile: flash
     persist_enable: false
+
+  cellar_special:
+    switch: s_lower_kickout_special
+    enable_events:  logicblock_attic_drop_counter_updated{value == 3}
+    hit_events: cellar_special_flash_lit_hit
+    disable_events: cellar_special_flash_hit
+    show_tokens:
+      leds: l_lower_special
+    profile: on_show
+    persist_enable: false
     
+  lower_right_bonus:
+    switch: s_lower_bonus_right
+    enable_events:  logicblock_cellar_drop_counter_updated{value == 1}
+    show_tokens:
+      leds: l_lower_right_bonus
+    profile: on_show
+    persist_enable: false
+
+  lower_left_bonus:
+    switch: s_lower_bonus_left
+    enable_events:  logicblock_cellar_drop_counter_updated{value == 2}
+    show_tokens:
+      leds: l_lower_left_bonus
+    profile: on_show
+    persist_enable: false
+
   lower_left_pop:
     switch: s_main_pop_bottom
   upper_left_pop:
@@ -173,6 +199,10 @@ variable_player:
   
   attic_special_flash_hit:
     score: 25000
+
+  cellar_special_flash_lit_hit:
+    score: 25000
+    
   ## the troughs for bonusx -- moved to bonus_x mode 12/8/2024
 #  secret_passage_trough_hit:
 #    bonus_multiplier: 1
@@ -241,11 +271,17 @@ variable_player:
     
   lower_special_hole_hit:
     score: 5000
-    
+
+  lower_left_bonus_lit_hit:
+    bonus_lower_playfield: 1   
   lower_left_hit:
     score: 1000
+
+  lower_right_bonus_lit_hit:
+    bonus_lower_playfield: 1
   lower_right_hit:
     score: 1000
+
   lower_pop_hit:
     score: 1000
   lower_10pt_lower_hit:
@@ -357,6 +393,13 @@ light_player:
     l_upper_target_3: on
   logicblock_attic_drop_counter_updated{value == 3}:
     l_upper_target_4: on
+    
+  logicblock_cellar_drop_counter_updated{value == 0}:
+    l_lower_bank_count_1: on
+  logicblock_cellar_drop_counter_updated{value == 1}:
+    l_lower_bank_count_2: on
+  logicblock_cellar_drop_counter_updated{value == 2}:
+    l_lower_bank_count_3: on
 
 ### moved to bonus_x mode 12/8/2024
 #  mode_base_started:
@@ -423,6 +466,11 @@ shot_profiles:
       - name: lit
         show: "flash"
         speed: 4
+
+  on_show:
+    states:
+      - name: lit
+        show: "on"
 
     
 shows:

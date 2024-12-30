@@ -73,17 +73,17 @@ variable_player:
   lower_rollover_ds_hit:
     score: 1000
 
-#show_player:
-#  mode_cellar_double_score_started:   lights not installed in machine yet
-#    flash_attic_db_score:
-#      speed: 3
+show_player:
+  mode_cellar_double_score_started:
+    flash_cellar_db_score:
+      speed: 3
   
-#shows:
-#  flash_cellar_db_score:
-#    - time: 0
-#      lights: 
-#        l_cellar_double_score: red
-#    - time: 1
-#      lights:
-#        l_cellar_double_score: off
+shows:
+  flash_cellar_db_score:
+    - time: 0
+      lights: 
+        l_lower_double_score: red
+    - time: 1
+      lights:
+        l_lower_double_score: off
   
