@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=3 uid="uid://gksyeno0t1am"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_05qtu"]
+[ext_resource type="FontFile" uid="uid://dkoa04aw20tji" path="res://slides/ProtestRevolution-Regular.ttf" id="2_217m7"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_05qtu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = 1
+layout_mode = 0
+offset_top = 40.0
+offset_right = 1920.0
+offset_bottom = 565.0
+color = Color(0.305882, 0.309804, 1, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+z_index = 2
+layout_mode = 0
+offset_left = 311.0
+offset_top = 72.0
+offset_right = 1539.0
+offset_bottom = 522.0
+theme_override_fonts/normal_font = ExtResource("2_217m7")
+theme_override_font_sizes/normal_font_size = 125
+bbcode_enabled = true
+text = "[center]Welcome to Gottlieb's Haunted House  Remastered"

@@ -2,13 +2,20 @@
 ##! mode: base
 
 mode:
-  start_events: ball_starting
+  start_events: ball_will_start
   priority: 100 
   
 slide_player:
   mode_base_started: base
   
+  game_start_slide_show:
+    game_start:
+      expire: '8s'
 
+queue_relay_player:
+  ball_starting{player ==1 and ball == 1}:
+    post: game_start_slide_show
+    wait_for: slide_game_start_removed
 
 ############################################
 ## Shot definitions
@@ -149,6 +156,8 @@ shots:
     switch: s_main_trapdoor_trough
   main_vuk:
     switch: s_main_vuk
+  main_lane_center:
+    switch: s_main_lane_center
    
 ############################################
 ## Player Variables
@@ -325,6 +334,8 @@ variable_player:
   rollunder_hit:
     score: 500
     bonus_main_playfield: 1
+  main_lane_center_hit:
+    score: 500
 
 ### moved to bonus_x mode 12/8/2024
 #  player_bonus_multiplier{value > 5}:  #we limit the maximum bonus multiplier to 5
@@ -484,6 +495,7 @@ shows:
         l_attic_center_gi: green
         l_main_right_gi_1: orange
         l_gi_post_left: red
+        l_gi_post_right: green
         
     - time: 1
       lights:
@@ -494,6 +506,7 @@ shows:
         l_attic_center_gi: red
         l_main_right_gi_1: white
         l_gi_post_left: green
+        l_gi_post_right: red
         
   gi_off:
     - time: 0

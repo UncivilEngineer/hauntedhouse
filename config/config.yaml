@@ -15,7 +15,6 @@ p_roc:
   use_watchdog: true
   watchdog_time: 1s
 
-
 modes:
   - base
   - attract

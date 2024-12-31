@@ -77,6 +77,7 @@ min_digits = 1
 template_string = "BALL: %s"
 
 [node name="EXTRA BALLS" type="Label" parent="."]
+layout_mode = 0
 offset_left = 779.0
 offset_top = 446.0
 offset_right = 1106.0
