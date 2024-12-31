@@ -1,4 +1,5 @@
 events:
+<<<<<<< Updated upstream
   game_ended: 5
   game_started: 17
 missing_switches:
@@ -132,3 +133,139 @@ switches:
   s_upper_4_drop: 0
   s_upper_4_target: 0
   s_upper_pop: 94
+=======
+  game_ended: 2
+  game_started: 2
+missing_switches:
+  s_lower_10pt_drops: 1
+  s_lower_10pt_lower: 1
+  s_lower_2_drop: 1
+  s_lower_4_drop: 2
+  s_main_10pt_left: 2
+  s_main_1_target: 2
+  s_main_1_trough: 2
+  s_main_5_target: 2
+  s_main_inlane_right: 1
+  s_main_lane_center: 1
+  s_main_outlane_right: 1
+  s_main_target_right: 1
+  s_main_trapdoor_trough: 1
+  s_start: 1
+  s_upper_1_drop: 1
+  s_upper_1_target: 2
+  s_upper_2_target: 2
+  s_upper_3_target: 1
+player:
+  score:
+    average: 124785
+    top:
+    - 158390
+    - 91180
+    total: 2
+shots:
+  10pt: 10
+  attic_pf_shots: 20
+  left_inlane: 2
+  left_outlane: 1
+  lower_10pt_drops: 2
+  lower_10pt_lower: 1
+  lower_10pt_upper: 6
+  lower_1_drop: 1
+  lower_2_drop: 1
+  lower_3_drop: 2
+  lower_5_drop: 3
+  lower_5_drop_ds: 1
+  lower_kick_target: 1
+  lower_left: 2
+  lower_left_pop: 2
+  lower_pop: 9
+  lower_pop_ds: 1
+  lower_right: 2
+  lower_rollover: 2
+  lower_slingshot: 6
+  lower_slingshot_ds: 1
+  lower_special_hole: 4
+  lower_vuk_ds: 1
+  main_2: 2
+  main_3: 2
+  main_4: 11
+  main_pf_shots: 56
+  main_pf_x_ball: 1
+  main_pf_x_ball_cycle: 16
+  main_slingshot: 1
+  main_trough_2: 3
+  main_vuk: 6
+  right_inlane: 1
+  right_kickout: 2
+  right_outlane: 2
+  rollunder: 6
+  secret_passage_trough: 3
+  standup_right: 1
+  trapdoor_trough: 1
+  trough_shots: 7
+  upper_1_drop: 3
+  upper_2_drop: 5
+  upper_3: 1
+  upper_3_drop: 5
+  upper_4: 1
+  upper_4_drop: 5
+  upper_left_pop: 4
+  upper_pop: 15
+  upper_pop_shot: 15
+switches:
+  s_left_flipper1: 54
+  s_left_flipper2: 64
+  s_lower_10pt_drops: 2
+  s_lower_10pt_lower: 1
+  s_lower_10pt_upper: 6
+  s_lower_1_drop: 1
+  s_lower_2_drop: 1
+  s_lower_3_drop: 2
+  s_lower_4_drop: 0
+  s_lower_5_drop: 3
+  s_lower_bonus_left: 2
+  s_lower_bonus_right: 2
+  s_lower_kick_target: 1
+  s_lower_kickout_special: 4
+  s_lower_pop: 9
+  s_lower_rollover: 2
+  s_lower_slingshot: 6
+  s_lower_vuk: 13
+  s_main_10pt_left: 0
+  s_main_1_target: 0
+  s_main_1_trough: 0
+  s_main_2_target: 2
+  s_main_2_trough: 3
+  s_main_3_target: 2
+  s_main_4_target: 11
+  s_main_5_target: 0
+  s_main_inlane_left: 2
+  s_main_inlane_right: 1
+  s_main_kickout_right: 2
+  s_main_lane_center: 6
+  s_main_outhole: 9
+  s_main_outlane_left: 1
+  s_main_outlane_right: 2
+  s_main_pop_bottom: 2
+  s_main_pop_top: 4
+  s_main_rollunder: 6
+  s_main_secret_trough: 3
+  s_main_slingshot: 1
+  s_main_target_right: 1
+  s_main_trapdoor_trough: 1
+  s_main_vuk: 26
+  s_right_flipper1: 51
+  s_right_flipper2: 49
+  s_start: 0
+  s_upper_10pt_center: 7
+  s_upper_10pt_left: 3
+  s_upper_1_drop: 3
+  s_upper_1_target: 0
+  s_upper_2_drop: 5
+  s_upper_2_target: 0
+  s_upper_3_drop: 5
+  s_upper_3_target: 1
+  s_upper_4_drop: 5
+  s_upper_4_target: 1
+  s_upper_pop: 15
+>>>>>>> Stashed changes
