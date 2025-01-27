@@ -27,6 +27,17 @@
     l_lower_special: red
     l_lower_pop: red
     
+    l_lower_bank_gi_right: red
+    l_lower_bank_gi_left: green
+    
+    l_lower_left_gi_1: red
+    l_lower_left_gi_2: red
+    l_lower_left_bonus_gi: red
+    
+    l_lower_right_gi_1: green
+    l_lower_right_gi_2: green
+    l_lower_right_bonus_gi: green
+    
 - duration: 1s
   lights: 
     l_upper_target_2: on
@@ -52,6 +63,17 @@
     l_lower_bank_count_1: on
     l_lower_right_bonus: green
     l_lower_pop: green
+    
+    l_lower_bank_gi_right: green
+    l_lower_bank_gi_left: red
+    
+    l_lower_left_gi_1: green
+    l_lower_left_gi_2: green
+    l_lower_left_bonus_gi: green
+    
+    l_lower_right_gi_1: red
+    l_lower_right_gi_2: red
+    l_lower_right_bonus_gi: red
     
 - duration: 1s
   lights: 
@@ -79,6 +101,17 @@
     l_lower_left_bonus: green
     l_lower_pop: purple
     
+    l_lower_bank_gi_right: red
+    l_lower_bank_gi_left: green
+    
+    l_lower_left_gi_1: red
+    l_lower_left_gi_2: red
+    l_lower_left_bonus_gi: red
+    
+    l_lower_right_gi_1: green
+    l_lower_right_gi_2: green
+    l_lower_right_bonus_gi: green
+    
 - duration: 1s
   lights: 
     l_upper_target_4: on
@@ -103,7 +136,18 @@
     l_db_cellar: red
     
     l_lower_bank_count_3: on
-    l_lower_pop: white 
+    l_lower_pop: white
+    
+    l_lower_bank_gi_right: green
+    l_lower_bank_gi_left: red
+    
+    l_lower_left_gi_1: green
+    l_lower_left_gi_2: green
+    l_lower_left_bonus_gi: green
+    
+    l_lower_right_gi_1: red
+    l_lower_right_gi_2: red
+    l_lower_right_bonus_gi: red
     
 - duration: 1s
   lights: 
@@ -176,5 +220,16 @@
     l_lower_pop: off
     l_lower_left_bonus: off
     l_lower_right_bonus: off
+    
+    l_lower_bank_gi_right: off
+    l_lower_bank_gi_left: off
+    
+    l_lower_left_gi_1: off
+    l_lower_left_gi_2: off
+    l_lower_left_bonus_gi: off
+    
+    l_lower_right_gi_1: off
+    l_lower_right_gi_2: off
+    l_lower_right_bonus_gi: off
     
 
