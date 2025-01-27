@@ -434,8 +434,13 @@ light_player:
 #    l_main_trap_door: off
   
 show_player:
-  mode_base_started: gi_on
-  mode_base_will_stop: gi_off
+  mode_base_started:
+    gi_on:
+      action: play
+      speed: 2
+  mode_base_stopped:
+    gi_on:
+      action: stop
   
   secret_passage_trough_hit:  
     lower_gi_on:
@@ -446,6 +451,10 @@ show_player:
       action: play
       speed: 2
   main_trough_1_hit: 
+    lower_gi_on:
+      action: play
+      speed: 2
+  main_trough_2_hit: 
     lower_gi_on:
       action: play
       speed: 2
