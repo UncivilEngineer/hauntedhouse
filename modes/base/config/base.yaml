@@ -158,6 +158,8 @@ shots:
     switch: s_main_vuk
   main_lane_center:
     switch: s_main_lane_center
+  lower_vuk:
+    switch: s_lower_vuk
    
 ############################################
 ## Player Variables
@@ -435,6 +437,24 @@ show_player:
   mode_base_started: gi_on
   mode_base_will_stop: gi_off
   
+  secret_passage_trough_hit:  
+    lower_gi_on:
+      action: play
+      speed: 2
+  trapdoor_trough_hit: 
+    lower_gi_on:
+      action: play
+      speed: 2
+  main_trough_1_hit: 
+    lower_gi_on:
+      action: play
+      speed: 2
+  lower_vuk_hit:
+    lower_gi_on:
+      action: stop
+  
+
+  
     
 
 ##HH has a random base value for the bonus.  This simulates it.
@@ -507,6 +527,34 @@ shows:
         l_main_right_gi_1: white
         l_gi_post_left: green
         l_gi_post_right: red
+
+  lower_gi_on:
+    - time: 0
+      lights:
+        l_lower_bank_gi_right: red
+        l_lower_bank_gi_left: green
+
+        l_lower_left_gi_1: red
+        l_lower_left_gi_2: red
+        l_lower_left_bonus_gi: red
+
+        l_lower_right_gi_1: green
+        l_lower_right_gi_2: green
+        l_lower_right_bonus_gi: green
+
+    - time: 1
+      lights:
+        l_lower_bank_gi_right: green
+        l_lower_bank_gi_left: red
+
+        l_lower_left_gi_1: green
+        l_lower_left_gi_2: green
+        l_lower_left_bonus_gi: green
+
+        l_lower_right_gi_1: red
+        l_lower_right_gi_2: red
+        l_lower_right_bonus_gi: red
+        
         
   gi_off:
     - time: 0
