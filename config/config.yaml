@@ -272,7 +272,7 @@ coils:
 #    number:
   c_flipper_left1_main:                           # Main Playfield Left Inner Flipper
     number: A2-B1-0
-    default_pulse_ms: 50
+    default_pulse_ms: 30
   c_flipper_left1_hold:
     number: A2-B1-3
     allow_enable: true
@@ -725,6 +725,26 @@ lights:
 
   l_lower_right_gi_2:
     number: 12-81-82-83
+    platform_settings:
+      polarity: true
+      
+  l_db_attic_enabled:
+    number: 15-48-49-50
+    platform_settings:
+      polarity: true
+      
+  l_target_3:
+    number: 15-51-52-53
+    platform_settings:
+      polarity: true
+
+  l_db_mainfloor_enabled:
+    number: 15-54-55-56
+    platform_settings:
+      polarity: true
+
+  l_db_cellar_enabled:
+    number: 15-57-58-59
     platform_settings:
       polarity: true
     

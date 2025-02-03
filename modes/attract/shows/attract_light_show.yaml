@@ -96,6 +96,8 @@
     l_3x: red
     l_db_main: on
     l_main_secret_passage: on
+    l_target_3: green
+    l_db_attic_enabled: green
     
     l_lower_bank_count_2: on
     l_lower_left_bonus: green
@@ -134,6 +136,7 @@
     l_db_attic: red
     l_db_main: red
     l_db_cellar: red
+    l_db_mainfloor_enabled: green
     
     l_lower_bank_count_3: on
     l_lower_pop: white
@@ -164,6 +167,7 @@
     l_gi_post_left: orange
     l_gi_post_right: red
     l_5x: red
+    l_db_cellar_enabled: green
     
     l_db_attic: orange
     l_db_main: orange
@@ -207,9 +211,13 @@
     l_db_main: off
     l_db_cellar: off  
     
+    l_target_3: off
     l_target_4: off
     l_target_5: off
     l_main_secret_passage: off
+    l_db_cellar_enabled: off
+    l_db_mainfloor_enabled: off
+    l_db_attic_enabled: off
     
     l_lower_double_score: off
     l_lower_bank_count_1: off

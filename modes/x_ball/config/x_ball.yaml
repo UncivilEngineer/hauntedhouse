@@ -42,10 +42,10 @@ shots:
 shot_profiles:
   main_pf_x_ball_cycle_profile:
     states:
-      - name: unlit
-        show: off
       - name: lit
         show: on
+      - name: unlit
+        show: off
     loop: true
 
 
