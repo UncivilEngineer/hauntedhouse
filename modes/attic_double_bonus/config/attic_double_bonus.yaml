@@ -1,0 +1,67 @@
+#config_version=6
+##! mode: attic_double_bonus
+
+mode:
+  start_events: start_attic_db
+  priority: 100
+  
+shots:
+
+  upper_1_drop_db:
+    switch: s_upper_1_drop
+  upper_2_drop_db:
+    switch: s_upper_2_drop
+  upper_3_drop_db:
+    switch: s_upper_3_drop
+  upper_4_drop_db:
+    switch: s_upper_4_drop
+  upper_1_db:
+    switch: s_upper_1_target 
+  upper_2_db:
+    switch: s_upper_2_target
+  upper_3_db:
+    switch: s_upper_3_target
+  upper_4_db:
+    switch: s_upper_4_target
+
+############################################
+## Player Variables
+############################################
+variable_player:
+ ## this is the base bonus value setup.  This based on the random events
+ ## player in the file
+  upper_1_db_hit{device.counters.attic_drop_counter.value >= 0}:
+    bonus_upper_playfield: 1
+  upper_2_db_hit{device.counters.attic_drop_counter.value >= 1}:
+    bonus_upper_playfield: 1
+  upper_3_db_hit{device.counters.attic_drop_counter.value >= 2}:
+    bonus_db_upper_playfield: 1
+  upper_4_db_hit{device.counters.attic_drop_counter.value >= 3}:
+    bonus_upper_playfield: 1
+  upper_1_drop_db_hit:
+    bonus_upper_playfield: 1
+  upper_2_drop_db_hit:
+    bonus_upper_playfield: 1
+  upper_3_drop_db_hit:
+    bonus_upper_playfield: 1
+  upper_4_drop_db_hit:
+    bonus_upper_playfield: 1
+
+show_player:
+  mode_attic_double_bonus_started:
+    flash_attic_db:
+      action: play
+      speed: 2
+  mode_attic_double_bonus_stopped:
+    flash_attic_db:
+      action: stop
+
+shows:
+  flash_attic_db:
+    - time: 0
+      lights:
+        l_db_attic_enabled: on
+    - time: 1
+      lights:
+        l_db_attic_enabled: off
+  

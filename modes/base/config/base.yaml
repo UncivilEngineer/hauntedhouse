@@ -61,6 +61,16 @@ shots:
       leds: l_lower_left_bonus
     profile: on_show
     persist_enable: false
+    
+  attic_db:
+    switch: s_main_1_trough
+    enable_events:  logicblock_cellar_drop_counter_updated{value == 2}
+    hit_events: attic_db_lit_hit
+    disable_events: attic_db_on_show_lit_hit
+    show_tokens:
+      leds:  l_db_attic
+    profile: on_show
+    persist_enable: false
 
   lower_left_pop:
     switch: s_main_pop_bottom
@@ -337,7 +347,11 @@ variable_player:
     score: 500
     bonus_main_playfield: 1
   main_lane_center_hit:
-    score: 500
+    score: 5000
+  main_vuk_hit:
+    score: 5000
+  trough_1_hit:
+    score: 5000
 
 ### moved to bonus_x mode 12/8/2024
 #  player_bonus_multiplier{value > 5}:  #we limit the maximum bonus multiplier to 5
@@ -396,6 +410,9 @@ counters:
     restart_events:  mode_attic_double_score_stopped 
     
 ### event players ####
+event_player:
+  attic_db_lit_hit: start_attic_db
+  
 ##attic target lights added by drops
 light_player:
   logicblock_attic_drop_counter_updated{value == 0}:

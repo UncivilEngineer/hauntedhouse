@@ -23,6 +23,7 @@ modes:
   - attic_double_score
   - cellar_double_score
   - x_ball
+  - attic_double_bonus
 ####################################################################
 # Switch Definitions
 # This section defines the switch naming and associated numbering to link with the P3-Roc controller
