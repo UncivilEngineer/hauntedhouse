@@ -61,7 +61,6 @@ func duck(settings) -> void:
 	# Track which duck we are timing
 	self._duck_release_timer.set_meta("ducking", settings)
 	self._duck_release_timer.start(settings.duration)
-	self.log.info("Ducking %s by %s over %ss, will last %s", [self.name, settings.attenuation, settings.attack, settings.duration])
 
 func duck_release() -> void:
 	# Remove this duck from the list of duckings
@@ -98,6 +97,7 @@ func duck_release() -> void:
 		self._duck_release_timer.remove_meta("ducking")
 
 func set_bus_volume(value: float):
+	self.log.debug("Setting bus volume to %s", value)
 	AudioServer.set_bus_volume_db(self._bus_index, value)
 
 func set_bus_volume_full(value: float):
@@ -142,8 +142,10 @@ func play(filename: String, settings: Dictionary = {}) -> void:
 	# If this is a solo bus, stop any other playback
 	if self.type == BusType.SOLO:
 		for c in self.channels:
-			if c.playing and c != available_channel:
-				c.stop_with_settings(settings)
+			if c.playing and c != available_channel and not c.get_meta("is_stopping", false):
+				# Do not pass the settings, because that includes actions and
+				# fade times that should not apply to the stopping track.
+				c.stop_with_settings()
 
 	if not available_channel:
 		# Queue the filename if this bus type has a queue
@@ -246,12 +248,23 @@ func _abort_ducking_check():
 	self.duck_release()
 
 func _create_duck_tween(attenuation: float, duration: float) -> Tween:
+	if (attenuation < 0 or attenuation > 1):
+		self.log.warning("Ducking attenuation settings have CHANGED from decibal values to linear. " +
+						 "Please specify attenuation as a value from 0.0 (no change) to 1.0 (full mute)")
+		attenuation = 0.0
 	var duck_tween = self.create_tween()
+	# TODO: Integrate default values
+	var full_volume = db_to_linear(self._full_volume_db)
+	# Attenuation value is the percentage of full volume to reduce.
+	var target_volume = full_volume * (1.0 - attenuation)
+	var target_volume_db = linear_to_db(target_volume)
+
 	duck_tween.tween_method(self.set_bus_volume,
 		# Always use the current level in case we're interrupting
 		AudioServer.get_bus_volume_db(self._bus_index),
-		# TODO: Integrate default values
-		self._full_volume_db - attenuation,
+		# The attenuation will be a negative value (-inf to 0.0) so *add* it
+		# to reduce the effective volume.
+		target_volume_db,
 		duration
 	).set_trans(Tween.TRANS_LINEAR).set_ease(Tween.EASE_IN)
 	return duck_tween
@@ -267,7 +280,7 @@ func _find_available_channel(filepath: String, settings: Dictionary, ignore_exis
 				if channel.has_meta("tween") and is_instance_valid(channel.get_meta("tween")):
 					# Stop the tween
 					var tween = channel.get_meta("tween")
-					tween.stop_all()
+					tween.stop()
 					# AVW: DISABLING DURING REFACTOR
 					#self._on_fade_complete(channel, tween,  "cancel")
 				# If the channel does not have a tween, let it continue playing

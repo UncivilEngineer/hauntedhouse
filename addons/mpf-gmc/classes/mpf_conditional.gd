@@ -1,5 +1,5 @@
 class_name MPFConditional
-extends Node2D
+extends Control
 ## A node that conditionally appears or hides based on a condition.
 
 
@@ -101,7 +101,7 @@ func _find_target():
 		VariableType.CURRENT_PLAYER:
 			base = MPF.game.player
 		VariableType.MACHINE_VAR:
-			base = MPF.game.machine
+			base = MPF.game.machine_vars
 		VariableType.SETTING:
 			base = MPF.game.settings
 		VariableType.EVENT_ARG:
@@ -115,8 +115,8 @@ func _find_target():
 			if MPF.game.players.size() > 2:
 				base = MPF.game.players[2]
 		VariableType.PLAYER_4:
-			if MPF.game.players.size() > 4:
-				base = MPF.game.players[4]
+			if MPF.game.players.size() > 3:
+				base = MPF.game.players[3]
 	if "." in self.variable_name and base != null:
 		var nested = self.variable_name.split(".")
 		while nested.size() > 1:
