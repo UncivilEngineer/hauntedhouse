@@ -20,7 +20,8 @@ offset_right = 1926.0
 offset_bottom = 640.0
 color = Color(0.454902, 0.47451, 0.486275, 1)
 
-[node name="MPFConditionalChildren" type="Node2D" parent="."]
+[node name="MPFConditionalChildren" type="Control" parent="."]
+anchors_preset = 0
 script = ExtResource("2_dnqfs")
 variable_type = 1
 variable_name = "entry"
