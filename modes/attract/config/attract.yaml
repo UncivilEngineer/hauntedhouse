@@ -4,12 +4,21 @@ mode:
   priority: 50
 
 show_player:
-  #mode_attract_started: 
-  #  fade_sweep:
-  #    speed: 4
-  mode_attract_started:
+  mode_attract_started: 
+    fadeshow:
+      speed: 8
+      loops: 3
+      events_when_completed: start_attract_2
+  start_attract_2:
     attract_light_show:
       speed: 4
+      loops: 3
+      events_when_completed: start_attract_3
+  start_attract_3:
+    fadeshow:
+      speed: 8
+      loops: 3
+      events_when_completed: start_attract_2
 
 slide_player:
 # mode_attract_started: attract
