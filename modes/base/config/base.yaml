@@ -8,6 +8,10 @@ mode:
 slide_player:
   mode_base_started: base
   
+  ball_started: 
+    base:
+      action: update
+  
   game_start_slide_show:
     game_start:
       expire: '8s'

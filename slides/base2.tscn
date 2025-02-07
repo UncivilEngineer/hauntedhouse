@@ -1,0 +1,114 @@
+[gd_scene load_steps=5 format=3 uid="uid://dh61ohdwi7b4j"]
+
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_sfrho"]
+[ext_resource type="FontFile" uid="uid://dkoa04aw20tji" path="res://slides/ProtestRevolution-Regular.ttf" id="2_p4wup"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_r8tp8"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_conditional_children.gd" id="4_1p013"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_sfrho")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_top = 50.0
+offset_right = 1920.0
+offset_bottom = 575.0
+color = Color(0.305882, 0.309804, 1, 1)
+
+[node name="main score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 580.0
+offset_top = 129.0
+offset_right = 1314.0
+offset_bottom = 409.0
+theme_override_fonts/font = ExtResource("2_p4wup")
+theme_override_font_sizes/font_size = 200
+text = "10,000"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_r8tp8")
+variable_name = "score"
+comma_separate = true
+min_digits = 1
+initialize_empty = false
+
+[node name="BALL" type="Label" parent="."]
+layout_mode = 0
+offset_left = 853.0
+offset_top = 361.0
+offset_right = 1004.0
+offset_bottom = 421.0
+theme_override_fonts/font = ExtResource("2_p4wup")
+theme_override_font_sizes/font_size = 50
+text = "BALL: 1"
+script = ExtResource("3_r8tp8")
+variable_name = "ball"
+min_digits = 1
+template_string = "BALL: %s"
+
+[node name="EXTRA BALLS" type="Label" parent="."]
+layout_mode = 0
+offset_left = 779.0
+offset_top = 411.0
+offset_right = 1106.0
+offset_bottom = 471.0
+theme_override_fonts/font = ExtResource("2_p4wup")
+theme_override_font_sizes/font_size = 50
+text = "EXTRA BALLS: 1"
+script = ExtResource("3_r8tp8")
+variable_name = "extra_balls"
+min_digits = 1
+template_string = "EXTRA BALLS: %s"
+initialize_empty = false
+
+[node name="base bonus" type="Label" parent="."]
+layout_mode = 0
+offset_left = 745.0
+offset_top = 469.0
+offset_right = 1127.0
+offset_bottom = 529.0
+theme_override_fonts/font = ExtResource("2_p4wup")
+theme_override_font_sizes/font_size = 50
+text = "Base Bonus 1,000"
+script = ExtResource("3_r8tp8")
+variable_name = "base_bonus"
+comma_separate = true
+min_digits = 3
+template_string = "Base Bonus %s"
+
+[node name="MPFConditionalChildren" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_1p013")
+variable_type = 2
+variable_name = "number"
+condition_type = 5
+
+[node name="Label" type="Label" parent="MPFConditionalChildren"]
+layout_mode = 0
+offset_left = 1717.0
+offset_top = 73.0
+offset_right = 1881.0
+offset_bottom = 133.0
+theme_override_fonts/font = ExtResource("2_p4wup")
+theme_override_font_sizes/font_size = 50
+text = "Player 1"
+
+[node name="MPFVariable" type="Label" parent="MPFConditionalChildren"]
+layout_mode = 0
+offset_left = 1730.0
+offset_top = 132.0
+offset_right = 1894.0
+offset_bottom = 192.0
+theme_override_fonts/font = ExtResource("2_p4wup")
+theme_override_font_sizes/font_size = 50
+text = "1,000
+"
+script = ExtResource("3_r8tp8")
+variable_name = "score"
+comma_separate = true

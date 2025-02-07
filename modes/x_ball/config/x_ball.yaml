@@ -9,6 +9,11 @@ mode:
   #restart_on_next_ball: true
   priority: 200
   stop_events:  extra_ball_awarded
+
+slide_player:
+  main_pf_x_ball_lit_hit:
+    base:
+      action: update
   
 shots:
   main_pf_x_ball_cycle:

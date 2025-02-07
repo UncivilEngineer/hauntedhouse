@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvwk4cv0yili2"]
+[gd_scene load_steps=5 format=3 uid="uid://bvwk4cv0yili2"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_oudoe"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_3yg74"]
 [ext_resource type="FontFile" uid="uid://dkoa04aw20tji" path="res://slides/ProtestRevolution-Regular.ttf" id="2_ry4s7"]
+[ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_conditional.gd" id="4_f77o3"]
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -13,44 +14,17 @@ script = ExtResource("1_oudoe")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_top = 40.0
+offset_top = 6.0
 offset_right = 1920.0
-offset_bottom = 565.0
+offset_bottom = 531.0
 color = Color(0.305882, 0.309804, 1, 1)
-
-[node name="p1 score" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1634.0
-offset_top = 460.0
-offset_right = 1810.0
-offset_bottom = 520.0
-theme_override_fonts/font = ExtResource("2_ry4s7")
-theme_override_font_sizes/font_size = 50
-text = "1000"
-horizontal_alignment = 2
-script = ExtResource("2_3yg74")
-variable_type = 4
-variable_name = "score"
-comma_separate = true
-min_digits = 0
-
-[node name="Label2" type="Label" parent="."]
-layout_mode = 0
-offset_left = 1639.0
-offset_top = 407.0
-offset_right = 1829.0
-offset_bottom = 467.0
-theme_override_fonts/font = ExtResource("2_ry4s7")
-theme_override_font_sizes/font_size = 50
-text = "Player 1"
-horizontal_alignment = 1
 
 [node name="main score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 580.0
-offset_top = 129.0
-offset_right = 1314.0
-offset_bottom = 409.0
+offset_left = 582.0
+offset_top = 80.0
+offset_right = 1316.0
+offset_bottom = 360.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 200
 text = "10,000"
@@ -64,10 +38,10 @@ initialize_empty = false
 
 [node name="BALL" type="Label" parent="."]
 layout_mode = 0
-offset_left = 854.0
-offset_top = 389.0
-offset_right = 1005.0
-offset_bottom = 449.0
+offset_left = 855.0
+offset_top = 332.0
+offset_right = 1006.0
+offset_bottom = 392.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "BALL: 1"
@@ -78,10 +52,10 @@ template_string = "BALL: %s"
 
 [node name="EXTRA BALLS" type="Label" parent="."]
 layout_mode = 0
-offset_left = 779.0
-offset_top = 446.0
-offset_right = 1106.0
-offset_bottom = 506.0
+offset_left = 783.0
+offset_top = 386.0
+offset_right = 1110.0
+offset_bottom = 446.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "EXTRA BALLS: 1"
@@ -89,3 +63,186 @@ script = ExtResource("2_3yg74")
 variable_name = "extra_balls"
 min_digits = 1
 template_string = "EXTRA BALLS: %s"
+initialize_empty = false
+
+[node name="base bonus" type="Label" parent="."]
+layout_mode = 0
+offset_left = 756.0
+offset_top = 445.0
+offset_right = 1138.0
+offset_bottom = 505.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "Base Bonus 1,000"
+script = ExtResource("2_3yg74")
+variable_name = "base_bonus"
+comma_separate = true
+min_digits = 3
+template_string = "Base Bonus %s"
+
+[node name="Player 2 label2" type="Label" parent="."]
+offset_left = 805.0
+offset_top = 46.0
+offset_right = 1035.0
+offset_bottom = 131.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 70
+text = "Player 1"
+horizontal_alignment = 1
+script = ExtResource("2_3yg74")
+variable_name = "number"
+template_string = "Player %s"
+
+[node name="player 2 side score" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 437.0
+offset_top = -162.0
+offset_right = 667.0
+offset_bottom = -77.0
+mouse_filter = 2
+script = ExtResource("4_f77o3")
+variable_name = "number"
+condition_type = 1
+condition_value = "2"
+min_players = 2
+
+[node name="p2 score" type="Label" parent="player 2 side score"]
+layout_mode = 0
+offset_left = 1244.0
+offset_top = 256.0
+offset_right = 1420.0
+offset_bottom = 316.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "1000"
+horizontal_alignment = 2
+script = ExtResource("2_3yg74")
+variable_type = 5
+variable_name = "score"
+comma_separate = true
+min_digits = 0
+
+[node name="Player 2 label" type="Label" parent="player 2 side score"]
+layout_mode = 0
+offset_left = 1244.0
+offset_top = 206.0
+offset_right = 1420.0
+offset_bottom = 266.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "Player 2"
+horizontal_alignment = 2
+
+[node name="player 3 side score" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_f77o3")
+variable_name = "number"
+condition_type = 1
+condition_value = "3"
+min_players = 3
+
+[node name="p3 score" type="Label" parent="player 3 side score"]
+layout_mode = 0
+offset_left = 104.0
+offset_top = 467.0
+offset_right = 280.0
+offset_bottom = 527.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "1000"
+horizontal_alignment = 2
+script = ExtResource("2_3yg74")
+variable_type = 6
+variable_name = "score"
+comma_separate = true
+min_digits = 0
+
+[node name="Player 3 label" type="Label" parent="player 3 side score"]
+layout_mode = 0
+offset_left = 89.0
+offset_top = 404.0
+offset_right = 279.0
+offset_bottom = 464.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "Player 3
+"
+horizontal_alignment = 1
+
+[node name="player 4 side score" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_f77o3")
+variable_name = "number"
+condition_type = 1
+condition_value = "4"
+min_players = 4
+
+[node name="Player 4 label" type="Label" parent="player 4 side score"]
+layout_mode = 0
+offset_left = 1709.0
+offset_top = 407.0
+offset_right = 1899.0
+offset_bottom = 467.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "Player 4
+"
+horizontal_alignment = 1
+
+[node name="p4 score" type="Label" parent="player 4 side score"]
+layout_mode = 0
+offset_left = 1714.0
+offset_top = 472.0
+offset_right = 1890.0
+offset_bottom = 532.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "1000"
+horizontal_alignment = 2
+script = ExtResource("2_3yg74")
+variable_type = 7
+variable_name = "score"
+comma_separate = true
+min_digits = 0
+
+[node name="player 1 side score" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_f77o3")
+variable_name = "number"
+condition_type = 1
+condition_value = "1"
+min_players = 2
+
+[node name="Player 1 label" type="Label" parent="player 1 side score"]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 34.0
+offset_right = 285.0
+offset_bottom = 94.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "Player 1"
+horizontal_alignment = 1
+
+[node name="p1 score" type="Label" parent="player 1 side score"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 91.0
+offset_right = 268.0
+offset_bottom = 151.0
+theme_override_fonts/font = ExtResource("2_ry4s7")
+theme_override_font_sizes/font_size = 50
+text = "1000"
+horizontal_alignment = 2
+script = ExtResource("2_3yg74")
+variable_type = 4
+variable_name = "score"
+comma_separate = true
+min_digits = 0
