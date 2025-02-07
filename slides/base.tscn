@@ -15,16 +15,16 @@ script = ExtResource("1_oudoe")
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
 offset_top = 6.0
-offset_right = 1920.0
-offset_bottom = 531.0
+offset_right = 1923.0
+offset_bottom = 580.0
 color = Color(0.305882, 0.309804, 1, 1)
 
 [node name="main score" type="Label" parent="."]
 layout_mode = 0
-offset_left = 582.0
-offset_top = 80.0
-offset_right = 1316.0
-offset_bottom = 360.0
+offset_left = 583.0
+offset_top = 133.0
+offset_right = 1317.0
+offset_bottom = 413.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 200
 text = "10,000"
@@ -39,9 +39,9 @@ initialize_empty = false
 [node name="BALL" type="Label" parent="."]
 layout_mode = 0
 offset_left = 855.0
-offset_top = 332.0
+offset_top = 357.0
 offset_right = 1006.0
-offset_bottom = 392.0
+offset_bottom = 417.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "BALL: 1"
@@ -52,10 +52,10 @@ template_string = "BALL: %s"
 
 [node name="EXTRA BALLS" type="Label" parent="."]
 layout_mode = 0
-offset_left = 783.0
-offset_top = 386.0
-offset_right = 1110.0
-offset_bottom = 446.0
+offset_left = 782.0
+offset_top = 421.0
+offset_right = 1109.0
+offset_bottom = 481.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "EXTRA BALLS: 1"
@@ -67,10 +67,10 @@ initialize_empty = false
 
 [node name="base bonus" type="Label" parent="."]
 layout_mode = 0
-offset_left = 756.0
-offset_top = 445.0
-offset_right = 1138.0
-offset_bottom = 505.0
+offset_left = 757.0
+offset_top = 485.0
+offset_right = 1139.0
+offset_bottom = 545.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "Base Bonus 1,000"
@@ -81,10 +81,11 @@ min_digits = 3
 template_string = "Base Bonus %s"
 
 [node name="Player 2 label2" type="Label" parent="."]
-offset_left = 805.0
-offset_top = 46.0
-offset_right = 1035.0
-offset_bottom = 131.0
+layout_mode = 0
+offset_left = 822.0
+offset_top = 87.0
+offset_right = 1052.0
+offset_bottom = 172.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 70
 text = "Player 1"
@@ -106,13 +107,14 @@ variable_name = "number"
 condition_type = 1
 condition_value = "2"
 min_players = 2
+max_players = 4
 
 [node name="p2 score" type="Label" parent="player 2 side score"]
 layout_mode = 0
-offset_left = 1244.0
-offset_top = 256.0
-offset_right = 1420.0
-offset_bottom = 316.0
+offset_left = 1271.0
+offset_top = 327.0
+offset_right = 1447.0
+offset_bottom = 387.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "1000"
@@ -125,10 +127,10 @@ min_digits = 0
 
 [node name="Player 2 label" type="Label" parent="player 2 side score"]
 layout_mode = 0
-offset_left = 1244.0
-offset_top = 206.0
-offset_right = 1420.0
-offset_bottom = 266.0
+offset_left = 1271.0
+offset_top = 277.0
+offset_right = 1447.0
+offset_bottom = 337.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "Player 2"
@@ -143,13 +145,14 @@ variable_name = "number"
 condition_type = 1
 condition_value = "3"
 min_players = 3
+max_players = 4
 
 [node name="p3 score" type="Label" parent="player 3 side score"]
 layout_mode = 0
-offset_left = 104.0
-offset_top = 467.0
-offset_right = 280.0
-offset_bottom = 527.0
+offset_left = 65.0
+offset_top = 500.0
+offset_right = 241.0
+offset_bottom = 560.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "1000"
@@ -162,10 +165,10 @@ min_digits = 0
 
 [node name="Player 3 label" type="Label" parent="player 3 side score"]
 layout_mode = 0
-offset_left = 89.0
-offset_top = 404.0
-offset_right = 279.0
-offset_bottom = 464.0
+offset_left = 50.0
+offset_top = 437.0
+offset_right = 240.0
+offset_bottom = 497.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "Player 3
@@ -181,13 +184,14 @@ variable_name = "number"
 condition_type = 1
 condition_value = "4"
 min_players = 4
+max_players = 4
 
 [node name="Player 4 label" type="Label" parent="player 4 side score"]
 layout_mode = 0
-offset_left = 1709.0
-offset_top = 407.0
-offset_right = 1899.0
-offset_bottom = 467.0
+offset_left = 1715.0
+offset_top = 439.0
+offset_right = 1905.0
+offset_bottom = 499.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "Player 4
@@ -196,10 +200,10 @@ horizontal_alignment = 1
 
 [node name="p4 score" type="Label" parent="player 4 side score"]
 layout_mode = 0
-offset_left = 1714.0
-offset_top = 472.0
-offset_right = 1890.0
-offset_bottom = 532.0
+offset_left = 1720.0
+offset_top = 504.0
+offset_right = 1896.0
+offset_bottom = 564.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "1000"
@@ -219,13 +223,14 @@ variable_name = "number"
 condition_type = 1
 condition_value = "1"
 min_players = 2
+max_players = 4
 
 [node name="Player 1 label" type="Label" parent="player 1 side score"]
 layout_mode = 0
-offset_left = 95.0
-offset_top = 34.0
-offset_right = 285.0
-offset_bottom = 94.0
+offset_left = 78.0
+offset_top = 106.0
+offset_right = 268.0
+offset_bottom = 166.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "Player 1"
@@ -233,10 +238,10 @@ horizontal_alignment = 1
 
 [node name="p1 score" type="Label" parent="player 1 side score"]
 layout_mode = 0
-offset_left = 92.0
-offset_top = 91.0
-offset_right = 268.0
-offset_bottom = 151.0
+offset_left = 75.0
+offset_top = 163.0
+offset_right = 251.0
+offset_bottom = 223.0
 theme_override_fonts/font = ExtResource("2_ry4s7")
 theme_override_font_sizes/font_size = 50
 text = "1000"
