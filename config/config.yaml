@@ -24,6 +24,7 @@ modes:
   - cellar_double_score
   - x_ball
   - attic_double_bonus
+  - main_double_score
 ####################################################################
 # Switch Definitions
 # This section defines the switch naming and associated numbering to link with the P3-Roc controller
@@ -746,6 +747,26 @@ lights:
 
   l_db_cellar_enabled:
     number: 15-57-58-59
+    platform_settings:
+      polarity: true
+
+  l_main_left_upper_gi:
+    number: 15-60-61-62
+    platform_settings:
+      polarity: true
+
+  l_main_upper_pop:
+    number: 15-63-64-65
+    platform_settings:
+      polarity: true
+
+  l_main_double_score:
+    number: 15-66-67-68
+    platform_settings:
+      polarity: true
+      
+  l_target_2:
+    number: 15-69-70-71
     platform_settings:
       polarity: true
     

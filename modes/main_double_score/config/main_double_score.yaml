@@ -1,0 +1,75 @@
+#config_version=6
+##! mode: attic_double_score
+
+mode:
+  start_events: 
+    - logicblock_attic_drop_counter_complete
+    - logicblock_cellar_drop_counter_complete
+  #restart_on_next_ball: true
+  priority: 200
+  
+shots:
+  10pt_ds:
+    switches: s_main_10pt_left
+  main_slingshot_ds:
+    switch: s_main_slingshot
+  right_outlane_ds:
+    switch: s_main_outlane_right
+  right_inlane_ds:
+    switch: s_main_inlane_right
+  left_inlane_ds:
+    switch: s_main_inlane_left
+  left_outlane_ds: 
+    switch: s_main_outlane_left
+  standup_right_ds:
+    switch: s_main_target_right
+  right_kickout_ds:
+    switch: s_main_kickout_right
+  rollunder_ds:
+    switch: s_main_rollunder
+  lower_left_pop_ds:
+    switch: s_main_pop_bottom
+  upper_left_pop_ds:
+    switch: s_main_pop_top
+
+variable_player:
+  10pt_ds_hit:
+    score: 30
+  lower_pop_ds_hit:
+    score: 1000
+  right_outlane_ds_hit:
+    score: 5000
+  right_inlane_ds_hit:
+    score: 5000
+  main_slingshot_ds_hit:
+    score: 1000
+  left_inlane_ds_hit:
+    score: 5000
+  left_outlane_ds_hit:
+    score: 5000
+  standup_right_ds_hit:
+    score: 500
+  right_kickout_ds_hit:
+    score: 500
+  rollunder_ds_hit:
+    score: 500
+  lower_left_pop_ds_hit:
+    score: 1000
+  upper_left_pop_ds:
+    score: 1000
+
+##need to handle main targets, unlit, lit and flashing scoring
+
+show_player:
+  mode_main_double_score_started: 
+    flash_main_db_score:
+      speed: 3
+  
+shows:
+  flash_main_db_score:
+    - time: 0
+      lights: 
+        l_main_double_score: orange
+    - time: 1
+      lights:
+        l_main_double_score: off
