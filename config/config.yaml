@@ -20,8 +20,8 @@ modes:
   - attract
   - bonus
   - bonus_x
-  - attic_double_score
-  - cellar_double_score
+  #- attic_double_score
+  #- cellar_double_score
   - x_ball
   - attic_double_bonus
   - main_double_score

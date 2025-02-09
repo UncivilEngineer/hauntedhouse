@@ -81,7 +81,9 @@ shots:
   upper_left_pop:
     switch: s_main_pop_top
   10pt:
-    switches: s_upper_10pt_left, s_upper_10pt_center, s_main_10pt_left
+    switches: s_upper_10pt_left, s_upper_10pt_center
+  main_10pt:
+    switches: s_main_10pt_left
   upper_1:
     switch: s_upper_1_target 
   upper_2:
@@ -335,10 +337,10 @@ variable_player:
 ## special values
 ######  
   attic_special_flash_hit:
-    score: 25000 * attic_pf_multi
+    score: 25000 * current_player.attic_pf_multi
 
   cellar_special_flash_lit_hit:
-    score: 25000 * cellar_pf_multi
+    score: 25000 * current_player.cellar_pf_multi
 
 #####
 ## Default score values
@@ -352,156 +354,158 @@ variable_player:
   lower_pop_hit:
     score: 1000 * current_player.cellar_pf_multi
     
-  10pt_hit:
-    score: 30
+  main_10pt_hit:
+    score: 30 * current_player.main_pf_multi
   upper_1_hit{device.counters.attic_drop_counter.value >= 0}:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_2_hit{device.counters.attic_drop_counter.value < 1}:
-    score: 500
+    score: 500 * current_player.attic_pf_multi
   upper_2_hit{device.counters.attic_drop_counter.value >= 1}:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_3_hit{device.counters.attic_drop_counter.value < 2}:
-    score: 500
+    score: 500 * current_player.attic_pf_multi
   upper_3_hit{device.counters.attic_drop_counter.value >= 2}:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_4_hit{device.counters.attic_drop_counter.value < 3}:
-    score: 500
+    score: 500 * current_player.attic_pf_multi
   upper_4_hit{device.counters.attic_drop_counter.value >= 3}:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_1_drop_hit:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_2_drop_hit:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_3_drop_hit:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
   upper_4_drop_hit:
-    score: 3000
+    score: 3000 * current_player.attic_pf_multi
     bonus_upper_playfield: 1
+    
+    
   lower_1_drop_hit:
-    score: 3000
+    score: 3000 * current_player.cellar_pf_multi
     bonus_lower_playfield: 1
   lower_2_drop_hit:
-    score: 3000
+    score: 3000 * current_player.cellar_pf_multi
     bonus_lower_playfield: 1
   lower_3_drop_hit:
-    score: 3000
+    score: 3000 * current_player.cellar_pf_multi
     bonus_lower_playfield: 1
   lower_4_drop_hit:
-    score: 3000
+    score: 3000 * current_player.cellar_pf_multi
     bonus_lower_playfield: 1
   lower_5_drop_hit:
-    score: 3000
+    score: 3000 * current_player.cellar_pf_multi
     bonus_lower_playfield: 1
     
   lower_special_hole_hit:
-    score: 5000
+    score: 5000 * current_player.cellar_pf_multi
 
   lower_left_bonus_lit_hit:
     bonus_lower_playfield: 1   
   lower_left_hit:
-    score: 1000
+    score: 1000 * current_player.cellar_pf_multi
 
   lower_right_bonus_lit_hit:
     bonus_lower_playfield: 1
   lower_right_hit:
-    score: 1000
+    score: 1000 * current_player.cellar_pf_multi
 
 
   lower_10pt_lower_hit:
-    score: 30
+    score: 30 * current_player.cellar_pf_multi
   lower_10pt_upper_hit:
-    score: 30
+    score: 30 * current_player.cellar_pf_multi
   lower_10pt_drops_hit:
-    score: 30
+    score: 30 * current_player.cellar_pf_multi
   lower_slingshot_hit:
-    score: 1000
+    score: 1000 * current_player.cellar_pf_multi
   lower_kick_target_hit:
-    score: 1000
+    score: 1000 * current_player.cellar_pf_multi
   lower_rollover_hit:
-    score: 1000
+    score: 1000 * current_player.cellar_pf_multi
 #######    
 ## main kickback target scoring
 #######
   main_target_1_flashing_hit:
-    score: 10000
+    score: 10000 * current_player.main_pf_multi
     bonus_main_playfield: 2
   main_target_1_lit_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
   
   main_target_2_unlit_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
   main_target_2_flashing_hit:
-    score: 10000
+    score: 10000 * current_player.main_pf_multi
     bonus_main_playfield: 2
   main_target_2_lit_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
  
   main_target_3_unlit_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
   main_target_3_flashing_hit:
-    score: 10000
+    score: 10000 * current_player.main_pf_multi
     bonus_main_playfield: 2
   main_target_3_lit_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
 
   main_target_4_unlit_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
   main_target_4_flashing_hit:
-    score: 10000
+    score: 10000 * current_player.main_pf_multi
     bonus_main_playfield: 2
   main_target_4_lit_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
 
   main_target_5_unlit_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
   main_target_5_flashing_hit:
-    score: 10000
+    score: 10000 * current_player.main_pf_multi
     bonus_main_playfield: 2
     main_target_sequence_complete:
       action: set
       string: "yes"
   main_target_5_lit_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
 ########
 
 
   right_outlane_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
   right_inlane_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
   main_slingshot_hit:
-    score: 1000
+    score: 1000 * current_player.main_pf_multi
   left_inlane_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
   left_outlane_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
   standup_right_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
   right_kickout_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
     bonus_main_playfield: 1
   rollunder_hit:
-    score: 500
+    score: 500 * current_player.main_pf_multi
     bonus_main_playfield: 1
   main_lane_center_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
   main_vuk_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
   trough_1_hit:
-    score: 5000
+    score: 5000 * current_player.main_pf_multi
 
 ### moved to bonus_x mode 12/8/2024
 #  player_bonus_multiplier{value > 5}:  #we limit the maximum bonus multiplier to 5
