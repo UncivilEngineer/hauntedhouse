@@ -49,12 +49,21 @@ player_vars:
     initial_value: 0
   bonus_multiplier:
     initial_value: 1
-#  current_playfield:
-#    value_type: str
-#    initial_value: "main_pf"
+  current_playfield:
+    value_type: str
+    initial_value: "main_pf"
 #  x_ball_awarded:
 #    value_type: str
 #    initial_value: "no"
+  main_pf_multi:
+    value_type: int
+    initial_value: 1
+  attic_pf_multi:
+    value_type: int
+    initial_value: 1
+  cellar_pf_multi:
+    value_type: int
+    initial_value: 1
   main_target_sequence_complete:
     value_type: str
     initial_value: "no"

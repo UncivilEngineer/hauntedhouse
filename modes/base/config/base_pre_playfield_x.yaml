@@ -284,74 +284,24 @@ variable_player:
     base_bonus:
       int: 1000
       action: set
-
-######
-## reset playfield mutlipliers on mode start
-######
-  mode_base_started:
-    main_pf_multi:
-      action: set
-      int: 1
-    attic_pf_multi:
-      action: set
-      int: 1
-    cellar_pf_multi:
-      action: set
-      int: 1
-#####
-## setting playfield multipliers
-#####  
-  attic_ds_enabled:
-    attic_pf_multi:
-      action: set
-      int: 2
-
-  cellar_ds_enabled:
-    cellar_pf_multi:
-      action: set
-      int: 2
-    
-  main_ds_enabled:
-    main_pf_multi:
-      action: set
-      int: 2      
-  
-  attic_ds_stopped:
-    attic_pf_multi:
-      action: set
-      int: 1
-
-  cellar_ds_stopped:
-    cellar_pf_multi:
-      action: set
-      int: 1
-
-  main_ds_stopped:
-    main_pf_multi:
-      action: set
-      int: 1
-    
 ######
 ## special values
 ######  
   attic_special_flash_hit:
-    score: 25000 * attic_pf_multi
+    score: 25000
 
   cellar_special_flash_lit_hit:
-    score: 25000 * cellar_pf_multi
+    score: 25000
 
 #####
 ## Default score values
 #####    
   upper_pop_hit: 
-    score: 1000 * current_player.attic_pf_multi
+    score: 1000
   lower_left_pop_hit:
-    score: 1000 * current_player.main_pf_multi
+    score: 1000
   upper_left_pop_hit:
-    score: 1000 * current_player.main_pf_multi
-  lower_pop_hit:
-    score: 1000 * current_player.cellar_pf_multi
-    
+    score: 1000
   10pt_hit:
     score: 30
   upper_1_hit{device.counters.attic_drop_counter.value >= 0}:
@@ -413,7 +363,8 @@ variable_player:
   lower_right_hit:
     score: 1000
 
-
+  lower_pop_hit:
+    score: 1000
   lower_10pt_lower_hit:
     score: 30
   lower_10pt_upper_hit:
@@ -521,7 +472,6 @@ counters:
     count_events: drop_target_bank_lower_down
     reset_on_complete: false
     count_complete_value: 2
-    events_when_complete: main_ds_enabled
     
   attic_hits:
     count_events:
@@ -536,8 +486,7 @@ counters:
       - upper_4_hit
     #reset_on_complete: false
     count_complete_value: 11
-    restart_events: cellar_ds_stopped
-    events_when_complete:  cellar_ds_enabled
+    restart_events: mode_cellar_double_score_stopped
     
 
   cellar_hits:
@@ -560,17 +509,12 @@ counters:
       - lower_special_hole_hit 
     #reset_on_complete: false
     count_complete_value: 11
-    restart_events:  attic_ds_stopped
-    events_when_complete: attic_ds_enabled
+    restart_events:  mode_attic_double_score_stopped 
     
 ### event players ####
 event_player:
   attic_db_lit_hit: start_attic_db
   main_target_5_flashing_hit: start_x_ball_mode
-
-  lower_vuk_hit: cellar_ds_stopped
-  main_trough_2_hit: attic_ds_stopped
-  
  
 #########  
 ##attic target lights added by drops
@@ -639,28 +583,6 @@ show_player:
     lower_gi_on:
       action: stop
   
-  attic_ds_enabled:
-    flash_attic_ds:
-      action: play
-      speed: 3
-
-  attic_ds_stopped:
-    flash_attic_ds:
-      action: stop
-
-  cellar_ds_enabled:
-    flash_cellar_ds:
-      action: play
-      speed: 3
-
-  cellar_ds_stopped:
-    flash_cellar_ds:
-      action: stop
-
-  main_ds_enabled:
-    flash_main_ds:
-      action: play
-      speed: 3
 
   
     
@@ -815,26 +737,3 @@ shows:
       lights:
         l_main_trap_door: off
   
-  flash_cellar_ds:
-    - time: 0
-      lights:
-        l_lower_double_score: red
-    - time: 1
-      lights:
-        l_lower_double_score: off
-  
-  flash_attic_ds:
-    - time: 0
-      lights:
-        l_attic_double_score: on
-    - time: 1
-      lights:
-        l_attic_double_score: off
-
-  flash_main_ds:
-    - time: 0
-      lights:
-        l_main_double_score: on
-    - time: 1
-      lights:
-        l_main_double_score: off
