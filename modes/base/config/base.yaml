@@ -136,7 +136,10 @@ shots:
     show_tokens:
       light: l_target_1
     profile: main_target_1_profile
-    reset_events: ball_started{current_player.main_target_sequence_complete_value == "yes"}
+    restart_events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+    control_events:
+      - events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+        state: 0
 
   main_target_2:
     switch: s_main_2_target
@@ -146,7 +149,10 @@ shots:
     advance_events:
       - main_target_1_flashing_hit
       - main_target_2_flashing_hit
-    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
+    restart_events: mode_base_started{current_player.main_target_sequence_complete == "yes"}
+    control_events:
+      - events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+        state: 0
 
   main_target_3:
     switch: s_main_3_target
@@ -156,8 +162,11 @@ shots:
     advance_events:
       - main_target_2_flashing_hit
       - main_target_3_flashing_hit
-    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
-    
+    restart_events: mode_base_started{current_player.main_target_sequence_complete == "yes"}
+    control_events:
+      - events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+        state: 0
+  
   main_target_4:
     switch: s_main_4_target
     show_tokens:
@@ -166,7 +175,10 @@ shots:
     advance_events:
       - main_target_3_flashing_hit
       - main_target_4_flashing_hit
-    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
+    restart_events: mode_base_started{current_player.main_target_sequence_complete == "yes"}
+    control_events:
+      - events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+        state: 0
 
   main_target_5:
     switch: s_main_5_target
@@ -176,8 +188,10 @@ shots:
     advance_events:
       - main_target_4_flashing_hit
       - main_target_5_flashing_hit
-    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
-
+    restart_events: mode_base_started{current_player.main_target_sequence_complete == "yes"}
+    control_events:
+      - events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+        state: 0
 
   main_2:
     switch: s_main_2_target
