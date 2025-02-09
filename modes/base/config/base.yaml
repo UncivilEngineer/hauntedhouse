@@ -128,8 +128,57 @@ shots:
     switch: s_lower_kick_target
   lower_rollover:
     switch: s_lower_rollover
-  main_1:
+########
+## main playfield kick back target handlers  
+########
+  main_target_1:
     switch: s_main_1_target
+    show_tokens:
+      light: l_target_1
+    profile: main_target_1_profile
+    reset_events: ball_started{current_player.main_target_sequence_complete_value == "yes"}
+
+  main_target_2:
+    switch: s_main_2_target
+    show_tokens:
+      light: l_target_2
+    profile: main_targets_profile
+    advance_events:
+      - main_target_1_flashing_hit
+      - main_target_2_flashing_hit
+    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
+
+  main_target_3:
+    switch: s_main_3_target
+    show_tokens:
+      light: l_target_3
+    profile: main_targets_profile
+    advance_events:
+      - main_target_2_flashing_hit
+      - main_target_3_flashing_hit
+    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
+    
+  main_target_4:
+    switch: s_main_4_target
+    show_tokens:
+      light: l_target_4
+    profile: main_targets_profile
+    advance_events:
+      - main_target_3_flashing_hit
+      - main_target_4_flashing_hit
+    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
+
+  main_target_5:
+    switch: s_main_5_target
+    show_tokens:
+      light: l_target_5
+    profile: main_targets_profile
+    advance_events:
+      - main_target_4_flashing_hit
+      - main_target_5_flashing_hit
+    reset_events: ball_started{current_player.main_target_sequence_complete == "yes"}
+
+
   main_2:
     switch: s_main_2_target
   main_3:
@@ -221,25 +270,18 @@ variable_player:
     base_bonus:
       int: 1000
       action: set
-  
+######
+## special values
+######  
   attic_special_flash_hit:
     score: 25000
 
   cellar_special_flash_lit_hit:
     score: 25000
-    
-  ## the troughs for bonusx -- moved to bonus_x mode 12/8/2024
-#  secret_passage_trough_hit:
-#    bonus_multiplier: 1
-#  trapdoor_trough_hit:
-#    bonus_multiplier: 1
-#  main_trough_1_hit:
-#    bonus_multiplier: 1
-#  main_trough_2_hit:
-#    bonus_multiplier: 1
-#  main_vuk_hit:
-#    bonus_multiplier: 1
-    
+
+#####
+## Default score values
+#####    
   upper_pop_hit: 
     score: 1000
   lower_left_pop_hit:
@@ -321,16 +363,57 @@ variable_player:
     score: 1000
   lower_rollover_hit:
     score: 1000
-  main_1_hit:
+#######    
+## main kickback target scoring
+#######
+  main_target_1_flashing_hit:
+    score: 10000
+    bonus_main_playfield: 2
+  main_target_1_lit_hit:
+    score: 5000
+    bonus_main_playfield: 1
+  
+  main_target_2_unlit_hit:
     score: 500
-  main_2_hit:
+  main_target_2_flashing_hit:
+    score: 10000
+    bonus_main_playfield: 2
+  main_target_2_lit_hit:
+    score: 5000
+    bonus_main_playfield: 1
+ 
+  main_target_3_unlit_hit:
     score: 500
-  main_3_hit:
+  main_target_3_flashing_hit:
+    score: 10000
+    bonus_main_playfield: 2
+  main_target_3_lit_hit:
+    score: 5000
+    bonus_main_playfield: 1
+
+  main_target_4_unlit_hit:
     score: 500
-  main_4_hit:
+  main_target_4_flashing_hit:
+    score: 10000
+    bonus_main_playfield: 2
+  main_target_4_lit_hit:
+    score: 5000
+    bonus_main_playfield: 1
+
+  main_target_5_unlit_hit:
     score: 500
-  main_5_hit:
-    score: 500
+  main_target_5_flashing_hit:
+    score: 10000
+    bonus_main_playfield: 2
+    main_target_sequence_complete:
+      action: set
+      string: "yes"
+  main_target_5_lit_hit:
+    score: 5000
+    bonus_main_playfield: 1
+########
+
+
   right_outlane_hit:
     score: 5000
   right_inlane_hit:
@@ -362,8 +445,9 @@ variable_player:
 #    bonus_multiplier:
 #      int: 5
 #      action: set
-    
+###########    
 #### counter to track attic drop complete events
+###########
 counters:
   attic_drop_counter:
     count_events: drop_target_bank_upper_down
@@ -416,7 +500,9 @@ counters:
 ### event players ####
 event_player:
   attic_db_lit_hit: start_attic_db
-  
+  main_target_5_flashing_hit: start_x_ball_mode
+ 
+#########  
 ##attic target lights added by drops
 light_player:
   logicblock_attic_drop_counter_updated{value == 0}:
@@ -502,6 +588,11 @@ random_event_player:
       - base_bonus_900
       - base_bonus_1000
 
+
+
+###############
+##shot profiles
+################
 shot_profiles:
   pop_hit:
     states:
@@ -533,6 +624,24 @@ shot_profiles:
       - name: lit
         show: "on"
 
+  main_targets_profile:
+    states:
+      - name: unlit
+        show: off
+      - name: flashing
+        show: flash
+        speed: 4
+      - name: lit
+        show: on
+    advance_on_hit: false
+
+  main_target_1_profile:
+    states:
+      - name: flashing
+        show: flash
+        speed: 4
+      - name: lit
+        show: on
     
 shows:
   gi_on:

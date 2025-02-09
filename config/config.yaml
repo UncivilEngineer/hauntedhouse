@@ -39,20 +39,23 @@ player_vars:
     initial_value: 0
   bonus_main_playfield:
     initial_value: 0
-  attic_double_score:
-    initial_value: 0
-  main_double_score:
-    initial_value: 0
-  lower_double_score:
-    initial_value: 0
+#  attic_double_score:
+#    initial_value: 0
+#  main_double_score:
+#    initial_value: 0
+#  lower_double_score:
+#    initial_value: 0
   base_bonus:
     initial_value: 0
   bonus_multiplier:
     initial_value: 1
-  current_playfield:
-    value_type: str
-    initial_value: "main_pf"
-  x_ball_awarded:
+#  current_playfield:
+#    value_type: str
+#    initial_value: "main_pf"
+#  x_ball_awarded:
+#    value_type: str
+#    initial_value: "no"
+  main_target_sequence_complete:
     value_type: str
     initial_value: "no"
 
@@ -767,6 +770,26 @@ lights:
       
   l_target_2:
     number: 15-69-70-71
+    platform_settings:
+      polarity: true
+
+  l_main_left_bonus:
+    number: 15-36-37-38
+    platform_settings:
+      polarity: true
+
+  l_target_1:
+    number: 15-39-40-41
+    platform_settings:
+      polarity: true
+
+  l_main_left_lower_gi:
+    number: 15-42-43-44
+    platform_settings:
+      polarity: true
+
+  l_main_lower_pop:
+    number: 15-45-46-47
     platform_settings:
       polarity: true
     

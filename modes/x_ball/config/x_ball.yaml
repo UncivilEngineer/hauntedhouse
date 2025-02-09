@@ -5,6 +5,7 @@ mode:
   start_events: 
     - logicblock_attic_drop_counter_hit{count == 1 and current_player.extra_ball_main_x_ball_num_awarded == 0}
     - logicblock_cellar_drop_counter_hit{count == 1 and current_player.extra_ball_main_x_ball_num_awarded == 0}
+    - start_x_ball_mode
     #- logicblock_attic_drop_counter_hit{count == 1}
   #restart_on_next_ball: true
   priority: 200
