@@ -136,7 +136,7 @@ shots:
     show_tokens:
       light: l_target_1
     profile: main_target_1_profile
-    restart_events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
+    restart_events: mode_base_started{current_player.main_target_sequence_complete == "yes"}
     control_events:
       - events: mode_base_started{current_player.main_target_sequence_complete_value == "yes"}
         state: 0
