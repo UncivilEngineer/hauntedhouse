@@ -27,9 +27,15 @@ queue_relay_player:
 shots:
   upper_pop: 
     switch: s_upper_pop
-    show_tokens:
-      leds: l_attic_pop
-    profile: pop_hit
+    
+  lower_pop:
+    switch: s_lower_pop
+    
+  lower_left_pop:
+    switch: s_main_pop_bottom
+    
+  upper_left_pop:
+    switch: s_main_pop_top
   
   attic_special:
     enable_events:  logicblock_cellar_drop_counter_updated{value == 2}
@@ -76,10 +82,6 @@ shots:
     profile: on_show
     persist_enable: false
 
-  lower_left_pop:
-    switch: s_main_pop_bottom
-  upper_left_pop:
-    switch: s_main_pop_top
   10pt:
     switches: s_upper_10pt_left, s_upper_10pt_center
   main_10pt:
@@ -116,8 +118,6 @@ shots:
     switch: s_lower_bonus_left
   lower_right:
     switch: s_lower_bonus_right
-  lower_pop:
-    switch: s_lower_pop
   lower_10pt_lower:
     switch: s_lower_10pt_lower
   lower_10pt_drops:
@@ -595,26 +595,12 @@ light_player:
   logicblock_cellar_drop_counter_updated{value == 2}:
     l_lower_bank_count_3: on
 
-### moved to bonus_x mode 12/8/2024
-#  mode_base_started:
-#    l_1x: on
-#  player_bonus_multiplier{value == 2}:
-#    l_2x: on
-#  player_bonus_multiplier{value == 3}:
-#    l_3x: on
-#  player_bonus_multiplier{value == 4}:
-#    l_4x: on
-#  player_bonus_multiplier{value == 5}:
-#    l_5x: on
-
-#  ball_started:
-#    l_main_trap_door: off
-#  diverter_trapdoor_diverter_activating:
-#    l_main_trap_door: on
-#  diverter_trapdoor_diverter_deactivating:
-#    l_main_trap_door: off
-  
+##########
+## show player
+##########
 show_player:
+
+#### base mode shows
   mode_base_started:
     gi_on:
       action: play
@@ -622,7 +608,33 @@ show_player:
   mode_base_stopped:
     gi_on:
       action: stop
-  
+      
+##### pop bumper shows
+  upper_pop_hit: 
+    upper_pop_show:
+      action: play
+      speed: 5
+      loops: 2
+      
+  lower_left_pop_hit:
+    main_lower_pop_show:
+      action: play
+      speed: 5
+      loops: 2
+
+  upper_left_pop_hit:
+    main_upper_pop_show:
+      action: play
+      speed: 5
+      loops: 2
+      
+  lower_pop_hit:
+    lower_pop_show:
+      action: play
+      speed: 5
+      loops: 2
+
+### lower gi shows  
   secret_passage_trough_hit:  
     lower_gi_on:
       action: play
@@ -642,7 +654,22 @@ show_player:
   lower_vuk_hit:
     lower_gi_on:
       action: stop
-  
+
+### upper gi shows
+  player_current_playfield{value == "attic_pf"}:
+    attic_gi_show:
+      action: play
+      speed: 2
+
+  player_current_playfield{value == "main_pf" and prev_value == "attic_pf"}:
+    attic_gi_show:
+      action: stop
+
+  player_current_playfield{value =="cellar_pf" and prev_value == "attic_pf"}:
+    attic_gi_show:
+      action: stop
+      
+#### misc shows  
   attic_ds_enabled:
     flash_attic_ds:
       action: play
@@ -740,26 +767,81 @@ shot_profiles:
         show: on
     
 shows:
+  upper_pop_show:
+    - time: 0
+      lights: 
+        l_attic_pop: white
+    - time: 1
+      lights:
+        l_attic_pop: off
+
+  lower_pop_show:
+    - time: 0
+      lights: 
+        l_lower_pop: white
+    - time: 1
+      lights:
+        l_lower_pop: off
+
+  main_upper_pop_show:
+    - time: 0
+      lights: 
+        l_main_upper_pop: white
+    - time: 1
+      lights:
+        l_main_upper_pop: off
+ 
+  main_lower_pop_show:
+    - time: 0
+      lights: 
+        l_main_lower_pop: white
+    - time: 1
+      lights:
+        l_main_lower_pop: off
+        
+  attic_gi_show:
+    - time: 0
+      lights:
+        l_attic_left_gi_1: green
+        l_attic_left_gi_2: red
+        l_attic_right_gi_2: red
+        l_attic_right_gi_1: green
+        l_attic_center_gi: green
+    - time: 1
+      lights:
+        l_attic_left_gi_1: red
+        l_attic_left_gi_2: green
+        l_attic_right_gi_2: green
+        l_attic_right_gi_1: red
+        l_attic_center_gi: red
+        
   gi_on:
     - time: 0
       lights:
-        l_attic_right_gi_1: red
-        l_attic_right_gi_2: green
-        l_attic_left_gi_1: red
-        l_attic_left_gi_2: green
-        l_attic_center_gi: green
+        l_attic_right_gi_1: white
+        l_attic_right_gi_2: yellow
+        l_attic_left_gi_1: white
+        l_attic_left_gi_2: yellow
+        l_attic_center_gi: white
         l_main_right_gi_1: orange
+        l_main_left_lower_gi: orange
+        l_main_left_upper_gi: orange
         l_gi_post_left: red
         l_gi_post_right: green
+        l_main_upper_pop: white
+        l_main_lower_pop: white
+        l_attic_pop: white
         
     - time: 1
       lights:
-        l_attic_right_gi_1: green
-        l_attic_right_gi_2: red
-        l_attic_left_gi_1: green
-        l_attic_left_gi_2: red
-        l_attic_center_gi: red
+        l_attic_right_gi_1: yellow
+        l_attic_right_gi_2: white
+        l_attic_left_gi_1: yellow
+        l_attic_left_gi_2: white
+        l_attic_center_gi: yellow
         l_main_right_gi_1: white
+        l_main_left_lower_gi: white
+        l_main_left_upper_gi: white
         l_gi_post_left: green
         l_gi_post_right: red
 
@@ -776,6 +858,7 @@ shows:
         l_lower_right_gi_1: green
         l_lower_right_gi_2: green
         l_lower_right_bonus_gi: green
+        l_lower_pop: white
 
     - time: 1
       lights:
@@ -789,27 +872,6 @@ shows:
         l_lower_right_gi_1: red
         l_lower_right_gi_2: red
         l_lower_right_bonus_gi: red
-        
-        
-  gi_off:
-    - time: 0
-      lights:
-        l_attic_right_gi_1: off
-        l_attic_right_gi_2: off
-        l_attic_left_gi_1: off
-        l_attic_left_gi_2: off
-        l_attic_center_gi: off
-        l_main_right_gi_1: off
-        l_gi_post_left: off
-    - time: 1
-      lights:
-        l_attic_right_gi_1: off
-        l_attic_right_gi_2: off
-        l_attic_left_gi_1: off
-        l_attic_left_gi_2: off
-        l_attic_center_gi: off
-        l_main_right_gi_1: off
-        l_gi_post_left: off
         
   flash_trapdoor_light:
     - time: 0

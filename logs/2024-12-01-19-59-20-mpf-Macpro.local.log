@@ -1,7 +1,0 @@
-2024-12-01 19:59:20,722 : INFO : root : Loading config.
-2024-12-01 19:59:20,725 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
-2024-12-01 19:59:20,725 : INFO : ConfigProcessor : Loading config from cache: /var/folders/lw/36nc9wln17qdc1y8dnh6d85h0000gr/T/a187413b8cf7049e0b91852f54cd1afa.mpf_cache
-2024-12-01 19:59:20,755 : WARNING : ConfigProcessor : Config file in cache changed: /Users/C_Alan/pinball/hauntedhouse/modes/attract/config/attract.yaml
-2024-12-01 19:59:20,755 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml.
-2024-12-01 19:59:20,756 : INFO : ConfigProcessor : Loading config: /Users/C_Alan/envp311/lib/python3.11/site-packages/mpf/modes/attract/config/attract.yaml
-2024-12-01 19:59:20,757 : INFO : ConfigProcessor : Loading config from file /Users/C_Alan/pinball/hauntedhouse/modes/attract/config/attract.yaml.

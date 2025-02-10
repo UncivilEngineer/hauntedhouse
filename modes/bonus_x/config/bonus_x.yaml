@@ -28,6 +28,7 @@ shots:
       - s_main_5_target
       - s_main_lane_center
       - s_main_vuk
+      - s_lower_vuk
     
   trough_shots:
     switch:
@@ -67,6 +68,9 @@ variable_player:
 
   trough_shots_hit:
     bonus_multiplier: 1
+    current_playfield:
+      string: "cellar_pf"
+      action: set
 
   upper_pop_shot_hit:
     current_playfield:
