@@ -209,16 +209,43 @@ shots:
     switch: s_main_outlane_right
   right_inlane:
     switch: s_main_inlane_right
-    
+
+#######
+### Left inlane trap door light
+#######  
   left_inlane:
     switch: s_main_inlane_left
     show_tokens: 
       light: l_main_trap_door
     profile: trapdoor_profile
     reset_events: diverter_trapdoor_diverter_deactivating
-    
+#######
+### secret trough trapdoor light
+#######
+  trapdoor_light:
+    switch: s_main_rollunder
+    show_tokens:
+      light: l_main_trap_door
+    profile: trapdoor_on_profile
+    advance_events: secret_passage_trough_hit
+    control_events: 
+      - events: mode_base_started
+        state: 0
+    persist_enable: false
+#######
+### Left bonus outlane
+#######    
   left_outlane: 
     switch: s_main_outlane_left
+    show_tokens:
+      light: l_main_left_bonus
+    profile:  left_outlane_bonus_profile
+    advance_events:  right_outlane_hit
+    control_events: 
+      - events: mode_base_started
+        state: 0
+    persist_enable: false
+
   standup_right:
     switch: s_main_target_right
   right_kickout:
@@ -229,10 +256,10 @@ shots:
     switch: s_main_1_trough
   main_trough_2:
     switch: s_main_2_trough
-  secret_passage_trough:
-    switch: s_main_secret_trough
   trapdoor_trough:
     switch: s_main_trapdoor_trough
+  secret_passage_trough:
+    switch: s_main_secret_trough
   main_vuk:
     switch: s_main_vuk
   main_lane_center:
@@ -490,8 +517,14 @@ variable_player:
     score: 1000 * current_player.main_pf_multi
   left_inlane_hit:
     score: 5000 * current_player.main_pf_multi
-  left_outlane_hit:
+    
+  left_outlane_unlit_hit:
     score: 5000 * current_player.main_pf_multi
+    
+  left_outlane_lit_hit:
+    score: 5000 * current_player.main_pf_multi
+    bonus_main_playfield: 1
+    
   standup_right_hit:
     score: 500 * current_player.main_pf_multi
   right_kickout_hit:
@@ -572,8 +605,10 @@ event_player:
   attic_db_lit_hit: start_attic_db
   main_target_5_flashing_hit: start_x_ball_mode
 
-  lower_vuk_hit: cellar_ds_stopped
-  main_trough_2_hit: attic_ds_stopped
+  #lower_vuk_hit: cellar_ds_stopped
+  #main_trough_2_hit: attic_ds_stopped
+  left_inlane_hit:  trap_door_open
+  trapdoor_light_lit_hit: trap_door_open
   
  
 #########  
@@ -639,21 +674,35 @@ show_player:
     lower_gi_on:
       action: play
       speed: 2
+    gi_on:
+      action: stop
+      
   trapdoor_trough_hit: 
     lower_gi_on:
       action: play
       speed: 2
+    gi_on:
+      action: stop
+      
   main_trough_1_hit: 
     lower_gi_on:
       action: play
       speed: 2
+    gi_on:
+      action: stop
+      
   main_trough_2_hit: 
     lower_gi_on:
       action: play
       speed: 2
+    gi_on:
+      action: stop
+      
   lower_vuk_hit:
     lower_gi_on:
       action: stop
+    gi_on:
+      action: play
 
 ### upper gi shows
   player_current_playfield{value == "attic_pf"}:
@@ -667,6 +716,8 @@ show_player:
 
   player_current_playfield{value =="cellar_pf" and prev_value == "attic_pf"}:
     attic_gi_show:
+      action: stop
+    gi_on:
       action: stop
       
 #### misc shows  
@@ -746,6 +797,24 @@ shot_profiles:
     states:
       - name: lit
         show: "on"
+  
+  left_outlane_bonus_profile:
+    states:
+      - name: unlit
+        show: off
+      - name: lit
+        show: on
+    advance_on_hit: false
+    loop: false
+
+  trapdoor_on_profile:
+    states:
+      - name: unlit
+        show: off
+      - name: lit
+        show: on
+    advance_on_hit: false
+    loop: false
 
   main_targets_profile:
     states:

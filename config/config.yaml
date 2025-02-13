@@ -807,6 +807,7 @@ diverters:
     activation_coil: c_dual_trapdoor
     type: hold
     activation_time: '8s'
-    activation_switches: s_main_inlane_left
+    #activation_switches: s_main_inlane_left
+    activate_events: trap_door_open
     enable_events: ball_started
     disable_events: ball_ended
