@@ -13,18 +13,18 @@ script = ExtResource("1_05qtu")
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = 1
 layout_mode = 0
-offset_top = 40.0
+offset_left = -1.0
 offset_right = 1920.0
-offset_bottom = 565.0
+offset_bottom = 1016.0
 color = Color(0.305882, 0.309804, 1, 1)
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 z_index = 2
 layout_mode = 0
-offset_left = 311.0
-offset_top = 72.0
-offset_right = 1539.0
-offset_bottom = 522.0
+offset_left = 393.0
+offset_top = 286.0
+offset_right = 1621.0
+offset_bottom = 736.0
 theme_override_fonts/normal_font = ExtResource("2_217m7")
 theme_override_font_sizes/normal_font_size = 125
 bbcode_enabled = true

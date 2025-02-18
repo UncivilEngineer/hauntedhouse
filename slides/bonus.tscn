@@ -16,8 +16,8 @@ script = ExtResource("1_hycxu")
 layout_mode = 0
 offset_left = 4.0
 offset_top = -6.0
-offset_right = 1926.0
-offset_bottom = 640.0
+offset_right = 1928.0
+offset_bottom = 1008.0
 color = Color(0.454902, 0.47451, 0.486275, 1)
 
 [node name="MPFConditionalChildren" type="Control" parent="."]
@@ -27,13 +27,12 @@ variable_type = 1
 variable_name = "entry"
 
 [node name="initial" type="Node2D" parent="MPFConditionalChildren"]
-visible = false
 
 [node name="MPFVariable" type="Label" parent="MPFConditionalChildren/initial"]
-offset_left = 690.0
-offset_top = 162.0
-offset_right = 1211.0
-offset_bottom = 282.0
+offset_left = 692.0
+offset_top = 260.0
+offset_right = 1213.0
+offset_bottom = 380.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "End of Ball 1"
@@ -55,10 +54,10 @@ variable_name = "base_bonus"
 comma_separate = true
 
 [node name="Label" type="Label" parent="MPFConditionalChildren/initial"]
-offset_left = 584.0
-offset_top = 272.0
-offset_right = 1318.0
-offset_bottom = 392.0
+offset_left = 586.0
+offset_top = 363.0
+offset_right = 1320.0
+offset_bottom = 483.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Base Bonus Value"
@@ -67,10 +66,10 @@ horizontal_alignment = 1
 [node name="__default__" type="Node2D" parent="MPFConditionalChildren"]
 
 [node name="text" type="Label" parent="MPFConditionalChildren/__default__"]
-offset_left = 588.0
-offset_top = 202.0
-offset_right = 1308.0
-offset_bottom = 322.0
+offset_left = 590.0
+offset_top = 491.0
+offset_right = 1310.0
+offset_bottom = 611.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Bonus Entry Text"
@@ -80,10 +79,10 @@ variable_type = 1
 variable_name = "text"
 
 [node name="score" type="Label" parent="MPFConditionalChildren/__default__"]
-offset_left = 800.0
-offset_top = 316.0
-offset_right = 1056.0
-offset_bottom = 436.0
+offset_left = 819.0
+offset_top = 493.0
+offset_right = 1075.0
+offset_bottom = 613.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "1,000"
@@ -97,10 +96,10 @@ comma_separate = true
 visible = false
 
 [node name="score" type="Label" parent="MPFConditionalChildren/subtotal"]
-offset_left = 798.0
-offset_top = 320.0
-offset_right = 1054.0
-offset_bottom = 440.0
+offset_left = 821.0
+offset_top = 490.0
+offset_right = 1077.0
+offset_bottom = 610.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "1,000"
@@ -111,10 +110,10 @@ variable_name = "score"
 comma_separate = true
 
 [node name="Label" type="Label" parent="MPFConditionalChildren/subtotal"]
-offset_left = 600.0
-offset_top = 208.0
-offset_right = 1320.0
-offset_bottom = 328.0
+offset_left = 594.0
+offset_top = 372.0
+offset_right = 1314.0
+offset_bottom = 492.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Bonus Subtotal"
@@ -124,10 +123,10 @@ horizontal_alignment = 1
 visible = false
 
 [node name="score" type="Label" parent="MPFConditionalChildren/total"]
-offset_left = 800.0
-offset_top = 308.0
-offset_right = 1056.0
-offset_bottom = 428.0
+offset_left = 819.0
+offset_top = 487.0
+offset_right = 1075.0
+offset_bottom = 607.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "1,000"
@@ -138,10 +137,10 @@ variable_name = "score"
 comma_separate = true
 
 [node name="Label" type="Label" parent="MPFConditionalChildren/total"]
-offset_left = 596.0
-offset_top = 204.0
-offset_right = 1316.0
-offset_bottom = 324.0
+offset_left = 590.0
+offset_top = 376.0
+offset_right = 1310.0
+offset_bottom = 496.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Total Bonus"
@@ -151,10 +150,10 @@ horizontal_alignment = 1
 visible = false
 
 [node name="score" type="Label" parent="MPFConditionalChildren/multiplier"]
-offset_left = 816.0
-offset_top = 218.0
-offset_right = 1072.0
-offset_bottom = 338.0
+offset_left = 814.0
+offset_top = 494.0
+offset_right = 1070.0
+offset_bottom = 614.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "x2"
@@ -165,10 +164,10 @@ variable_name = "score"
 template_string = "x%s"
 
 [node name="Label" type="Label" parent="MPFConditionalChildren/multiplier"]
-offset_left = 596.0
-offset_top = 106.0
-offset_right = 1316.0
-offset_bottom = 226.0
+offset_left = 630.0
+offset_top = 376.0
+offset_right = 1350.0
+offset_bottom = 496.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Bonus Multiplier"

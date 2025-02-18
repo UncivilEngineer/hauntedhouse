@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 	if textplace.y > -1420:
 		textplace.y = textplace.y - (100 * delta)
 	else:
-		textplace.y = 650
+		textplace.y = 1080
 		
 	$Label.set_position(textplace)
 	
