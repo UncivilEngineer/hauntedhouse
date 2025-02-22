@@ -41,10 +41,10 @@ variable_name = "ball"
 template_string = "End of Ball %s"
 
 [node name="MPFVariable2" type="Label" parent="MPFConditionalChildren/initial"]
-offset_left = 810.0
-offset_top = 372.0
-offset_right = 1066.0
-offset_bottom = 492.0
+offset_left = 822.0
+offset_top = 495.0
+offset_right = 1078.0
+offset_bottom = 615.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "1,000"
@@ -54,22 +54,23 @@ variable_name = "base_bonus"
 comma_separate = true
 
 [node name="Label" type="Label" parent="MPFConditionalChildren/initial"]
-offset_left = 586.0
-offset_top = 363.0
-offset_right = 1320.0
-offset_bottom = 483.0
+offset_left = 592.0
+offset_top = 389.0
+offset_right = 1326.0
+offset_bottom = 509.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Base Bonus Value"
 horizontal_alignment = 1
 
 [node name="__default__" type="Node2D" parent="MPFConditionalChildren"]
+visible = false
 
 [node name="text" type="Label" parent="MPFConditionalChildren/__default__"]
-offset_left = 590.0
-offset_top = 491.0
-offset_right = 1310.0
-offset_bottom = 611.0
+offset_left = 598.0
+offset_top = 387.0
+offset_right = 1318.0
+offset_bottom = 507.0
 theme_override_fonts/font = ExtResource("3_va6dc")
 theme_override_font_sizes/font_size = 100
 text = "Bonus Entry Text"
