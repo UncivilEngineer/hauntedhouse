@@ -1,6 +1,6 @@
 class_name MPFSlide
 extends MPFSceneBase
-
+@export var bonus_mob_scene: PackedScene
 var _widgets: Control
 
 ## A scene root node for creating a Slide that can be added to a display stack using events and the slide_player.
@@ -53,3 +53,27 @@ func _sort_widgets() -> void:
 
 func _to_string() -> String:
 	return "<%s:MPFSlide:pri=%s:%s" % [self.name, self.priority, self.get_instance_id()]
+	
+	##Bonus Animatiuon Call handler
+func bonus_anima(_settings, _kwargs):
+	
+	#first call an instance of the bonus mob
+	var mob = bonus_mob_scene.instantiate()
+	#choose random locaiton to spawn
+	var mob_spawn_location = $BonusMobPath/BonusMobSpawn
+	mob_spawn_location.progress_ratio = randf()
+	#set spawn position
+	mob.position = mob_spawn_location.position
+	#print("mob position is:", mob.position)
+	
+	# Set the mob's direction perpendicular to the path direction.
+	var direction = mob_spawn_location.rotation + PI / 2
+
+	#set velocity for mob
+	var velocity = Vector2(-300,0)
+	mob.linear_velocity = velocity.rotated(direction)
+	# Spawn the mob by adding it to the Main scene.
+	#print("bonus added")
+	add_child(mob)
+	
+	

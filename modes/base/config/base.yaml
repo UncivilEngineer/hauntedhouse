@@ -8,9 +8,21 @@ mode:
 slide_player:
   mode_base_started: base
   
-#  ball_started: 
-#    base:
-#      action: update
+  player_bonus_upper_playfield{value >= 1}:
+    base:
+      action: method
+      method: bonus_anima
+
+  player_bonus_main_playfield{value >= 1}:
+    base:
+      action: method
+      method: bonus_anima
+      
+  player_bonus_lower_playfield{value >= 1}:
+    base:
+      action: method
+      method: bonus_anima
+
   
   game_start_slide_show:
     game_start:
@@ -20,6 +32,8 @@ queue_relay_player:
   ball_starting{player ==1 and ball == 1}:
     post: game_start_slide_show
     wait_for: slide_game_start_removed
+
+
 
 ############################################
 ## Shot definitions

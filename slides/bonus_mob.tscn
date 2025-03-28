@@ -1,0 +1,107 @@
+[gd_scene load_steps=16 format=3 uid="uid://ckt8o4nxvy7pb"]
+
+[ext_resource type="Texture2D" uid="uid://cmkbnx2ongeyv" path="res://gimp files/starsheet1.png" id="1_mf07q"]
+[ext_resource type="Script" path="res://slides/bonus_mob.gd" id="1_x0b3s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k5l3d"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(0, 1600, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0x3ss"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(400, 1600, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dj545"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(800, 1600, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b6ck8"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(1200, 1600, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_airyf"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(1600, 1600, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tff35"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(2000, 1600, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lumpw"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(0, 0, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8wu1k"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(400, 0, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jd5h6"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(800, 0, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xs6g"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(1200, 0, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tmrkh"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(1600, 0, 400, 1600)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2vimb"]
+atlas = ExtResource("1_mf07q")
+region = Rect2(2000, 0, 400, 1600)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l1vei"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k5l3d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0x3ss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dj545")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b6ck8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_airyf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tff35")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lumpw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8wu1k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jd5h6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xs6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tmrkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2vimb")
+}],
+"loop": false,
+"name": &"ShootingBonus",
+"speed": 5.0
+}]
+
+[node name="BonusMob" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_x0b3s")
+
+[node name="Bonus1" type="AnimatedSprite2D" parent="."]
+z_index = 4
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_l1vei")
+animation = &"ShootingBonus"
+autoplay = "ShootingBonus"

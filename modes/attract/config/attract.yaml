@@ -27,4 +27,12 @@ slide_player:
     last_score:
       expire: '5s'
       priority: 100
+
+## I did this for testing purpose when developing the mobs for 
+## this graphics call
+#  s_left_flipper1_active:
+#    attract_scroll_animated:
+#      action: method
+#      method: bonus_anima
+  
   

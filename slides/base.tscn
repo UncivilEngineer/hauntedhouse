@@ -1,9 +1,16 @@
-[gd_scene load_steps=5 format=3 uid="uid://bvwk4cv0yili2"]
+[gd_scene load_steps=7 format=3 uid="uid://bvwk4cv0yili2"]
 
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_oudoe"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="2_3yg74"]
+[ext_resource type="PackedScene" uid="uid://ckt8o4nxvy7pb" path="res://slides/bonus_mob.tscn" id="2_lpaph"]
 [ext_resource type="FontFile" uid="uid://dkoa04aw20tji" path="res://slides/ProtestRevolution-Regular.ttf" id="2_ry4s7"]
 [ext_resource type="Script" path="res://addons/mpf-gmc/classes/mpf_conditional.gd" id="4_f77o3"]
+
+[sub_resource type="Curve2D" id="Curve2D_iudn0"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 97, 1030, 0, 0, 0, 0, 1799, 1034)
+}
+point_count = 2
 
 [node name="Base" type="Control"]
 layout_mode = 3
@@ -11,12 +18,13 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_oudoe")
+bonus_mob_scene = ExtResource("2_lpaph")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 layout_mode = 0
-offset_top = 6.0
 offset_right = 1920.0
-offset_bottom = 1086.0
+offset_bottom = 1080.0
 color = Color(0.305882, 0.309804, 1, 1)
 
 [node name="main score" type="Label" parent="."]
@@ -251,3 +259,10 @@ variable_type = 4
 variable_name = "score"
 comma_separate = true
 min_digits = 0
+
+[node name="BonusMobPath" type="Path2D" parent="."]
+curve = SubResource("Curve2D_iudn0")
+
+[node name="BonusMobSpawn" type="PathFollow2D" parent="BonusMobPath"]
+position = Vector2(97, 1030)
+rotation = 0.00235017
