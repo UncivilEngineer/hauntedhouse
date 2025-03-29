@@ -341,6 +341,7 @@ variable_player:
     cellar_pf_multi:
       action: set
       int: 1
+
 #####
 ## setting playfield multipliers
 #####  
@@ -567,12 +568,16 @@ counters:
     count_events: drop_target_bank_upper_down
     reset_on_complete: false
     count_complete_value: 3
+    persist_state: true
+    restart_events:  attic_drop_counter_reset_event
 
   cellar_drop_counter:
     count_events: drop_target_bank_lower_down
     reset_on_complete: false
     count_complete_value: 2
     events_when_complete: main_ds_enabled
+    persist_state: true
+    restart_events: cellar_drop_counter_reset_event
     
   attic_hits:
     count_events:
@@ -619,8 +624,9 @@ event_player:
   attic_db_lit_hit: start_attic_db
   main_target_5_flashing_hit: start_x_ball_mode
 
-  #lower_vuk_hit: cellar_ds_stopped
-  #main_trough_2_hit: attic_ds_stopped
+  slide_base_active{device.counters.attic_drop_counter.value >= 3}: attic_drop_counter_reset_event
+  slide_base_active{device.counters.cellar_drop_counter.value >= 2}: cellar_drop_counter_reset_event
+  
   left_inlane_hit:  trap_door_open
   trapdoor_light_lit_hit: trap_door_open
   
@@ -628,22 +634,33 @@ event_player:
 #########  
 ##attic target lights added by drops
 light_player:
-  logicblock_attic_drop_counter_updated{value == 0}:
+  logicblock_attic_drop_counter_updated{value >= 0}:
     l_upper_target_1: on
-  logicblock_attic_drop_counter_updated{value == 1}:
+  logicblock_attic_drop_counter_updated{value >= 1}:
     l_upper_target_2: on
-  logicblock_attic_drop_counter_updated{value == 2}:
+  logicblock_attic_drop_counter_updated{value >= 2}:
     l_upper_target_3: on
-  logicblock_attic_drop_counter_updated{value == 3}:
+  logicblock_attic_drop_counter_updated{value >= 3}:
     l_upper_target_4: on
     
-  logicblock_cellar_drop_counter_updated{value == 0}:
+  logicblock_cellar_drop_counter_updated{value >= 0}:
     l_lower_bank_count_1: on
-  logicblock_cellar_drop_counter_updated{value == 1}:
+  logicblock_cellar_drop_counter_updated{value >= 1}:
     l_lower_bank_count_2: on
-  logicblock_cellar_drop_counter_updated{value == 2}:
+  logicblock_cellar_drop_counter_updated{value >= 2}:
     l_lower_bank_count_3: on
 
+  attic_drop_counter_reset_event:
+    l_upper_target_1: on
+    l_upper_target_2: off
+    l_upper_target_3: off
+    l_upper_target_4: off
+    
+  cellar_drop_counter_reset_event:
+    l_lower_bank_count_1: on
+    l_lower_bank_count_2: off
+    l_lower_bank_count_3: off
+    
 ##########
 ## show player
 ##########

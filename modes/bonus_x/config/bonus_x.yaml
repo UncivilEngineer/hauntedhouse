@@ -4,8 +4,13 @@
 mode:
   start_events: ball_starting
   restart_on_next_ball: true
+  stop_events:  ball_ending
   priority: 100
-   
+
+slide_player:
+  player_bonus_multiplier{value >= 1 and prev_value <= 4}:
+    bonus_multiplier:
+      expire: '1.5s'
   
 shots:
   main_pf_shots:
@@ -55,11 +60,12 @@ shots:
 ## Player Variables
 ############################################
 variable_player:
-  main_pf_shots_hit{current_player.current_playfield == "attic_pf"}:
+  main_pf_shots_hit{current_player.current_playfield == "attic_pf" or current_player.current_playfield == "cellar_pf" }:
     current_playfield:
       string: "main_pf"
       action: set
-
+  
+  
   attic_pf_shots_hit{current_player.current_playfield == "main_pf"}:
     bonus_multiplier: 1
     current_playfield:
