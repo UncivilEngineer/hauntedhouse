@@ -5,8 +5,4 @@ master_volume:
 player1_score:
   expire: null
   expire_secs: null
-<<<<<<< HEAD
-  value: 47000
-=======
-  value: 207000
->>>>>>> origin/main
+  value: 93040
