@@ -21,7 +21,6 @@ script = ExtResource("1_oudoe")
 bonus_mob_scene = ExtResource("2_lpaph")
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
