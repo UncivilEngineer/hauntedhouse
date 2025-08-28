@@ -1,0 +1,63 @@
+#config_version=6
+##! mode: cellar_double_bonus
+
+mode:
+  start_events: start_cellar_db
+  priority: 100
+  
+shots:
+
+  lower_right_bonus_db:
+    switch: s_lower_bonus_right 
+  lower_left_bonus_db:
+    switch: s_lower_bonus_left
+  lower_1_drop_db:
+    switch: s_lower_1_drop
+  lower_2_drop_db:
+    switch: s_lower_2_drop
+  lower_3_drop_db:
+    switch: s_lower_3_drop
+  lower_4_drop_db:
+    switch: s_lower_4_drop
+  lower_5_drop_db:
+    switch: s_lower_5_drop
+
+
+############################################
+## Player Variables
+############################################
+variable_player:
+
+  lower_right_bonus_db:
+    bonus_lower_playfield: 1
+  lower_left_bonus_db:
+    bonus_lower_playfield: 1
+  lower_1_drop_db:
+    bonus_lower_playfield: 1
+  lower_2_drop_db:
+    bonus_lower_playfield: 1
+  lower_3_drop_db:
+    bonus_lower_playfield: 1
+  lower_4_drop_db:
+    bonus_lower_playfield: 1
+  lower_5_drop_db:
+    bonus_lower_playfield: 1
+
+show_player:
+  mode_cellar_double_bonus_started:
+    flash_cellar_db:
+      action: play
+      speed: 2
+  mode_cellar_double_bonus_stopped:
+    flash_attic_db:
+      action: stop
+
+shows:
+  flash_cellar_db:
+    - time: 0
+      lights:
+        l_db_cellar_enabled: on
+    - time: 1
+      lights:
+        l_db_cellar_enabled: off
+  

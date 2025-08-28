@@ -1,0 +1,85 @@
+#config_version=6
+##! mode: main_double_bonus
+
+mode:
+  start_events: start_main_db
+  priority: 100
+  
+shots:
+  main_target_1_db:
+    switch: s_main_1_target
+
+  main_target_2_db:
+    switch: s_main_2_target
+
+  main_target_3_db:
+    switch: s_main_3_target
+
+  main_target_4_db:
+    switch: s_main_4_target
+
+  main_target_5_db:
+    switch: s_main_5_target
+
+  right_inlane_db:
+    switch: s_main_inlane_right
+
+  left_outlane_db:
+    switch: s_main_outlane_left
+
+  rollunder_db:
+    switch: s_main_rollunder
+
+  right_kickout_db:
+    switch: s_main_kickout_right
+
+############################################
+## Player Variables
+############################################
+variable_player:
+
+  main_target_1_db_hit:
+    bonus_main_playfield: 2
+
+  main_target_2_db_hit:
+    bonus_main_playfield: 2
+
+  main_target_3_db_hit:
+    bonus_main_playfield: 2
+
+  main_target_4_db_hit:
+    bonus_main_playfield: 2
+
+  main_target_5_db_hit:
+    bonus_main_playfield: 2
+
+  right_inlane_db_hit:
+    bonus_main_playfield: 1
+
+  left_outlane_db_hit:
+    bonus_main_playfield: 1
+
+  rollunder_db_hit:
+    bonus_main_playfield: 1
+
+  right_kickout_db_hit:
+    bonus_main_playfield: 1
+
+show_player:
+  mode_main_double_bonus_started:
+    flash_main_db:
+      action: play
+      speed: 2
+  mode_main_double_bonus_stopped:
+    flash_main_db:
+      action: stop
+
+shows:
+  flash_main_db:
+    - time: 0
+      lights:
+        l_db_mainfloor_enabled: on
+    - time: 1
+      lights:
+        l_db_mainfloor_enabled: off
+  

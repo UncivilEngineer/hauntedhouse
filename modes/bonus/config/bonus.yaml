@@ -2,7 +2,7 @@
 ##! mode: bonus
 ##
 mode_settings:
-  display_delay_ms: '1s'
+  display_delay_ms: '1.8s'
   #hurry_up_delay_ms: 0
   bonus_entries:
     - entry: attic_bonus
@@ -13,6 +13,7 @@ mode_settings:
     - entry:  main_bonus
       text:  "Main Bonus Score"
       score: current_player.base_bonus * current_player.bonus_main_playfield
+      skip_if_zero: False
       
     - entry: cellar_bonus
       text: "Cellar Bonus Score"
@@ -33,7 +34,12 @@ slide_player:
     bonus:
       action: update
 
-
+sound_player:
+  mode_bonus_started:
+    bonus_music:
+      bus: music
+      fade_in: 500ms
+      fade_out: 500ms
 
 variable_player:
   mode_bonus_will_stop:

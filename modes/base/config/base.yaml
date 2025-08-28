@@ -26,14 +26,25 @@ slide_player:
   
   game_start_slide_show:
     game_start:
-      expire: '8s'
+      expire: '6.5s'
 
 queue_relay_player:
   ball_starting{player ==1 and ball == 1}:
     post: game_start_slide_show
     wait_for: slide_game_start_removed
 
+sound_player:
+  game_start_slide_show:
+    hh_organ_intro:
+      bus:  music
+      fade_in: 500ms
+      fade_out: 500ms
 
+  ball_started:
+    organ_loop_1:
+      bus: music
+      action: play
+      loops: -1
 
 ############################################
 ## Shot definitions
@@ -93,6 +104,26 @@ shots:
     disable_events: attic_db_on_show_lit_hit
     show_tokens:
       leds:  l_db_attic
+    profile: on_show
+    persist_enable: false
+
+  cellar_db:
+    switch: s_main_lane_center
+    enable_events: main_target_5_flashing_hit
+    hit_events: cellar_db_lit_hit
+    disable_events: cellar_db_on_show_lit_hit
+    show_tokens:
+      leds: l_db_cellar
+    profile: on_show
+    persist_enable: false
+
+  main_db:
+    switch: s_main_vuk
+    enable_events:  logicblock_attic_drop_counter_updated{value == 3}
+    hit_events: main_db_lit_hit
+    disable_events: main_db_on_show_lit_hit
+    show_tokens:
+      leds:  l_db_main
     profile: on_show
     persist_enable: false
 
@@ -520,9 +551,8 @@ variable_player:
   main_target_5_lit_hit:
     score: 5000 * current_player.main_pf_multi
     bonus_main_playfield: 1
-########
-
-
+    
+    
   right_outlane_hit:
     score: 5000 * current_player.main_pf_multi
   right_inlane_hit:
@@ -555,11 +585,6 @@ variable_player:
   trough_1_hit:
     score: 5000 * current_player.main_pf_multi
 
-### moved to bonus_x mode 12/8/2024
-#  player_bonus_multiplier{value > 5}:  #we limit the maximum bonus multiplier to 5
-#    bonus_multiplier:
-#      int: 5
-#      action: set
 ###########    
 #### counter to track attic drop complete events
 ###########
@@ -622,6 +647,8 @@ counters:
 ### event players ####
 event_player:
   attic_db_lit_hit: start_attic_db
+  cellar_db_lit_hit: start_cellar_db
+  main_db_lit_hit: start_main_db
   main_target_5_flashing_hit: start_x_ball_mode
 
   slide_base_active{device.counters.attic_drop_counter.value >= 3}: attic_drop_counter_reset_event
@@ -629,6 +656,8 @@ event_player:
   
   left_inlane_hit:  trap_door_open
   trapdoor_light_lit_hit: trap_door_open
+  
+  lower_vuk_hit{current_player.current_playfield == "cellar_pf"}: cellar_ds_stopped
   
  
 #########  
@@ -734,6 +763,7 @@ show_player:
       action: stop
     gi_on:
       action: play
+
 
 ### upper gi shows
   player_current_playfield{value == "attic_pf"}:
