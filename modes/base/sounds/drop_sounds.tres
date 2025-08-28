@@ -1,0 +1,15 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=6 format=3 uid="uid://dthaqc5py47mf"]
+
+[ext_resource type="AudioStream" uid="uid://b8ph3lifp7hv1" path="res://modes/base/sounds/impact1.ogg" id="1_m70rb"]
+[ext_resource type="AudioStream" uid="uid://dvv66yqravrkh" path="res://modes/base/sounds/impact2.ogg" id="2_i0qnm"]
+[ext_resource type="AudioStream" uid="uid://feecwl4p2u4s" path="res://modes/base/sounds/impact3.ogg" id="3_7r6xq"]
+[ext_resource type="AudioStream" uid="uid://wv5uikiyudyy" path="res://modes/base/sounds/impact4.ogg" id="4_a8uyu"]
+[ext_resource type="AudioStream" uid="uid://bsgmjpskqx7bl" path="res://modes/base/sounds/smash1.ogg" id="5_uxmcx"]
+
+[resource]
+streams_count = 5
+stream_0/stream = ExtResource("1_m70rb")
+stream_1/stream = ExtResource("2_i0qnm")
+stream_2/stream = ExtResource("3_7r6xq")
+stream_3/stream = ExtResource("4_a8uyu")
+stream_4/stream = ExtResource("5_uxmcx")

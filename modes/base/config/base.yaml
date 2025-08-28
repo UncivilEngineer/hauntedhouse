@@ -45,6 +45,31 @@ sound_player:
       bus: music
       action: play
       loops: -1
+  
+  right_inlane_hit:
+    leavingR1:
+      bus: voice
+      action: play
+
+  upper_1_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  upper_2_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  upper_3_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  upper_4_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
 
 ############################################
 ## Shot definitions
