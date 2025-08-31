@@ -1,209 +1,179 @@
 events:
-  game_ended: 17
-  game_started: 42
+  game_ended: 31
+  game_started: 77
 missing_switches:
-  s_left_flipper1: 6
-  s_left_flipper2: 6
-  s_lower_10pt_drops: 7
-  s_lower_10pt_lower: 7
-  s_lower_10pt_upper: 7
-  s_lower_1_drop: 6
-  s_lower_2_drop: 6
-  s_lower_3_drop: 8
-  s_lower_4_drop: 7
-  s_lower_5_drop: 7
-  s_lower_bonus_left: 7
-  s_lower_bonus_right: 8
-  s_lower_kick_target: 7
-  s_lower_kickout_special: 8
-  s_lower_pop: 7
-  s_lower_rollover: 7
-  s_lower_slingshot: 7
-  s_lower_vuk: 6
-  s_main_10pt_left: 7
-  s_main_1_target: 9
-  s_main_1_trough: 8
-  s_main_2_target: 6
-  s_main_2_trough: 7
-  s_main_3_target: 7
-  s_main_4_target: 5
-  s_main_5_target: 7
-  s_main_inlane_left: 12
-  s_main_inlane_right: 2
-  s_main_kickout_right: 7
-  s_main_lane_center: 1
-  s_main_outlane_left: 6
-  s_main_outlane_right: 8
-  s_main_pop_bottom: 6
-  s_main_pop_top: 6
-  s_main_rollunder: 4
-  s_main_secret_trough: 6
-  s_main_slingshot: 6
-  s_main_target_right: 7
-  s_main_trapdoor_trough: 8
-  s_main_vuk: 1
-  s_right_flipper1: 6
-  s_right_flipper2: 6
-  s_start: 8
-  s_upper_10pt_center: 6
-  s_upper_10pt_left: 34
-  s_upper_1_target: 6
-  s_upper_2_target: 6
-  s_upper_3_target: 9
-  s_upper_4_target: 9
-  s_upper_pop: 6
+  s_lower_1_drop: 2
+  s_lower_2_drop: 2
+  s_lower_3_drop: 2
+  s_lower_5_drop: 2
+  s_lower_bonus_left: 2
+  s_lower_bonus_right: 5
+  s_lower_kick_target: 2
+  s_lower_kickout_special: 2
+  s_main_10pt_left: 2
+  s_main_1_trough: 2
+  s_main_3_target: 3
+  s_main_4_target: 2
+  s_main_kickout_right: 3
+  s_main_rollunder: 2
+  s_main_slingshot: 2
+  s_main_target_right: 2
+  s_main_trapdoor_trough: 4
+  s_start: 29
+  s_upper_3_target: 4
+  s_upper_4_target: 8
 player:
   score:
-    average: 114339
+    average: 114891
     top:
     - 318900
+    - 311040
     - 255200
+    - 168730
     - 163340
     - 160320
+    - 158640
+    - 158120
     - 134000
-    - 131140
-    - 104380
-    - 100590
-    - 95490
-    - 93040
-    total: 17
+    - 132920
+    total: 31
 shots:
-  10pt: 37
+  10pt: 114
   attic_db: 1
-  attic_pf_shots: 180
+  attic_pf_shots: 251
   attic_special: 1
   cellar_db: 213303
-  left_inlane: 6
-  left_outlane: 7
-  lower_10pt_drops: 24
-  lower_10pt_lower: 15
-  lower_10pt_upper: 25
-  lower_1_drop: 35
+  left_inlane: 13
+  left_outlane: 15
+  lower_10pt_drops: 47
+  lower_10pt_lower: 24
+  lower_10pt_upper: 47
+  lower_1_drop: 46
   lower_1_drop_db: 2
-  lower_2_drop: 24
+  lower_2_drop: 39
   lower_2_drop_db: 2
-  lower_3_drop: 20
+  lower_3_drop: 39
   lower_3_drop_db: 2
-  lower_4_drop: 18
+  lower_4_drop: 36
   lower_4_drop_db: 1
-  lower_5_drop: 18
+  lower_5_drop: 36
   lower_5_drop_db: 2
-  lower_kick_target: 13
-  lower_left: 33
-  lower_left_bonus: 14
+  lower_kick_target: 20
+  lower_left: 55
+  lower_left_bonus: 15
   lower_left_bonus_db: 3
-  lower_left_pop: 45
-  lower_pop: 46
-  lower_right: 27
-  lower_right_bonus: 3
+  lower_left_pop: 128
+  lower_pop: 114
+  lower_right: 33
+  lower_right_bonus: 4
   lower_right_bonus_db: 1
-  lower_rollover: 5
-  lower_slingshot: 26
-  lower_special_hole: 13
-  lower_vuk: 94
-  main_10pt: 14
-  main_2: 21
-  main_3: 20
-  main_4: 26
-  main_5: 10
+  lower_rollover: 20
+  lower_slingshot: 80
+  lower_special_hole: 57
+  lower_vuk: 292
+  main_10pt: 28
+  main_2: 41
+  main_3: 33
+  main_4: 61
+  main_5: 24
   main_db: 2
-  main_lane_center: 49
-  main_pf_shots: 603
+  main_lane_center: 92
+  main_pf_shots: 1382
   main_pf_x_ball: 3
-  main_pf_x_ball_cycle: 51
-  main_slingshot: 42
-  main_target_1: 16
+  main_pf_x_ball_cycle: 70
+  main_slingshot: 67
+  main_target_1: 30
   main_target_1_db: 1
-  main_target_2: 21
-  main_target_3: 20
-  main_target_4: 26
-  main_target_5: 10
-  main_trough_1: 10
-  main_trough_2: 14
-  main_vuk: 39
-  right_inlane: 29
-  right_kickout: 9
+  main_target_2: 41
+  main_target_3: 33
+  main_target_4: 61
+  main_target_5: 24
+  main_trough_1: 37
+  main_trough_2: 27
+  main_vuk: 60
+  right_inlane: 58
+  right_kickout: 24
   right_kickout_db: 1
-  right_outlane: 15
-  rollunder: 33
+  right_outlane: 34
+  rollunder: 59
   rollunder_db: 3
-  secret_passage_trough: 22
-  standup_right: 11
-  trapdoor_light: 33
-  trapdoor_trough: 2
-  trough_shots: 46
-  upper_1: 24
+  secret_passage_trough: 39
+  standup_right: 47
+  trapdoor_light: 59
+  trapdoor_trough: 7
+  trough_shots: 108
+  upper_1: 29
   upper_1_db: 2
-  upper_1_drop: 34
+  upper_1_drop: 42
   upper_1_drop_db: 1
-  upper_2: 29
+  upper_2: 41
   upper_2_db: 2
-  upper_2_drop: 20
+  upper_2_drop: 31
   upper_2_drop_db: 1
-  upper_3: 18
+  upper_3: 25
   upper_3_db: 2
-  upper_3_drop: 23
+  upper_3_drop: 35
   upper_3_drop_db: 1
-  upper_4: 8
+  upper_4: 9
   upper_4_db: 1
-  upper_4_drop: 24
+  upper_4_drop: 39
   upper_4_drop_db: 1
-  upper_left_pop: 45
-  upper_pop: 62
-  upper_pop_shot: 62
+  upper_left_pop: 97
+  upper_pop: 144
+  upper_pop_shot: 144
 switches:
-  s_left_flipper1: 238
-  s_left_flipper2: 221
-  s_lower_10pt_drops: 24
-  s_lower_10pt_lower: 15
-  s_lower_10pt_upper: 25
-  s_lower_1_drop: 35
-  s_lower_2_drop: 24
-  s_lower_3_drop: 21
-  s_lower_4_drop: 21
-  s_lower_5_drop: 20
-  s_lower_bonus_left: 33
-  s_lower_bonus_right: 27
-  s_lower_kick_target: 13
-  s_lower_kickout_special: 13
-  s_lower_pop: 46
-  s_lower_rollover: 5
-  s_lower_slingshot: 26
-  s_lower_vuk: 95
-  s_main_10pt_left: 14
-  s_main_1_target: 16
-  s_main_1_trough: 10
-  s_main_2_target: 21
-  s_main_2_trough: 14
-  s_main_3_target: 20
-  s_main_4_target: 26
-  s_main_5_target: 10
-  s_main_inlane_left: 6
-  s_main_inlane_right: 47
-  s_main_kickout_right: 9
-  s_main_lane_center: 73
-  s_main_outhole: 107
-  s_main_outlane_left: 7
-  s_main_outlane_right: 15
-  s_main_pop_bottom: 45
-  s_main_pop_top: 45
-  s_main_rollunder: 64
-  s_main_secret_trough: 22
-  s_main_slingshot: 42
-  s_main_target_right: 11
-  s_main_trapdoor_trough: 2
-  s_main_vuk: 87
-  s_right_flipper1: 231
-  s_right_flipper2: 207
+  s_left_flipper1: 875
+  s_left_flipper2: 717
+  s_lower_10pt_drops: 47
+  s_lower_10pt_lower: 24
+  s_lower_10pt_upper: 47
+  s_lower_1_drop: 46
+  s_lower_2_drop: 39
+  s_lower_3_drop: 40
+  s_lower_4_drop: 39
+  s_lower_5_drop: 38
+  s_lower_bonus_left: 55
+  s_lower_bonus_right: 33
+  s_lower_kick_target: 20
+  s_lower_kickout_special: 57
+  s_lower_pop: 114
+  s_lower_rollover: 20
+  s_lower_slingshot: 80
+  s_lower_vuk: 304
+  s_main_10pt_left: 28
+  s_main_1_target: 30
+  s_main_1_trough: 37
+  s_main_2_target: 41
+  s_main_2_trough: 27
+  s_main_3_target: 33
+  s_main_4_target: 61
+  s_main_5_target: 24
+  s_main_inlane_left: 13
+  s_main_inlane_right: 101
+  s_main_kickout_right: 24
+  s_main_lane_center: 159
+  s_main_outhole: 229
+  s_main_outlane_left: 15
+  s_main_outlane_right: 34
+  s_main_pop_bottom: 128
+  s_main_pop_top: 97
+  s_main_rollunder: 132
+  s_main_secret_trough: 39
+  s_main_slingshot: 67
+  s_main_target_right: 47
+  s_main_trapdoor_trough: 7
+  s_main_vuk: 145
+  s_right_flipper1: 764
+  s_right_flipper2: 724
   s_start: 0
-  s_upper_10pt_center: 20
-  s_upper_10pt_left: 17
-  s_upper_1_drop: 34
-  s_upper_1_target: 24
-  s_upper_2_drop: 20
-  s_upper_2_target: 29
-  s_upper_3_drop: 23
-  s_upper_3_target: 18
-  s_upper_4_drop: 24
-  s_upper_4_target: 8
-  s_upper_pop: 62
+  s_upper_10pt_center: 75
+  s_upper_10pt_left: 39
+  s_upper_1_drop: 42
+  s_upper_1_target: 29
+  s_upper_2_drop: 31
+  s_upper_2_target: 41
+  s_upper_3_drop: 35
+  s_upper_3_target: 25
+  s_upper_4_drop: 39
+  s_upper_4_target: 9
+  s_upper_pop: 144

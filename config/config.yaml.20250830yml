@@ -103,8 +103,7 @@ switches:
     tags: playfield_active
   s_lower_vuk:                         # top left of playfield                                - Ball Device -
     number: A3-B1-0
-    tags:
-    ignore_window_ms: 500
+    tags: 
   s_lower_kickout_special:             # bottom of playfield                                  - Ball Device - 
     number: A3-B0-5
     tags: 
@@ -280,49 +279,49 @@ coils:
 #    number:
   c_flipper_left1_main:                           # Main Playfield Left Inner Flipper
     number: A2-B1-3
-    default_pulse_ms: 200
+    default_pulse_ms: 75
   c_flipper_left1_hold:
     number: A2-B1-0
     allow_enable: true
-  c_flipper_right1_main:                          # Main Playfield Right Inner Flipper
+  c_flipper_right1_main:                          # Main Playfie Right Inner Flipper
     number: A2-B1-5
-    default_pulse_ms: 125
+    default_pulse_ms: 75
   c_flipper_right1_hold:
     number: A2-B1-4
     allow_enable: true
   c_flipper_left2_main:                           # Main Playfield Left Outer Flipper
     number: A2-B1-2
-    default_pulse_ms: 200
+    default_pulse_ms: 60
   c_flipper_left2_hold:
     number: A2-B1-6
     allow_enable: true 
   c_flipper_right2_main:                          # Main Playfield Right Outer Flipper
     number: A2-B1-7
-    default_pulse_ms: 100
+    default_pulse_ms: 60
   c_flipper_right2_hold:
     number: A2-B1-1
     allow_enable: true
   c_flipper_left_lower_main:                           # Lower Playfield Left Flipper
     number: A1-B0-2
-    default_pulse_ms: 60
+    default_pulse_ms: 30
   c_flipper_left_lower_hold:
     number: A1-B0-1
     allow_enable: true
   c_flipper_right_lower_main:                          # Lower Playfield Right Flipper
-    number: A1-B0-6
-    default_pulse_ms: 80
+    number: A1-B0-4
+    default_pulse_ms: 40
   c_flipper_right_lower_hold:
-    number: A1-B0-7
+    number: A1-B0-3
     allow_enable: true
   c_flipper_left_upper_main:                           # Upper Playfield Left Flipper
     number: A2-B0-3
-    default_pulse_ms: 40
+    default_pulse_ms: 30
   c_flipper_left_upper_hold:
     number: A2-B0-4
     allow_enable: true
   c_flipper_right_upper_main:                          # Upper Playfield Right Flipper
     number: A2-B0-1
-    default_pulse_ms: 40
+    default_pulse_ms: 30
   c_flipper_right_upper_hold:
     number: A2-B0-2
     allow_enable: true
@@ -390,7 +389,7 @@ coils:
     default_pulse_ms: 75
   c_lower_vuk:                                    # VUK back to main playfield                    - Ball Device - 
     number: A1-B0-0 
-    default_pulse_ms: 190
+    default_pulse_ms: 170
    
 dual_wound_coils:
   c_dual_trapdoor:
@@ -501,7 +500,7 @@ flippers:
     hold_coil: c_flipper_left_lower_hold
     activation_switch: s_left_flipper2
   lower_right: 
-    main_coil: c_flipper_right_lower_main
+    main_coil: c_flipper_left_lower_main
     hold_coil: c_flipper_right_lower_hold
     activation_switch: s_right_flipper2
   upper_left: 
