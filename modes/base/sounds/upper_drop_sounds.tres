@@ -1,0 +1,13 @@
+[gd_resource type="AudioStreamRandomizer" load_steps=5 format=3 uid="uid://dt12i7aoyperd"]
+
+[ext_resource type="AudioStream" uid="uid://c7vtl5mjrjd7c" path="res://modes/base/sounds/scream1.ogg" id="1_ay323"]
+[ext_resource type="AudioStream" uid="uid://b4wspx6epbbci" path="res://modes/base/sounds/scream2.ogg" id="2_rl604"]
+[ext_resource type="AudioStream" uid="uid://dc6rkyumc33pu" path="res://modes/base/sounds/scream3.ogg" id="3_yutts"]
+[ext_resource type="AudioStream" uid="uid://c8vmbrb060x65" path="res://modes/base/sounds/scream4.ogg" id="4_kjhwr"]
+
+[resource]
+streams_count = 4
+stream_0/stream = ExtResource("1_ay323")
+stream_1/stream = ExtResource("2_rl604")
+stream_2/stream = ExtResource("3_yutts")
+stream_3/stream = ExtResource("4_kjhwr")

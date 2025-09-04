@@ -33,6 +33,11 @@ queue_relay_player:
     post: game_start_slide_show
     wait_for: slide_game_start_removed
 
+
+############################################
+## Sound Section
+############################################
+
 sound_player:
   game_start_slide_show:
     hh_organ_intro:
@@ -46,31 +51,73 @@ sound_player:
       action: play
       loops: -1
   
-  right_inlane_hit:
+  right_outlane_hit:
     leavingR1:
       bus: voice
       action: play
 
-  upper_1_drop_hit:
+  lower_1_drop_hit:
     drop_sounds:
+      bus: effects
+      action: play
+
+  lower_2_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  lower_3_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  lower_4_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  lower_5_drop_hit:
+    drop_sounds:
+      bus: effects
+      action: play
+
+  drop_target_bank_lower_down:
+    zombie_gasp:
+      bus: effects
+      action: play
+
+  player_current_playfield{value == 'attic_pf' and prev_value == 'main_pf'}:
+    bell_chimes1:
+      bus: voice
+      action: play
+  
+  upper_1_drop_hit:
+    upper_drop_sounds:
       bus: effects
       action: play
 
   upper_2_drop_hit:
-    drop_sounds:
+    upper_drop_sounds:
       bus: effects
       action: play
-
+      
   upper_3_drop_hit:
-    drop_sounds:
+    upper_drop_sounds:
       bus: effects
       action: play
 
   upper_4_drop_hit:
-    drop_sounds:
+    upper_drop_sounds:
       bus: effects
       action: play
 
+  drop_target_bank_upper_down:
+    scream_end:
+      bus: effects
+      action: play
+
+  
+      
 ############################################
 ## Shot definitions
 ############################################
