@@ -795,6 +795,21 @@ lights:
     number: 15-45-46-47
     platform_settings:
       polarity: true
+
+  l_main_shoot_again:
+    number: 15-24-25-26
+    platform_settings:
+      polarity: true
+
+  l_main_right_lower_gi:
+    number: 15-27-28-29
+    platform_settings:
+      polarity: true
+      
+  l_main_right_mid_gi:
+    number: 15-30-31-32
+    platform_settings:
+      plolarity: true
     
 diverters:
   trapdoor_diverter:

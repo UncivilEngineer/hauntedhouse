@@ -29,7 +29,7 @@ slide_player:
       expire: '6.5s'
 
 queue_relay_player:
-  ball_starting{player ==1 and ball == 1}:
+  ball_starting{player ==1 and ball == 1 and is_extra_ball == False}:
     post: game_start_slide_show
     wait_for: slide_game_start_removed
 
@@ -761,6 +761,12 @@ light_player:
     l_lower_bank_count_1: on
     l_lower_bank_count_2: off
     l_lower_bank_count_3: off
+
+  player_extra_balls{value >= 1}:
+    l_main_shoot_again: on
+  player_extra_balls{value == 0}:
+    l_main_shoot_again: off
+    
     
 ##########
 ## show player
@@ -1028,6 +1034,8 @@ shows:
         l_main_right_gi_1: orange
         l_main_left_lower_gi: orange
         l_main_left_upper_gi: orange
+        l_main_right_lower_gi: orange
+        l_main_right_mid_gi: orange
         l_gi_post_left: red
         l_gi_post_right: green
         l_main_upper_pop: white
@@ -1044,6 +1052,8 @@ shows:
         l_main_right_gi_1: white
         l_main_left_lower_gi: white
         l_main_left_upper_gi: white
+        l_main_right_lower_gi: white
+        l_main_right_mid_gi: white
         l_gi_post_left: green
         l_gi_post_right: red
 

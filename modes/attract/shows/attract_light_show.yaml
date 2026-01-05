@@ -3,6 +3,7 @@
 
 - duration: 1s
   lights: 
+    l_main_shoot_again: red
     l_upper_target_1: on
     l_attic_right_gi_1: green
     l_attic_right_gi_2: red
@@ -14,6 +15,8 @@
     l_main_left_lower_gi: white
     l_gi_post_left: red
     l_gi_post_right: orange
+    l_main_right_lower_gi: orange
+    l_main_right_mid_gi: white
     
     l_attic_double_score: on
     l_attic_pop: green
@@ -46,6 +49,7 @@
     
 - duration: 1s
   lights: 
+    l_main_shoot_again: off
     l_upper_target_2: on
     l_attic_pop: purple
     l_attic_special: off
@@ -61,7 +65,9 @@
     l_main_left_lower_gi: orange
     l_gi_post_left: orange
     l_gi_post_right: red
-    
+    l_main_right_lower_gi: white
+    l_main_right_mid_gi: orange
+        
     l_main_upper_pop: purple
     l_main_lower_pop: purple
     l_main_trap_door: off
@@ -89,6 +95,7 @@
     
 - duration: 1s
   lights: 
+    l_main_shoot_again: red
     l_upper_target_3: on
     l_attic_pop: blue
     l_attic_special: red
@@ -105,6 +112,8 @@
     l_gi_post_right: red
     l_main_double_score: orange
     l_main_left_bonus: white
+    l_main_right_lower_gi: orange
+    l_main_right_mid_gi: white
     
     l_main_upper_pop: blue
     l_main_lower_pop: blue
@@ -134,6 +143,7 @@
     
 - duration: 1s
   lights: 
+    l_main_shoot_again: off
     l_upper_target_4: on
     l_attic_pop: red
     l_attic_special: red 
@@ -148,6 +158,8 @@
     l_main_left_upper_gi: orange
     l_main_left_lower_gi: white
     l_gi_post_right: white
+    l_main_right_lower_gi: white
+    l_main_right_mid_gi: orange
     
     l_main_upper_pop: red
     l_main_lower_pop: red
@@ -180,6 +192,7 @@
     
 - duration: 1s
   lights: 
+    l_main_shoot_again: red
     l_attic_pop: green
     l_attic_special: off 
     l_attic_double_score: off
@@ -196,6 +209,8 @@
     l_gi_post_right: red
     l_5x: red
     l_db_cellar_enabled: green
+    l_main_right_lower_gi: white
+    l_main_right_mid_gi: orange
     
     l_db_attic: orange
     l_db_main: orange
@@ -215,6 +230,7 @@
     
 - duration: 1s
   lights: 
+    l_main_shoot_again: off
     l_upper_target_1: "000000"
     l_upper_target_2: "000000"
     l_upper_target_3: "000000"
@@ -244,6 +260,8 @@
     l_4x: off
     l_5x: off
     l_main_left_bonus: off
+    l_main_right_lower_gi: off
+    l_main_right_mid_gi: off
     
     l_db_attic: off
     l_db_main: off
