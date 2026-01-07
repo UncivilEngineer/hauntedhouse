@@ -5,8 +5,4 @@ master_volume:
 player1_score:
   expire: null
   expire_secs: null
-<<<<<<< Updated upstream
-  value: 157320
-=======
-  value: 322300
->>>>>>> Stashed changes
+  value: 112340
