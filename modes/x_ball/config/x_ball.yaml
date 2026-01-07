@@ -3,10 +3,10 @@
 
 mode:
   start_events: 
-    - logicblock_attic_drop_counter_hit{count == 1 and current_player.extra_ball_main_x_ball_num_awarded == 0}
-    - logicblock_cellar_drop_counter_hit{count == 1 and current_player.extra_ball_main_x_ball_num_awarded == 0}
+    - logicblock_attic_drop_counter_hit{count == 1 and current_player.extra_ball_drops_extra_ball_num_awarded == 0}
+    - logicblock_cellar_drop_counter_hit{count == 1 and current_player.extra_ball_drops_extra_ball_num_awarded == 0}
     - start_x_ball_mode
-    #- logicblock_attic_drop_counter_hit{count == 1}
+    
   #restart_on_next_ball: true
   priority: 200
   stop_events:  extra_ball_awarded
@@ -56,6 +56,9 @@ shot_profiles:
 
 
 extra_balls:
-  main_x_ball:
-    award_events:  main_pf_x_ball_lit_hit
-    
+  target_extra_ball:
+    award_events: main_pf_x_ball_lit_hit{current_player.main_target_sequence_complete == "yes"} 
+  drops_extra_ball:
+    award_events: 
+      - main_pf_x_ball_lit_hit{device.counters.cellar_drop_counter.value >= 1 and current_player.extra_ball_drops_extra_ball_num_awarded == 0}
+      - main_pf_x_ball_lit_hit{device.counters.attic_drop_counter.value >= 1 and current_player.extra_ball_drops_extra_ball_num_awarded == 0}  
