@@ -773,6 +773,22 @@ light_player:
 ##########
 show_player:
 
+### ball save light handlers ##
+  ball_save_default_timer_start:
+    shoot_again_flash:
+      action: play
+      speed: 3
+  ball_save_default_hurry_up:
+    shoot_again_flash:
+      action: play
+      speed: 5
+  ball_save_default_grace_period:
+    shoot_again_flash:
+      action: stop
+  ball_save_default_disabled:
+    shoot_again_flash:
+      action: stop
+
 #### base mode shows
   mode_base_started:
     gi_on:
@@ -975,6 +991,15 @@ shot_profiles:
         show: on
     
 shows:
+
+  shoot_again_flash:
+    - time: 0
+      lights:
+        l_main_shoot_again: red
+    - time: 1
+      lights:
+        l_main_shoot_again: off
+        
   upper_pop_show:
     - time: 0
       lights: 
@@ -1116,3 +1141,11 @@ shows:
     - time: 1
       lights:
         l_main_double_score: off
+
+ball_saves:
+  default:
+    active_time: '10s'
+    hurry_up_time: '2s'
+    grace_period: '2s'
+    enable_events:  mode_base_started
+    timer_start_events:  ball_started

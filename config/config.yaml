@@ -809,7 +809,7 @@ lights:
   l_main_right_mid_gi:
     number: 15-30-31-32
     platform_settings:
-      plolarity: true
+      polarity: true
     
 diverters:
   trapdoor_diverter:
