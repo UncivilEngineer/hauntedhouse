@@ -286,19 +286,19 @@ coils:
     allow_enable: true
   c_flipper_right1_main:                          # Main Playfield Right Inner Flipper
     number: A2-B1-5
-    default_pulse_ms: 125
+    default_pulse_ms: 180
   c_flipper_right1_hold:
     number: A2-B1-4
     allow_enable: true
   c_flipper_left2_main:                           # Main Playfield Left Outer Flipper
     number: A2-B1-2
-    default_pulse_ms: 200
+    default_pulse_ms: 150
   c_flipper_left2_hold:
     number: A2-B1-6
     allow_enable: true 
   c_flipper_right2_main:                          # Main Playfield Right Outer Flipper
     number: A2-B1-7
-    default_pulse_ms: 100
+    default_pulse_ms: 150
   c_flipper_right2_hold:
     number: A2-B1-1
     allow_enable: true
@@ -316,13 +316,13 @@ coils:
     allow_enable: true
   c_flipper_left_upper_main:                           # Upper Playfield Left Flipper
     number: A2-B0-3
-    default_pulse_ms: 40
+    default_pulse_ms: 80
   c_flipper_left_upper_hold:
     number: A2-B0-4
     allow_enable: true
   c_flipper_right_upper_main:                          # Upper Playfield Right Flipper
     number: A2-B0-1
-    default_pulse_ms: 40
+    default_pulse_ms: 100
   c_flipper_right_upper_hold:
     number: A2-B0-2
     allow_enable: true
